@@ -1,0 +1,421 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piligrim - Главная страница</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.png">
+        <link rel="SHORTCUT ICON" type="image/png" href="favicon.png">
+        <link rel="stylesheet" type="text/css" href="content/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="content/css/common.css" />
+        <link rel="stylesheet" type="text/css" href="content/css/jquery-ui-1.10.4.custom.css" />
+        <link rel="stylesheet" type="text/css" href="content/css/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" type="text/css" href="content/fancybox/jquery.fancybox.css" />
+        <link rel="stylesheet" type="text/css" href="content/css/map.css" />
+        <link rel="stylesheet" type="text/css" href="content/css/home.css" />
+        <link rel="stylesheet" type="text/css" href="content/css/responsive.css" />
+
+    </head>
+    <body>
+        <!-- HEADER -->
+        <div class="wrapper container" id="header">
+
+            <header class="row">
+                <div class="col-md-1 col-sm-1 route-selector">
+                    <a href="#" class="route-toggle"><span>0</span></a>
+                </div>
+                <div class="col-md-7 col-sm-7 point-selector">
+                    <ul class="mcontainer">
+                        <li>
+                            <a href="#" class="toggle point" data-id="4094" data-lat="43.6017215" data-lng="39.7251289" data-name="Сочи"><i>1</i><span>Сочи</span></a>
+                            <div class="item-toggle">
+                                <div class="search">
+                                    <input type="text" value="" class="ssity" autocomplete="off" />
+                                </div>
+                                <div class="append">
+
+                                </div>
+                                <div class="last-hidden">
+                                    <a href="#" class="remove"><i>&nbsp</i><span>Удалить эту точку</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="toggle point" data-id="4917" data-lat="53.202778" data-lng="50.140833" data-name="Самара"><i>2</i><span>Самара</span></a>
+                            <div class="item-toggle">
+                                <div class="search">
+                                    <input type="text" value="" class="ssity" autocomplete="off" />
+                                </div>
+                                <div class="append">
+
+                                </div>
+                                <div class="last-hidden">
+                                    <a href="#" class="remove"><i>&nbsp</i><span>Удалить эту точку</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="last">
+                            <a href="#" class="toggle point"><i>&nbsp</i><span class="noborder">&nbsp</span></a>
+                            <div class="item-toggle float-size">
+                                <div class="search">
+                                    <input type="text" value="" class="ssity" autocomplete="off" />
+                                </div>
+                                <div class="append">
+
+                                </div>
+                                <div class="last-hidden">
+                                    <a href="#" class="remove"><i>&nbsp</i><span>Удалить эту точку</span></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mdescription">
+                        <div class="msect" id="route-distance"></div>
+                        <div class="msect" id="route-duration"><span></span></div>
+                        <div class="msect" id="route-speed"><span></span></div>
+                        <div class="clear"></div>
+                        <div class="msect" id="route-subjects"><span></span></div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-2 type-selector">
+                    <ul class="selector">
+                        <li class="active">
+                            <span><i class="icon-map">&nbsp</i>карта</span>
+                        </li>
+                        <li>
+                            <a href="#listroutewrap" class="fancybox"><i class="icon-list">&nbsp</i>список</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-2 logo-selector">
+                    <span class="logo">
+                        <img src="content/img/logo.png" alt="Piligrim" />
+                    </span>
+                    <div class="slogan">Контроль поездки</div>
+                    <a href="#aboutwrap" class="about-link fancybox">О проекте</a>
+                </div>
+            </header>
+
+        </div>
+        <!-- END HEADER -->
+
+        <!-- MAP -->
+        <div id="main" class="container">
+            <div class="mapwrapper row">
+                <div id="map" class="col-xs-12"></div>
+
+                <div class="scales">
+                    <a href="#" class="plus"> </a>
+                    <a href="#" class="minus"> </a>
+                </div>
+                <div class="controls">
+                    <a href="#" class="history"></a>
+                    <a href="#" class="prev"></a>
+                    <a href="#" class="next disabled"></a>
+                </div>
+                <!-- History -->
+                <div id="history">
+                    <div>
+                        <div class="scroll">
+                            <a href="#" class="history-item point-add"><i></i><span>Добавлена точка: Сочи</span></a>
+                            <a href="#" class="history-item point-add"><i></i><span>Добавлена точка: Саранск</span></a>
+                            <a href="#" class="history-item zoom-plus"><i></i><span>Приближена карта</span></a>
+                            <a href="#" class="history-item point-change"><i></i><span>Изменена точка: Саранск &rarr; Самара</span></a>
+                            <a href="#" class="history-item point-move"><i></i><span>Перестановка точек</span></a>
+                            <a href="#" class="history-item zoom-minus"><i></i><span>Отдалена карта</span></a>
+                            <a href="#" class="history-item point-remove"><i></i><span>Удалена точка: Пенза</span></a>
+                            <a href="#" class="history-item point-view"><i></i><span>Смотр: кластер</span></a>
+                            <a href="#" class="history-item change-mileage"><i></i><span>Установлен пробег: 400 км / день</span></a>
+                            <a href="#" class="history-item point-view"><i></i><span>Смотр: АЗС</span></a>
+                            <a href="#" class="history-item point-add"><i></i><span>Добавлена точка: Сочи</span></a>
+                            <a href="#" class="history-item point-add"><i></i><span>Добавлена точка: Саранск</span></a>
+                            <a href="#" class="history-item zoom-plus"><i></i><span>Приближена карта</span></a>
+                            <a href="#" class="history-item point-change"><i></i><span>Изменена точка: Саранск &rarr; Самара</span></a>
+                            <a href="#" class="history-item point-move"><i></i><span>Перестановка точек</span></a>
+                            <a href="#" class="history-item zoom-minus"><i></i><span>Отдалена карта</span></a>
+                            <a href="#" class="history-item point-remove"><i></i><span>Удалена точка: Пенза</span></a>
+                            <a href="#" class="history-item point-view"><i></i><span>Смотр: кластер</span></a>
+                            <a href="#" class="history-item change-mileage"><i></i><span>Установлен пробег: 400 км / день</span></a>
+                            <a href="#" class="history-item point-view"><i></i><span>Смотр: АЗС</span></a>
+                        </div>
+                    </div>
+                    <a href="#" class="close-history"></a>
+                </div>
+                <!-- END History -->
+                <div id="dragOverlay">
+
+                </div>
+            </div>
+        </div>
+        <!-- END MAP -->
+
+
+        <!-- FOOTER -->
+        <div class="wrapper container" id="footer">
+            <footer class="row">
+                <div class="col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-0">
+                    Пробег: <a href="#" id="route-probeg"><span>yстановить</span></a>
+                    <div id="mileage">
+                        <div class="bbottom">
+                            <div class="mileage-title">Что это?</div>
+                            <div>
+                                Установите отрезок, который вы планируете проехать за день &mdash; на карте появиться радиус,
+                                охватывающий полезные места на заданном отрезке. Двигайте радиус на карте.
+                            </div>
+                        </div>
+                        <div>
+                            <label><input type="text" value="850" id="distance" /> км / день</label>
+                            <div id="distance-slider"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="object fuel" data-type="gas_station">
+                        <i></i>
+                        <span>&nbsp;</span>
+                        <div class="otitle">АЗС</div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="object shower" data-type="lodging">
+                        <i></i>
+                        <span>&nbsp;</span>
+                        <div class="otitle">Гостиницы, хостелы</div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="object coffee" data-type="food">
+                        <i></i>
+                        <span>&nbsp;</span>
+                        <div class="otitle">Кафе, рестораны</div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="object card" data-type="bank">
+                        <i></i>
+                        <span>&nbsp;</span>
+                        <div class="otitle">Банки и банкоматы</div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="object pit" data-type="atm">
+                        <i></i>
+                        <span>&nbsp;</span>
+                        <div class="otitle">Платежные терминалы</div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="object drink" data-type="market">
+                        <i></i>
+                        <span>&nbsp;</span>
+                        <div class="otitle">Продуктовые магазины</div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="object photo" data-type="poi">
+                        <i></i>
+                        <span>&nbsp;</span>
+                        <div class="otitle">Достопримечательности</div>
+                    </div>
+                </div>
+                <div class="col-xs-1"></div>
+            </footer>
+        </div>
+        <!-- END FOOTER -->
+
+        <!-- ABOUT POPUP -->
+        <div id="aboutwrap">
+            <p>Piligrim.ru - это один из крупнейших, высокопосещаемых, независимых сайтов, предоставляющий информацию о компаниях и организациях, осуществляющих свою деятельность на территории России и стран СНГ. Наша цель - быть самым достоверным источником информации о предприятих и компаниях, товарах и услугах в российском сегменте всемирной сети. Мы стремимся достигнуть этой цели предоставляя объективную, независимую, всеобъемлющую и актуальную информацию в простом и удобном виде.</p>
+
+            <p> Успех портала Piligrim.ru целиком и полностью зависит от удовлетворения запросов наших посетителей. Мы приветствуем любые ваши замечения и предложения по поводу того, как мы можем усовершенстовать наш сервис.Piligrim.ru - это один из крупнейших, высокопосещаемых, независимых сайтов, предоставляющий информацию о компаниях и организациях, осуществляющих свою деятельность на территории России и стран СНГ. Наша цель - быть самым достоверным источником информации о предприятих и компаниях, товарах и услугах в российском сегменте всемирной сети. Мы стремимся достигнуть этой цели предоставляя объективную, независимую, всеобъемлющую и актуальную информацию в простом и удобном виде.</p>
+
+            <p>Успех портала Piligrim.ru целиком и полностью зависит от удовлетворения запросов наших посетителей. Мы приветствуем любые ваши замечения и предложения по поводу того, как мы можем усовершенстовать наш сервис</p>
+        </div>
+        <!-- END ABOUT POPUP -->
+
+        <!-- ROUTE SELECTOR POPUP -->
+        <div id="listroutewrap"></div>
+        <div id="overlay"></div>
+
+        <div id="route-selector">
+            <div class="route-selector-bg">
+                <img src="content/img/altai.jpg" alt="Алтай" />
+                <div class="overlay"></div>
+                <div class="description">
+                    <a href="#">Гора &laquo;Белуха&raquo;</a>
+                    <div>Россия, Республика Алтай</div>
+                </div>
+            </div>
+            <a href="#" class="route-toggle"><span>4</span></a>
+
+            <div class="rs-wrapper" id="rs-wrapper">
+                <ul>
+
+                    <li>
+                        <div class="rs-item">
+                            <div class="rs-controls">
+                                <a href="#" class="delete"><i></i><span>Удалить</span></a>
+                                <a href="#" class="show"><i></i><span>Смотреть</span></a>
+                            </div>
+                            <div class="rs-points">
+                                <span>Сочи</span><span>Самара</span>
+                            </div>
+                            <div class="rs-description">
+                                <div><span>1 860 км</span><span>19 ч 47 м</span><span class="gray">(1,5 световых дня)</span></div>
+                                <div><span>85 км/ч</span><span class="gray">(средняя скорость)</span></div>
+                                <div><span>65 населен. пунктов</span><span class="gray">(8 субъектов)</span></div>
+                            </div>
+                            <div class="rs-features">
+                                <div>
+                                    <span class="rs-feature fuel"><i></i>123</span>
+                                    <span class="rs-feature shower"><i></i>269</span>
+                                    <span class="rs-feature coffee"><i></i>365</span>
+                                </div>
+                                <div>
+                                    <span class="rs-feature card"><i></i>102</span>
+                                    <span class="rs-feature pit"><i></i>495</span>
+                                    <span class="rs-feature drink"><i></i>82</span>
+                                    <span class="rs-feature photo"><i></i>3</span>
+                                </div>
+                            </div>
+                            <div class="map">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="rs-item">
+                            <div class="rs-controls">
+                                <a href="#" class="delete"><i></i><span>Удалить</span></a>
+                                <a href="#" class="show"><i></i><span>Смотреть</span></a>
+                            </div>
+                            <div class="rs-points">
+                                <span>Сочи</span><span>Самара</span>
+                            </div>
+                            <div class="rs-description">
+                                <div><span>1 860 км</span><span>19 ч 47 м</span><span class="gray">(1,5 световых дня)</span></div>
+                                <div><span>85 км/ч</span><span class="gray">(средняя скорость)</span></div>
+                                <div><span>65 населен. пунктов</span><span class="gray">(8 субъектов)</span></div>
+                            </div>
+                            <div class="rs-features">
+                                <div>
+                                    <span class="rs-feature fuel"><i></i>123</span>
+                                    <span class="rs-feature shower"><i></i>269</span>
+                                    <span class="rs-feature coffee"><i></i>365</span>
+                                </div>
+                                <div>
+                                    <span class="rs-feature card"><i></i>102</span>
+                                    <span class="rs-feature pit"><i></i>495</span>
+                                    <span class="rs-feature drink"><i></i>82</span>
+                                    <span class="rs-feature photo"><i></i>3</span>
+                                </div>
+                            </div>
+                            <div class="map">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="rs-item">
+                            <div class="rs-controls">
+                                <a href="#" class="delete"><i></i><span>Удалить</span></a>
+                                <a href="#" class="show"><i></i><span>Смотреть</span></a>
+                            </div>
+                            <div class="rs-points">
+                                <span>Сочи</span><span>Самара</span>
+                            </div>
+                            <div class="rs-description">
+                                <div><span>1 860 км</span><span>19 ч 47 м</span><span class="gray">(1,5 световых дня)</span></div>
+                                <div><span>85 км/ч</span><span class="gray">(средняя скорость)</span></div>
+                                <div><span>65 населен. пунктов</span><span class="gray">(8 субъектов)</span></div>
+                            </div>
+                            <div class="rs-features">
+                                <div>
+                                    <span class="rs-feature fuel"><i></i>123</span>
+                                    <span class="rs-feature shower"><i></i>269</span>
+                                    <span class="rs-feature coffee"><i></i>365</span>
+                                </div>
+                                <div>
+                                    <span class="rs-feature card"><i></i>102</span>
+                                    <span class="rs-feature pit"><i></i>495</span>
+                                    <span class="rs-feature drink"><i></i>82</span>
+                                    <span class="rs-feature photo"><i></i>3</span>
+                                </div>
+                            </div>
+                            <div class="map">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="rs-item">
+                            <div class="rs-controls">
+                                <a href="#" class="delete"><i></i><span>Удалить</span></a>
+                                <a href="#" class="show"><i></i><span>Смотреть</span></a>
+                            </div>
+                            <div class="rs-points">
+                                <span>Сочи</span><span>Самара</span>
+                            </div>
+                            <div class="rs-description">
+                                <div><span>1 860 км</span><span>19 ч 47 м</span><span class="gray">(1,5 световых дня)</span></div>
+                                <div><span>85 км/ч</span><span class="gray">(средняя скорость)</span></div>
+                                <div><span>65 населен. пунктов</span><span class="gray">(8 субъектов)</span></div>
+                            </div>
+                            <div class="rs-features">
+                                <div>
+                                    <span class="rs-feature fuel"><i></i>123</span>
+                                    <span class="rs-feature shower"><i></i>269</span>
+                                    <span class="rs-feature coffee"><i></i>365</span>
+                                </div>
+                                <div>
+                                    <span class="rs-feature card"><i></i>102</span>
+                                    <span class="rs-feature pit"><i></i>495</span>
+                                    <span class="rs-feature drink"><i></i>82</span>
+                                    <span class="rs-feature photo"><i></i>3</span>
+                                </div>
+                            </div>
+                            <div class="map">
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="last">
+                        <a href="#" class="add-route"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- END ROUTE SELECTOR POPUP -->
+
+
+        <script src="js/modernizr-2.6.2.js"></script>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery-ui-1.10.4.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/func.js"></script>
+
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false&key=AIzaSyDVn3nSrTIA_hOiEh5LPtfxwhKahhqpj6I"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+        <script src="js/markerwithlabel.js"></script>
+        <script src="js/markerclusterer.js"></script>
+        <script src="js/iscroll-probe.js"></script>
+        <script src="js/iscroll.js"></script>
+        <script src="js/views/staticdata.js" type="text/javascript"></script>
+        <script src="js/views/poi.js" type="text/javascript"></script>
+        <script src="js/views/mapprocessor.js" type="text/javascript"></script>
+        <script src="js/views/home.js" type="text/javascript"></script>
+        <script src="js/views/mileage.js" type="text/javascript"></script>
+
+
+    </body>
+    </html>

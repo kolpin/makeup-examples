@@ -1,0 +1,231 @@
+/*--------- music --------*/
+/*--------- film --------*/
+/*--------- theater --------*/
+/*--------- design --------*/
+/*--------- art --------*/
+.design-page .musician-info .social-info .likes:hover:before,
+.design-page .musician-updates ul li .socials .likes:hover:before,
+.design-page .socials .likes:hover:before {
+  background-position: -11px -60px;
+}
+.design-page .musician-info .social-info .comments:hover:before,
+.design-page .musician-updates ul li .socials .comments:hover:before,
+.design-page .socials .comments:hover:before {
+  background-position: -26px -60px;
+}
+.design-page .musician-info .social-info .shares:hover:before,
+.design-page .musician-updates ul li .socials .shares:hover:before,
+.design-page .socials .shares:hover:before {
+  background-position: -40px -60px;
+}
+.design-page .image-gallery-info .socials .likes:hover:before {
+  background-position: -11px -60px;
+}
+.design-page .image-gallery-info .socials .comments:hover:before {
+  background-position: -26px -60px;
+}
+.design-page .image-gallery-info .socials .shares:hover:before {
+  background-position: -40px -60px;
+}
+.design-page a:hover {
+  color: #f68121;
+}
+.design-page a:active {
+  color: #a1a1a1;
+}
+.design-page .comments form button {
+  background-color: #f68121;
+}
+.design-page .comments form button:hover {
+  background-color: #ea5802;
+}
+.design-page h1,
+.design-page h2,
+.design-page .block-credits h2,
+.design-page .musician-funds-raised h2,
+.design-page .musician-upcoming-events h2,
+.design-page .musician-member-of h2,
+.design-page .musician-recommended-links h2,
+.design-page .musician-updates .top h2,
+.design-page .musician-store .top h2,
+.design-page .musician-groups h2 {
+  color: #f68121;
+}
+.design-page .userpic .button,
+.design-page .button {
+  background: #f68121;
+}
+.design-page .userpic .button:hover,
+.design-page .button:hover {
+  background: #ea5802;
+  color: #fff !important;
+}
+.design-page .userpic .button.edit-button.rearrange,
+.design-page .button.edit-button.rearrange {
+  background: #f68121;
+}
+.design-page .userpic .button.edit-button.rearrange:hover,
+.design-page .button.edit-button.rearrange:hover {
+  background: #ea5802;
+}
+.design-page .userpic .button.edit-button.customize,
+.design-page .button.edit-button.customize {
+  background: #f68121;
+}
+.design-page .userpic .button.edit-button.customize:hover,
+.design-page .button.edit-button.customize:hover {
+  background: #ea5802;
+}
+.design-page .userpic .button.red,
+.design-page .button.red {
+  background: #ED1D24;
+}
+.design-page .userpic .button.red:hover,
+.design-page .button.red:hover {
+  background: #c5000e;
+}
+.design-page .userpic .button.blue,
+.design-page .button.blue {
+  background: #40a3dc;
+}
+.design-page .userpic .button.blue:hover,
+.design-page .button.blue:hover,
+.design-page .userpic .button.blue:active,
+.design-page .button.blue:active {
+  background: #2480d3;
+}
+.design-page .userpic .button.dark,
+.design-page .button.dark {
+  background: #424242;
+}
+.design-page .userpic .button.dark:hover,
+.design-page .button.dark:hover {
+  background: #1E1E1E;
+}
+.design-page .userpic .button.light,
+.design-page .button.light {
+  background: #E6E6E6;
+}
+.design-page .userpic .button.light:hover,
+.design-page .button.light:hover {
+  background: #CECECE;
+}
+.design-page .userpic .button.myprofile,
+.design-page .button.myprofile {
+  background: #f68121;
+}
+.design-page .userpic .button.myprofile:hover,
+.design-page .button.myprofile:hover {
+  background: #ea5802;
+}
+.design-page .musician-singles-albums .nav a.active,
+.design-page .musician-videos-valbums .nav a.active,
+.design-page .musician-images-igalleries .nav a.active,
+.design-page .musician-store .nav a.active,
+.design-page .guests-events .top a.active,
+.design-page .guests .top a.active {
+  background: #f68121;
+}
+.design-page .completeness-list li .prcnts_bg {
+  background: #ffd4af;
+}
+.design-page .completeness-list li .prcnts_bg span {
+  background: #f68121;
+}
+.design-page .completeness-list li.sel {
+  color: #f68121;
+}
+.design-page .musician-updates ul li .content .photos .rest:hover {
+  background: #ffd4af;
+  color: #f68121;
+}
+.design-page .musician-updates ul li .info a:hover {
+  color: #ea5802;
+}
+.design-page .musician-updates .top .rss {
+  background-position: 0 -60px;
+}
+.design-page .all-galleries ul li a:hover {
+  color: #f68121;
+}
+.design-page .dropdown-multiselect .dropdown-items ul li.active label {
+  background-position: 1px -78px;
+}
+.design-page .breadcrumbs .dropdown-multiselect .dropdown-items ul li.active label {
+  background-position: 0px -75px;
+}
+.design-page .musician-write .types a.active {
+  color: #f68121;
+}
+.design-page .musician-write .types a.active:before {
+  background-position: 0 -60px;
+}
+.design-page .musician-write .types a:hover {
+  color: #f68121;
+}
+.design-page .musician-write .types a.music.active:before {
+  background-position: -14px -60px;
+}
+.design-page .musician-write .types a.image.active:before {
+  background-position: -27px -60px;
+}
+.design-page .musician-write .types a.video.active:before {
+  background-position: -42px -60px;
+}
+.design-page .nav a.active {
+  background: #f68121;
+}
+.design-page .nav a.prev:hover,
+.design-page .nav a.next:hover {
+  background-position: -1px -76px;
+}
+.design-page .nav a.prev.next:hover,
+.design-page .nav a.next.next:hover {
+  background-position: -12px -76px;
+}
+.design-page .block-store-menu h2 a:before {
+  background: #f68121;
+}
+.design-page .block-store-menu h2 a:hover:before {
+  background: #ea5802;
+}
+.design-page .block-store-menu ul li a:hover,
+.design-page .block-store-menu ul li a.active {
+  background: #f68121;
+}
+.design-page.payment-confirmation .thanks > div:before {
+  background-position: -264px -354px;
+}
+.design-page .features-membership > section > div.content.unknown i {
+  background-position: -161px 0px;
+}
+.design-page .features-membership > section > div.content.starving i {
+  background-position: -161px -53px;
+}
+.design-page .features-membership > section > div.content.successfull i {
+  background-position: -161px -108px;
+}
+.design-page .features-membership > section > div.content.celebrity i {
+  background-position: -161px -161px;
+}
+.design-page .order-summary .total-summ .unknown {
+  background-position: -129px 0;
+}
+.design-page .order-summary .total-summ .starving {
+  background-position: -129px -43px;
+}
+.design-page .order-summary .total-summ .succssful {
+  background-position: -129px -86px;
+}
+.design-page .order-summary .total-summ .celebrity {
+  background-position: -129px -129px;
+}
+.design-page .amount-money > li:hover {
+  background: #f68121;
+}
+.design-page .amount-money > li.active {
+  background: #ea5802;
+}
+.design-page .checkbox.active {
+  background-position: 0 -160px;
+}

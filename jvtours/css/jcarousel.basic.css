@@ -1,0 +1,46 @@
+/** Carousel **/
+
+.jcarousel_full {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel_full ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel_full li {
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.jcarousel-pagination {
+    display: none;
+}
+
+.jcarousel_small {
+    position: relative;
+    width: 680px; height: 454px;
+    overflow: hidden;
+}
+
+.jcarousel_small ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel_small li {
+    position: relative;
+    width: 680px; height: 454px;
+    float: left;
+}
+.jcarousel-pagination-small {
+    display: none;
+}

@@ -1,0 +1,110 @@
+﻿@import "lesshat.less";
+
+.mapwrapper{
+    position: relative;
+   
+    padding: 0;
+    overflow: hidden;
+    #map {
+        min-height:300px;
+        width:100%;
+    }
+
+    .scales{
+        position: absolute;
+        top: 53px;
+        right: 39px;
+        a{
+            display: block;
+            position: relative;
+            width: 55px;
+            height: 55px;
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 19px;
+            .border-radius(5px);
+            background-image: url("../img/scales.png");
+            background-repeat: no-repeat;
+
+            &.plus{
+                background-position: 0 -55px;
+                &:hover{
+                    background-position: 0 -110px;
+                }
+                &.disabled{
+                    background-position: 0 0;
+                }
+            }
+
+            &.minus{
+                background-position: -55px -55px;
+                &:hover{
+                    background-position: -55px -110px;
+                }
+                &.disabled{
+                    background-position: -55px 0;
+                }
+            }
+            
+            
+        }
+    }
+
+    .controls{
+        position: absolute;
+        left: 40px;
+        bottom: 51px;
+        .clearfix();
+        a{
+            display: block;
+            float:left;
+            width: 24px;
+            height: 24px;
+            background-image: url("../img/history.png");
+            background-repeat: no-repeat;
+            margin-right: 53px;
+
+        }
+
+        .history{
+            background-position: 0 0;
+            height: 29px;
+            
+            &:hover{
+                background-position: -24px 0;
+            }
+            &.disabled{
+                background-position: -48px 0;
+            }
+        }
+
+        .prev{
+            margin-top: 2px;
+            background-position: 0 -29px;
+            &:hover{
+                background-position: -24px  -29px;
+            }
+            &.disabled{
+                background-position: -48px  -29px;
+            }
+        }
+
+        .next{
+            margin-top: 2px;
+            background-position: 0 -53px;
+            &:hover{
+                background-position: -24px  -53px;
+            }
+            &.disabled{
+                background-position: -48px  -53px;
+            }
+        }
+    }
+ }
+
+#aboutwrap {
+    display:none;
+}
+#listroutewrap {
+    display:none;
+}

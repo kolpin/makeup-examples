@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="author" content="">
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,CHROME=1">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ArtistView</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/allgroups.css">
+    <link rel="stylesheet" href="styles/player.css">
+    <link rel="stylesheet" href="styles/popup.css">
+
+    <link rel="stylesheet" href="styles/store_main.css">
+
+    <link rel="stylesheet" href="styles/music.css">
+
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script data-main="js/requirejs-init.js" src="js/lib/require.js"></script>
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/ie.css">
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="music-page">
+<header>
+    <div class="container">
+        <div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+        <div id="back"><a>Back</a></div>
+        <form id="search" method="get" action="/">
+            <fieldset>
+                <input type="search">
+                <button type="submit"></button>
+            </fieldset>
+        </form>
+        <ul class="logged">
+            <li><a href="#" class="i-1"><i></i></a></li>
+            <li>
+                <a class="i-2 dropdown-toggle" data-dropdown="notifications"><i></i></a>
+                <div id="notifications-dropdown">
+                    <h2>2 NEW NOTIFICATIONS</h2>
+                    <ul>
+                        <li class="friends">
+                            User <a href="#">Shakira</a> added you to Friends
+                            <div class="buttons">
+                                <a href="#" class="button red">Confirm</a>
+                                <a href="#" class="button gray">Deny</a>
+                            </div>
+                        </li>
+                        <li>
+                            User <a href="#">Shakira</a> invited you to event: <a href="#">Electric Daisy Festival</a>
+                        </li>
+                        <li>
+                            User <a href="#">Shakira</a> invited you to event: <a href="#">Electric Daisy Festival</a>
+                        </li>
+                        <li>
+                            User <a href="#">Shakira</a> invited you to event: <a href="#">Electric Daisy Festival</a>
+                        </li>
+                        <li>
+                            User <a href="#">Shakira</a> invited you to event: <a href="#">Electric Daisy Festival</a>
+                        </li>
+                        <li>
+                            User <a href="#">Shakira</a> invited you to event: <a href="#">Electric Daisy Festival</a>
+                        </li>
+                        <li>
+                            User <a href="#">Shakira</a> invited you to event: <a href="#">Electric Daisy Festival</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a data-dropdown="chat" class="i-3 dropdown-toggle" data-stick="true"><i></i><b>34</b></a>
+                <div id="chat-dropdown">
+                    <h2>Chat</h2>
+                    <div>
+                        <input type="search">
+                        <div class="scroller">
+                            <ul>
+                                <li><a><img alt="" src="img/userpic.jpg"><span>Amily</span></a></li>
+                                <li class="active"><a><img alt="" src="img/userpic.jpg"><span>Amily</span></a></li>
+                                <li><a><img alt="" src="img/userpic.jpg"><span>Amily</span></a></li>
+                                <li><a><img alt="" src="img/userpic.jpg"><span>Amily</span></a></li>
+                                <li><a><img alt="" src="img/userpic.jpg"><span>Amily</span></a></li>
+                                <li><a><img alt="" src="img/userpic.jpg"><span>Amily</span></a></li>
+                                <li><a><img alt="" src="img/userpic.jpg"><span>Amily</span></a></li>
+                                <li><a><img alt="" src="img/userpic.jpg"><span>Amily</span></a></li>
+                                <li><a><img alt="" src="img/userpic.jpg"><span>Amily</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a data-dropdown="location" class="i-4 dropdown-toggle"><i></i></a>
+                <form method="post" action="/" id="location-dropdown">
+                    <h2>CHANGE LOCATION</h2>
+                    <fieldset>
+                        <p>
+                            Currently selected:<br>
+                            <a href="#">Chicago, IL</a>
+                        </p>
+                        <p>
+                            Previously Chosen:<br>
+                            <a href="#">New York, NY</a><br>
+                            <a href="#">New York, NY</a><br>
+                            <a href="#">New York, NY</a><br>
+                            <a href="#">New York, NY</a><br>
+                            <a href="#">New York, NY</a>
+                        </p>
+                        Select Another Location:
+                        <input type="text">
+                        <button type="submit" class="button red">Choose this location</button>
+                    </fieldset>
+                </form>
+            </li>
+            <li>
+                <a data-dropdown="basket" class="i-5 dropdown-toggle"><i></i></a>
+                <div id="basket-dropdown">
+                    <h2>NEW ITEMS IN YOUR CART</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/musician/member-of.jpg" alt="">
+                                T-Shirt with Thadeus Project portrait
+                            </a>
+                            <i>$20</i>
+                            <a href="#" class="delete"></a>
+                            <a href="#" class="edit"></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/musician/member-of.jpg" alt="">
+                                T-Shirt with Thadeus Project portrait
+                            </a>
+                            <i>$20</i>
+                            <a href="#" class="delete"></a>
+                            <a href="#" class="edit"></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/musician/member-of.jpg" alt="">
+                                T-Shirt with Thadeus Project portrait
+                            </a>
+                            <i>$20</i>
+                            <a href="#" class="delete"></a>
+                            <a href="#" class="edit"></a>
+                        </li>
+                    </ul>
+                    <div class="subtotal"><span>Subtotal:</span> $50.00</div>
+                    <a href="#" class="button red">Checkout</a>
+                    <a class="button gray view-cart" href="#">VIEW SHOPPING CART</a>
+                </div>
+            </li>
+            <li class="userpic">
+                <a class="dropdown-toggle" data-dropdown="profile"><img src="img/userpic.jpg" alt=""></a>
+                <ul id="profile-dropdown">
+                    <li class="status">
+                        <i style="width: 70%;"></i>
+                        <span>70% profile complete</span>
+                    </li>
+                    <li class="line"></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">My Art</a></li>
+                    <li><a href="#">My Store</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">My Fans</a></li>
+                    <li><a href="#">My Friends</a></li>
+                    <li><a href="#">My Guests</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">My Events</a></li>
+                    <li><a href="#">My Groups</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Account settings</a></li>
+                    <li><a href="#">Privacy settings</a></li>
+                    <li class="line"></li>
+                    <li><a href="#">Log Out</a></li>
+                </ul>
+            </li>
+        </ul>
+        <nav>
+            <a href="#" class="i-1 active">music</a>
+            <a href="#" class="i-2">film</a>
+            <a href="#" class="i-3">theater</a>
+            <a href="#" class="i-4">design</a>
+            <a href="#" class="i-5">art</a>
+        </nav>
+    </div>
+</header>
+
+<div id="container">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="#"><img src="img/man.jpg" alt="" class="up"></a>
+            <a href="#">Thadeus Project</a> / <a href="#">Store</a> / Shopping Cart
+        </div>
+
+        <section class="store-tabs">
+            <a href="#" class="button light hidden-wide">Continue shopping</a>
+            <div>
+                <h2>Shopping Cart</h2>
+            </div>
+        </section>
+        <section class="cart-table-center">
+            <div class="cart-table-header">
+                <div class="preview">Preview</div>
+                <div class="description">Description</div>
+                <div class="price">Price</div>
+                <div class="quantity">Quantity</div>
+                <div class="total">Total</div>
+            </div>
+            <div class="cart-table-row">
+                <div class="preview">
+                    <a href="#"><img src="img/store/cart1.jpg" alt=""/></a>
+                </div>
+                <div class="description">
+                    <a href="#">T-Shirt with Thadeus Project portrait</a>
+                    <a href="#" class="remove">Remove</a>
+                </div>
+                <div class="headers">
+                    <span class="price">Price</span>
+                    <span class="quantity">Quantity</span>
+                    <span class="total">Total</span>
+                </div>
+                <div class="price">$200.00</div>
+                <div class="quantity">
+                    <span class="range">
+                        <a href="#" class="minus"></a>
+                        <a href="#" class="plus"></a>
+                        <input type="text" value="1" />
+                    </span>
+                </div>
+                <div class="delete"><a href="#" class="remove">Remove</a></div>
+                <div class="total">$200.00</div>
+            </div>
+            <div class="cart-table-row last">
+                <div class="preview">
+                    <a href="#"><img src="img/store/cart2.jpg" alt=""/></a>
+                </div>
+                <div class="description">
+                    <a href="#">CD &laquo;Madonna Celebration&raquo;</a>
+                    <a href="#" class="remove"><i class="icon icon-remove"></i>Remove</a>
+                </div>
+                <div class="headers">
+                    <span class="price">Price</span>
+                    <span class="quantity">Quantity</span>
+                    <span class="total">Total</span>
+                </div>
+                <div class="price">$12.00</div>
+                <div class="quantity">
+                     <span class="range">
+                        <a href="#" class="minus"></a>
+                        <a href="#" class="plus"></a>
+                        <input type="text" value="4" />
+                    </span>
+                </div>
+                <div class="delete"><a href="#" class="remove">Remove</a></div>
+                <div class="total">$48.00</div>
+            </div>
+            <div class="cart-table-checkout">
+                <div class="total">
+                    Order Total: <span>$248.00</span>
+                    <a href="#" class="paypal popup-toggle" data-template="purhase-checkout"></a>
+                </div>
+                <a href="#" class="button light hidden-mobile">Continue shopping</a>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<section id="player">
+    <div>
+        <div class="container">
+            <div class="controls">
+                <a href="#" class="prev"></a>
+                <a href="#" class="play"></a>
+                <a href="#" class="next"></a>
+            </div>
+            <div class="status">
+                <img src="img/userpic.jpg" alt="">
+                <div>
+                    <span class="title"><a href="#">Bonobo - Here comes the sun</a></span>
+                            <span class="bar">
+                                <a href="#" class="seek-bar">
+                                    <b class="play-bar"></b>
+                                </a>
+                                <i class="duration">0:00</i>
+                                <i class="current-time">0:00</i>
+                            </span>
+                </div>
+            </div>
+            <div class="controls">
+                <a href="#" class="mute"></a>
+                <a href="#" class="unmute"></a>
+                <div class="volume"></div>
+                <div class="slideshow-time">
+                    Slideshow: <span class="sec">1</span> sec
+                    <ul>
+                        <li class="selected"><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="socials">
+                    <a href="#" class="likes"><b>56</b></a>
+                    <a href="#" class="comments"><b>56</b></a>
+                    <a href="#" class="shares"><b>56</b></a>
+                </div>
+                <div class="options">
+                    <a href="#" class="music"></a>
+                    <a href="#" class="picture"></a>
+                    <a href="#" class="video"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="playlist">
+        <div>
+            <a href="#" class="close"></a>
+            <div class="preview">
+                <div id="jp-player" class="jp-player"></div>
+                <div class="video-play">
+                    <a href="#" class="video-play-icon"></a>
+                </div>
+                <div class="toolbox">
+                    <a class="icon fullscreen" href="#"></a>
+                    <a class="icon zoom" href="#"></a>
+                </div>
+            </div>
+            <div class="list music">
+                <div class="scroller">
+                    <ul>
+                        <li class="current">
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="audio" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Omina" data-title="The Light" data-source-mp3="audio/song.mp3" data-source-oga="audio/song.ogg" data-image=""></a><a href="#" class="title">The Light</a>Omina</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic2.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="audio" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Kavin Holldin" data-title="Random Access Deluxe" data-source-mp3="audio/song2.mp3" data-source-oga="audio/song2.ogg" data-image=""></a><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="audio" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Omina" data-title="The Light" data-source-mp3="audio/song.mp3" data-source-oga="audio/song.ogg" data-image=""></a><a href="#" class="title">The Light</a>Omina</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic2.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="audio" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Kavin Holldin" data-title="Random Access Deluxe" data-source-mp3="audio/song2.mp3" data-source-oga="audio/song2.ogg" data-image=""></a><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="audio" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Omina" data-title="The Light" data-source-mp3="audio/song.mp3" data-source-oga="audio/song.ogg" data-image=""></a><a href="#" class="title">The Light</a>Omina</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic2.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="audio" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Kavin Holldin" data-title="Random Access Deluxe" data-source-mp3="audio/song2.mp3" data-source-oga="audio/song2.ogg" data-image=""></a><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="audio" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Omina" data-title="The Light" data-source-mp3="audio/song.mp3" data-source-oga="audio/song.ogg" data-image=""></a><a href="#" class="title">The Light</a>Omina</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic2.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="audio" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Kavin Holldin" data-title="Random Access Deluxe" data-source-mp3="audio/song2.mp3" data-source-oga="audio/song2.ogg" data-image=""></a><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list video">
+                <div class="scroller">
+                    <ul>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="video" data-album-cover="img/player/pic.jpg" data-source-m4v="videos/clip1.mp4" data-source-ogv="videos/clip1.ogv" data-source-webmv="videos/clip1.webm" data-image="videos/clip1.jpg" data-autor="Kavin Holldin" data-title="Random Access Deluxe"></a><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item"  data-type="video" data-album-cover="img/player/pic2.jpg" data-source-m4v="videos/clip2-good.mp4" data-source-ogv="videos/clip2-good.ogv" data-source-webmv="videos/clip2-good.webm" data-image="videos/clip2-good.jpg" data-autor="Kavin Holldin" data-title="Random Access Deluxe"></a><a href="#" class="title"> Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="video" data-album-cover="img/player/pic.jpg" data-source-m4v="videos/clip1.mp4" data-source-ogv="videos/clip1.ogv" data-source-webmv="videos/clip1.webm" data-image="videos/clip1.jpg" data-autor="Kavin Holldin" data-title="Random Access Deluxe"></a><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item"  data-type="video" data-album-cover="img/player/pic2.jpg" data-source-m4v="videos/clip2-good.mp4" data-source-ogv="videos/clip2-good.ogv" data-source-webmv="videos/clip2-good.webm" data-image="videos/clip2-good.jpg" data-autor="Kavin Holldin" data-title="Random Access Deluxe"></a><a href="#" class="title"> Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="video" data-album-cover="img/player/pic.jpg" data-source-m4v="videos/clip1.mp4" data-source-ogv="videos/clip1.ogv" data-source-webmv="videos/clip1.webm" data-image="videos/clip1.jpg" data-autor="Kavin Holldin" data-title="Random Access Deluxe"></a><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item"  data-type="video" data-album-cover="img/player/pic2.jpg" data-source-m4v="videos/clip2-good.mp4" data-source-ogv="videos/clip2-good.ogv" data-source-webmv="videos/clip2-good.webm" data-image="videos/clip2-good.jpg" data-autor="Kavin Holldin" data-title="Random Access Deluxe"></a><a href="#" class="title"> Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item" data-type="video" data-album-cover="img/player/pic.jpg" data-source-m4v="videos/clip1.mp4" data-source-ogv="videos/clip1.ogv" data-source-webmv="videos/clip1.webm" data-image="videos/clip1.jpg" data-autor="Kavin Holldin" data-title="Random Access Deluxe"></a><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="play-item"  data-type="video" data-album-cover="img/player/pic2.jpg" data-source-m4v="videos/clip2-good.mp4" data-source-ogv="videos/clip2-good.ogv" data-source-webmv="videos/clip2-good.webm" data-image="videos/clip2-good.jpg" data-autor="Kavin Holldin" data-title="Random Access Deluxe"></a><a href="#" class="title"> Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list picture">
+                <div class="scroller">
+                    <ul>
+                        <li class="current">
+                            <a href="#" class="cover show-item" data-type="picture" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Kavin Holldin" data-title="Random Access Deluxe" data-image="img/player/preview.jpg"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover show-item" data-type="picture" data-album="Random Access Deluxe"  data-album-cover="img/player/pic2.jpg"  data-autor="Kavin Holldin" data-title="Random Access Deluxe" data-image="img/player/preview2.jpg"><img src="img/player/pic2.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover show-item" data-type="picture" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Kavin Holldin" data-title="Random Access Deluxe" data-image="img/player/preview.jpg"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover show-item" data-type="picture" data-album="Random Access Deluxe"  data-album-cover="img/player/pic2.jpg"  data-autor="Kavin Holldin" data-title="Random Access Deluxe" data-image="img/player/preview2.jpg"><img src="img/player/pic2.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover show-item" data-type="picture" data-album="Random Access Deluxe"  data-album-cover="img/player/pic.jpg"  data-autor="Kavin Holldin" data-title="Random Access Deluxe" data-image="img/player/preview.jpg"><img src="img/player/pic.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="cover show-item" data-type="picture" data-album="Random Access Deluxe"  data-album-cover="img/player/pic2.jpg"  data-autor="Kavin Holldin" data-title="Random Access Deluxe" data-image="img/player/preview2.jpg"><img src="img/player/pic2.jpg" alt="Random Access Deluxe"/></a>
+                            <p><a href="#" class="title">Random Access Deluxe</a>Kavin Holldin</p>
+                            <a href="#" class="remove"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="middle">
+        <div class="container">
+            <ul>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Film</a></li>
+                <li><a href="#">Theater</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Art</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Businesses</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Advertisers</a></li>
+            </ul>
+            <div class="socials">
+                <a href="#" class="fb"></a>
+                <a href="#" class="tw"></a>
+                <a href="#" class="fl"></a>
+                <a href="#" class="gp"></a>
+                <a href="#" class="pi"></a>
+                <a href="#" class="vi"></a>
+                <a href="#" class="yt"></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="container">
+            <p class="copyright">
+                © 2013, ArtistView.com. All Rights Reserved<br>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions of Use</a> | <a href="#">Terms & Conditions of Sale</a>
+            </p>
+            <p class="by">
+                Web Development by <a href="#">Intechnic</a> in Chicago
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script type="text/template" id="template-chat-log">
+    <div class="chat-log">
+        <h2>
+            Steven spielberg
+            <a></a>
+        </h2>
+        <a class="close"></a>
+        <div>
+            <div class="scroller">
+                <time>Friday 0:02</time>
+                <ul>
+                    <li>
+                        <img alt="" src="img/userpic.jpg" class="userpic">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    </li>
+                </ul>
+                <time>Friday 0:02</time>
+                <ul>
+                    <li>
+                        <img alt="" src="img/userpic.jpg" class="userpic">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    </li>
+                    <li>
+                        <img alt="" src="img/userpic.jpg" class="userpic">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    </li>
+                </ul>
+            </div>
+            <form method="post" action="/">
+                <fieldset>
+                    <textarea></textarea>
+                    <button type="submit"></button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</script>
+
+<script type="text/template" id="template-purhase-checkout">
+    <div id="purhase-checkout" class="popup">
+        <div>
+            <a class="close"></a>
+            <h2>Purhase checkout</h2>
+            <p class="title">You are about to make the purchase<br/> through the Artist's own PayPal account.</p>
+            <p>Please note that ArtistView.com doesn't assume any responsibility for the merchandize sold by Artists.</p>
+            <p>Please contact the Artist directly regarding any issues or concerns.</p>
+            <p class="terms">
+                <label for="" class="checkbox"><input type="checkbox"/> I agree with the</label> <a href="#">Terms and Conditions</a>
+            </p>
+            <p class="buttons">
+                <a href="store-shoping-thanks.html" class="button continue">Continue</a>
+                <a href="#" class="button gray cancel">Cancel</a>
+            </p>
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript">
+    $(window).load(function() {
+        requirejs([
+            'plugin/album',
+            'plugin/chat',
+            'plugin/dropdowns',
+            'plugin/popups',
+            'plugin/forms',
+            'plugin/passions',
+            'plugin/player',
+            'plugin/cart',
+            'plugin/mobile'
+        ], function (
+                Album,
+                Chat,
+                Dropdowns,
+                Popups,
+                Forms,
+                Passions,
+                Player,
+                Cart,
+                Mobile
+                ) {
+            Album.init();
+            Chat.init();
+            Dropdowns.init();
+            Popups.init();
+            Forms.init();
+            Passions.init();
+            Player.init();
+            Cart.init();
+            Mobile.init();
+        });
+    });
+</script>
+
+</body>
+</html>

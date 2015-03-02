@@ -1,0 +1,108 @@
+﻿.mapwrapper {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+.mapwrapper #map {
+  min-height: 300px;
+  width: 100%;
+}
+.mapwrapper .scales {
+  position: absolute;
+  top: 53px;
+  right: 39px;
+}
+.mapwrapper .scales a {
+  display: block;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 19px;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+  background-image: url(../img/scales.png);
+  background-repeat: no-repeat;
+}
+.mapwrapper .scales a.plus {
+  background-position: 0 -55px;
+}
+.mapwrapper .scales a.plus:hover {
+  background-position: 0 -110px;
+}
+.mapwrapper .scales a.plus.disabled {
+  background-position: 0 0;
+}
+.mapwrapper .scales a.minus {
+  background-position: -55px -55px;
+}
+.mapwrapper .scales a.minus:hover {
+  background-position: -55px -110px;
+}
+.mapwrapper .scales a.minus.disabled {
+  background-position: -55px 0;
+}
+.mapwrapper .controls {
+  position: absolute;
+  left: 40px;
+  bottom: 51px;
+}
+.mapwrapper .controls:before,
+.mapwrapper .controls:after {
+  content: " ";
+  display: table;
+}
+.mapwrapper .controls:after {
+  clear: both;
+}
+.mapwrapper .controls a {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/history.png);
+  background-repeat: no-repeat;
+  margin-right: 53px;
+}
+.mapwrapper .controls .history {
+  background-position: 0 0;
+  height: 29px;
+}
+.mapwrapper .controls .history:hover {
+  background-position: -24px 0;
+}
+.mapwrapper .controls .history.disabled {
+  background-position: -48px 0;
+}
+.mapwrapper .controls .prev {
+  margin-top: 2px;
+  background-position: 0 -29px;
+}
+.mapwrapper .controls .prev:hover {
+  background-position: -24px -29px;
+}
+.mapwrapper .controls .prev.disabled {
+  background-position: -48px -29px;
+}
+.mapwrapper .controls .next {
+  margin-top: 2px;
+  background-position: 0 -53px;
+}
+.mapwrapper .controls .next:hover {
+  background-position: -24px -53px;
+}
+.mapwrapper .controls .next.disabled {
+  background-position: -48px -53px;
+}
+#aboutwrap {
+  display: none;
+}
+#listroutewrap {
+  display: none;
+}
+/*# sourceMappingURL=home.css.map */

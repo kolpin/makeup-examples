@@ -1,0 +1,482 @@
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 70;
+  background: rgba(60, 60, 60, 0.9);
+}
+.popup:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.popup > div {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+  width: 900px;
+}
+.popup > div .close {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  right: -17px;
+  background: url(../img/popup-close2.png);
+  top: 0;
+}
+.popup h2 {
+  font: 30px 'amble';
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 10px;
+}
+#watch-intro > div .close,
+#sign-up > div .close,
+#login > div .close,
+#forgot-password > div .close {
+  top: 0px;
+}
+#watch-intro > div #watch-intro-video,
+#sign-up > div #watch-intro-video,
+#login > div #watch-intro-video,
+#forgot-password > div #watch-intro-video {
+  width: 960px !important;
+  height: 540px !important;
+  font-size: 10px;
+  position: relative;
+}
+#watch-intro > div #watch-intro-video.vjs-fullscreen,
+#sign-up > div #watch-intro-video.vjs-fullscreen,
+#login > div #watch-intro-video.vjs-fullscreen,
+#forgot-password > div #watch-intro-video.vjs-fullscreen {
+  width: 100% !important;
+  height: 100% !important;
+}
+#watch-intro > div #watch-intro-video video,
+#sign-up > div #watch-intro-video video,
+#login > div #watch-intro-video video,
+#forgot-password > div #watch-intro-video video {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  outline: 0;
+}
+#watch-intro > div .button,
+#sign-up > div .button,
+#login > div .button,
+#forgot-password > div .button {
+  margin: 20px 0 0;
+}
+#sign-up fieldset,
+#login fieldset,
+#forgot-password fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#sign-up .left,
+#login .left,
+#forgot-password .left {
+  float: left;
+  width: 515px;
+  background: #e3e2e3;
+  padding: 46px 25px 0;
+  height: 309px;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+#sign-up .field,
+#login .field,
+#forgot-password .field {
+  float: left;
+  margin: 0 15px;
+  width: 225px;
+}
+#sign-up .field label,
+#login .field label,
+#forgot-password .field label {
+  display: block;
+}
+#sign-up .field > div,
+#login .field > div,
+#forgot-password .field > div {
+  position: relative;
+  margin: 3px 0 15px;
+}
+#sign-up .field input,
+#login .field input,
+#forgot-password .field input {
+  display: block;
+  margin: 0;
+  border: 0;
+  background: #fff;
+  font: 12px 'amble', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  padding: 7px;
+  width: 211px;
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#sign-up .field input.mm,
+#login .field input.mm,
+#forgot-password .field input.mm,
+#sign-up .field input.dd,
+#login .field input.dd,
+#forgot-password .field input.dd {
+  width: 46px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+#sign-up .field input.yyyy,
+#login .field input.yyyy,
+#forgot-password .field input.yyyy {
+  width: 51px;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+#sign-up .field.error,
+#login .field.error,
+#forgot-password .field.error {
+  position: relative;
+}
+#sign-up .field.error > div:after,
+#login .field.error > div:after,
+#forgot-password .field.error > div:after {
+  content: '!';
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font: 20px/30px 'amble';
+  text-align: center;
+  background: #f14950;
+  color: #fff;
+}
+#sign-up .field p.error,
+#login .field p.error,
+#forgot-password .field p.error {
+  position: absolute;
+  right: -190px;
+  top: -12px;
+  background: rgba(237, 28, 36, 0.85);
+  width: 145px;
+  padding: 10px 15px;
+  font-size: 12px;
+  color: #fff;
+  margin: 0;
+  z-index: 1;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+#sign-up .field p.error:before,
+#login .field p.error:before,
+#forgot-password .field p.error:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-right: 9px solid #ed1c24;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  -webkit-opacity: 0.85;
+  -moz-opacity: 0.85;
+  opacity: 0.85;
+  filter: alpha(opacity= 85 );
+  position: absolute;
+  left: -9px;
+  top: 18px;
+}
+#sign-up .spacer,
+#login .spacer,
+#forgot-password .spacer {
+  height: 10px;
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+}
+#sign-up .checkbox,
+#login .checkbox,
+#forgot-password .checkbox {
+  padding-left: 35px;
+  font-weight: 300;
+  font-size: 12px;
+  color: #3c3c3c;
+  text-indent: 0;
+  margin: 0;
+  line-height: 16px;
+}
+#sign-up .checkbox a,
+#login .checkbox a,
+#forgot-password .checkbox a {
+  color: #6d6d6d;
+  text-decoration: underline;
+}
+#sign-up .checkbox a:hover,
+#login .checkbox a:hover,
+#forgot-password .checkbox a:hover {
+  text-decoration: none;
+}
+#sign-up .button,
+#login .button,
+#forgot-password .button {
+  margin: 0;
+  display: block;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+#sign-up .or,
+#login .or,
+#forgot-password .or {
+  border-bottom: 1px solid #b8b8b8;
+  font-weight: 500;
+  color: #a8a8a8;
+  font-size: 12px;
+  text-transform: uppercase;
+  height: 7px;
+  text-align: center;
+  margin: 10px 0 18px;
+}
+#sign-up .or span,
+#login .or span,
+#forgot-password .or span {
+  display: inline-block;
+  background: #e3e2e3;
+  padding: 0 5px;
+}
+#sign-up .right,
+#login .right,
+#forgot-password .right {
+  float: left;
+  width: 335px;
+  background: url(../img/sign-up.jpg);
+  height: 355px;
+  text-align: center;
+}
+#sign-up .right .or,
+#login .right .or,
+#forgot-password .right .or {
+  display: none;
+}
+#sign-up .facebook,
+#login .facebook,
+#forgot-password .facebook {
+  font: 12px/44px 'amble';
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  background: #506db1;
+  padding: 0 20px;
+  margin: 254px 0 0 45px;
+  position: relative;
+}
+#sign-up .facebook:before,
+#login .facebook:before,
+#forgot-password .facebook:before {
+  content: '';
+  width: 44px;
+  height: 44px;
+  background: #506db1 url(../img/sign-up-facebook.png) 50% 50% no-repeat;
+  position: absolute;
+  left: -45px;
+  top: 0;
+}
+#login > div {
+  width: 335px;
+}
+#login fieldset {
+  background: #e3e2e3;
+  padding: 45px 40px;
+  margin: 0;
+  border: 0;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+#login fieldset .field {
+  margin: 0;
+  float: none;
+  width: auto;
+}
+#login fieldset .field input {
+  width: 241px;
+}
+#login .forgot {
+  color: #6d6d6d;
+  text-decoration: underline;
+  display: inline-block;
+  margin: -5px 0 10px;
+}
+#login .forgot:hover {
+  text-decoration: none;
+}
+#login .facebook {
+  margin-top: 0;
+  display: block;
+  text-align: center;
+}
+#forgot-password {
+  z-index: 71;
+}
+#forgot-password > div {
+  width: 580px;
+}
+#forgot-password > div .button {
+  width: 135px;
+  float: left;
+  margin: 18px 20px 0 0;
+  height: 29px;
+  line-height: 31px;
+  color: #fff;
+  text-decoration: none;
+}
+#forgot-password > div .button.red {
+  width: 70px;
+  margin: 18px 0 0 0;
+}
+#forgot-password fieldset {
+  padding: 45px 40px;
+  background: #e3e2e3;
+  margin: 0;
+  border: 0;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+#forgot-password .field {
+  margin: 0 20px 0 0;
+}
+#forgot-password .cancel {
+  line-height: 29px;
+  font-weight: 500;
+  color: #6d6d6d;
+  text-decoration: underline;
+  float: left;
+  margin: 18px 0 0;
+  text-transform: uppercase;
+}
+#forgot-password .cancel:hover {
+  text-decoration: none;
+}
+#sign-up .left .checkbox {
+  margin-top: 10px;
+}
+#sign-up .left button {
+  margin-top: 5px;
+}
+#sign-up .right .facebook {
+  margin-top: 250px;
+}
+#watch-intro > div {
+  text-align: center;
+  width: 960px !important;
+}
+#watch-intro > div .close {
+  top: -40px;
+}
+#edit-category > h2,
+#add-category > h2,
+#delete-category > h2 {
+  color: #ffffff;
+}
+#edit-category > div,
+#add-category > div,
+#delete-category > div {
+  width: 570px;
+}
+#edit-category > div > div,
+#add-category > div > div,
+#delete-category > div > div {
+  border: 5px solid #b9b9b9;
+  background: #fff;
+  font-size: 12px;
+  padding-bottom: 30px;
+}
+#edit-category > div > div .bg-wrapp,
+#add-category > div > div .bg-wrapp,
+#delete-category > div > div .bg-wrapp {
+  background: #efefef;
+  padding: 42px 30px 30px 26px;
+  margin-bottom: 20px;
+}
+#edit-category > div > div .bg-wrapp .title-delete,
+#add-category > div > div .bg-wrapp .title-delete,
+#delete-category > div > div .bg-wrapp .title-delete {
+  font-weight: bold;
+  color: #000000;
+  padding-bottom: 10px;
+}
+#edit-category > div > div h3,
+#add-category > div > div h3,
+#delete-category > div > div h3 {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 0 5px;
+  color: #3c3c3c;
+}
+#edit-category > div > div input[type="text"],
+#add-category > div > div input[type="text"],
+#delete-category > div > div input[type="text"] {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 0 none;
+  box-shadow: 1px 1px 0 0 #DDDDDD;
+  font: 300 12px 'amble', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  margin: 0;
+  outline: 0 none;
+  padding: 8px 12px;
+  width: 481px;
+}
+#edit-category > div > div .button,
+#add-category > div > div .button,
+#delete-category > div > div .button {
+  padding: 0;
+  text-align: center;
+}
+#edit-category > div > div .button.save,
+#add-category > div > div .button.save,
+#delete-category > div > div .button.save {
+  margin: 0 10px 0 30px;
+  width: 200px;
+}
+#edit-category > div > div .button.delete,
+#add-category > div > div .button.delete,
+#delete-category > div > div .button.delete {
+  margin: 0 10px 0 30px;
+  width: 200px;
+}
+#edit-category > div > div .button.delete i,
+#add-category > div > div .button.delete i,
+#delete-category > div > div .button.delete i {
+  display: inline-block;
+  margin-right: 5px;
+  width: 12px;
+  height: 15px;
+  background: url('../img/store/actions_btn.png') 0px -11px no-repeat;
+  vertical-align: -2px;
+}
+#edit-category > div > div .button.cancel,
+#add-category > div > div .button.cancel,
+#delete-category > div > div .button.cancel {
+  width: 142px;
+}
+#colorbox:focus {
+  outline: none;
+}
+#colorbox button {
+  border: none;
+  background: transparent;
+}

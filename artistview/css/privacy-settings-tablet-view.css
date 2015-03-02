@@ -1,0 +1,456 @@
+@media all and (max-width: 1023px) {
+  .albumedit-page.only #container .container .column-left {
+    width: 27%;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+  }
+  .albumedit-page.only #container .container .column-left-center.as2 {
+    width: 70% !important;
+    display: inline-block;
+    margin: 0 0px 20px 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .albumedit-page fieldset.music .columns > li {
+    width: 200px;
+  }
+  .albumedit-page fieldset.music .columns > li .checkbox-group label {
+    margin-right: 25px;
+  }
+  .albumedit-page #container .container .column-right {
+    display: inline-block;
+  }
+  .albumedit-page #container .container .column-left {
+    float: left;
+    margin-left: 11px;
+  }
+  .albumedit-page #container .container .column-left-center.as2,
+  .albumedit-page #container .container .column-left-center {
+    display: inline-block;
+    width: 69% !important;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.mobile-only,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.mobile-only {
+    display: block;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div input[type="radio"],
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div input[type="radio"] {
+    border: none;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.profile,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.profile {
+    display: none;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li {
+    width: 100%;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox {
+    width: 100%;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label {
+    margin: 0;
+    width: 150px;
+    float: left;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.friends,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.friends {
+    margin: 0;
+    width: 169px;
+    float: left;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.fans,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.fans {
+    margin: 0;
+    width: 122px;
+    float: left;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.nobody,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.nobody {
+    margin: 0;
+    width: 150px;
+    float: left;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group label,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group label {
+    float: left;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group label.nobody,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group label.nobody {
+    float: right;
+    margin-right: 100px;
+  }
+  .albumedit-page #container .container .column-left-center {
+    margin: 0 0px 20px 10px;
+  }
+}
+@media screen and (max-width: 568px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .albumedit-page fieldset.whats-your-passion > div > ul {
+    width: 257px !important;
+  }
+  .right-wrapper {
+    float: none;
+  }
+  .albumedit-page.only #container .container .column-left-center.as2 {
+    width: auto;
+    margin: 0;
+  }
+  #first-login .business-main > div > div,
+  .albumedit-page .business-main > div,
+  li.birthday .input-title .right-wrapper,
+  .albumedit-page .business-main > div {
+    margin-left: 0px;
+  }
+  li.birthday .input-title .right-wrapper .selectbox .select .text {
+    width: 64px;
+  }
+  li.birthday .input-title .right-wrapper {
+    width: 100%;
+  }
+  #container .container .column-left-center > section .text {
+    width: 64px;
+  }
+  .selectbox.v13,
+  .selectbox.v3,
+  .selectbox.v13 .select,
+  .selectbox.v3 .select {
+    display: inline-block;
+    margin: 10px 0;
+    width: 99%;
+  }
+  .selectbox.v3 .select .text,
+  .selectbox.v13 .select .text {
+    width: 99%;
+    font-size: 13px;
+  }
+  .selectbox {
+    display: inline-block;
+    padding: 0;
+    width: 94px;
+  }
+  .selectbox .dropdown {
+    width: 115% !important;
+  }
+  .selectbox ul li {
+    padding: 0 0px;
+    height: 30px;
+    line-height: 30px;
+    font: 13px/27px 'amble';
+    color: #6d6d6d;
+    -ms-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+    padding: 0 10px;
+  }
+  .selectbox ul li:hover {
+    color: #fff;
+  }
+  .selectbox ul li.selected.sel a {
+    color: #fff;
+  }
+  .selectbox ul li.selected.sel a:hover {
+    color: #fff;
+  }
+  .selectbox ul li a {
+    color: #6d6d6d;
+  }
+  .selectbox ul li a:hover {
+    color: #fff;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group label.nobody {
+    margin-right: 20px !important;
+  }
+  section.upgrade .button {
+    margin-right: 10%;
+  }
+  .block-passions.profile {
+    display: none;
+  }
+  .block-passions.mobile-only {
+    display: block;
+  }
+  .block-passions.contacting fieldset.music .columns > li .checkbox-group label,
+  .block-passions.profile fieldset.music .columns > li .checkbox-group label {
+    margin-right: 46px;
+  }
+  .block-passions.contacting fieldset.music .columns > li .checkbox-group div,
+  .block-passions.profile fieldset.music .columns > li .checkbox-group div {
+    margin-top: -20px;
+  }
+  .block-passions.contacting fieldset.music .columns > li .checkbox-group div label,
+  .block-passions.profile fieldset.music .columns > li .checkbox-group div label {
+    padding: 4px 0;
+    display: block;
+  }
+  .bg-wrapper {
+    width: 320px;
+  }
+  nav {
+    display: none;
+  }
+  .mobile-nav {
+    margin: 0px 0 0 0;
+    display: block;
+  }
+  .birthday {
+    height: 75px;
+  }
+  .dateinput {
+    width: 320px;
+    padding: 0;
+    margin-top: 25px;
+  }
+  .selectbox .select {
+    width: 46px;
+    margin: 0;
+  }
+  ul li .right-wrapper .selectbox {
+    padding-left: 0;
+  }
+  ul li .right-wrapper .selectbox.v13 .dropdown,
+  ul li .right-wrapper .selectbox.v3 .dropdown {
+    width: 276px;
+    margin-top: 0px;
+  }
+  ul li .right-wrapper .selectbox .dropdown {
+    margin-top: 0px;
+  }
+  ul li .right-wrapper .selectbox .dropdown ul li {
+    border: none;
+  }
+  .container .breadcrumbs.upgrade {
+    width: auto;
+    margin: 0 0 0px 0;
+  }
+  .password_change {
+    font-size: 13px;
+    display: block;
+    width: 100%;
+  }
+  .password_change label {
+    width: 100%;
+  }
+  .password_change input[type="password"] {
+    width: 92%;
+    display: block;
+  }
+  #password,
+  #new_password,
+  #confirm_password {
+    margin: 10px 0;
+  }
+  .email_change {
+    width: 100%;
+  }
+  #email,
+  #new_email,
+  #confirm_email {
+    margin: 10px 0;
+    width: 92%;
+  }
+  .albumedit-page .business-main .input-group > li input[type="text"] {
+    width: 100%;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    box-sizing: border-box;
+    height: 32px;
+    box-shadow: 1px 1px 0 0 #DDDDDD;
+    margin: 0 15px 10px 0;
+    outline: 0 none;
+    padding: 8px 12px;
+    float: none;
+  }
+  .albumedit-page .business-main .input-group > li input[type="text"]:active,
+  .albumedit-page .business-main .input-group > li input[type="text"]:focus {
+    outline: none;
+  }
+  .button.blue {
+    width: 200px;
+  }
+  #container .container .column-left-center,
+  #container .container .column-right {
+    width: auto;
+    margin: 0;
+    padding: 0px 0px;
+  }
+  .checkbox {
+    display: block;
+  }
+  .checkbox-top {
+    margin-left: -10px;
+    margin-top: 10px;
+  }
+  .checkbox-top.accept {
+    margin-left: 0;
+  }
+  .button.black.paypal {
+    margin-top: 0px;
+  }
+  .checkbox.acception {
+    padding: 0 38px 0 0;
+  }
+  .as2 .top.long {
+    padding-left: 10px;
+  }
+  .as2 .top.long h2 {
+    padding-left: 0px;
+  }
+  .as2 .input-group li textarea {
+    width: 254px !important;
+    height: 65px;
+  }
+  .select.country-select {
+    width: 230px;
+  }
+  .as2 .input-group li ul li {
+    padding: 8px 10px;
+    font-size: 11px;
+    border-bottom: 1px solid #dddddd;
+  }
+  .dropdown.country-dropdown {
+    margin-top: 0px;
+    overflow-y: scroll;
+    height: 200px;
+  }
+  .page-colors {
+    width: 290px;
+    display: inline-block;
+    list-style: none;
+  }
+  .page-colors li {
+    height: 40px;
+  }
+  .avdollars {
+    width: 270px;
+  }
+  .usage {
+    width: 258px;
+  }
+  .currentdollars {
+    margin: 4px 0 0 34px;
+    line-height: 14px;
+  }
+  .comment {
+    width: 258px;
+  }
+  .input-title {
+    height: 60px;
+  }
+  .birthday .input-title .right-wrapper {
+    top: 0;
+    margin-left: 0;
+  }
+  .profile-colors .left .box {
+    width: auto;
+  }
+  #colorpicker {
+    display: none;
+  }
+  .profile-colors .left .box .bgcolor {
+    margin: 0;
+  }
+  #colorpicker_area {
+    width: 0;
+    height: 0;
+  }
+  .block-user-button {
+    display: none;
+  }
+  .block-user-button.mobile {
+    display: block;
+    margin: 5px 55px;
+    width: 100%;
+  }
+  .block-user-button.mobile button {
+    margin: 0;
+  }
+  .nob .target-input {
+    width: 92%;
+  }
+  .user-list {
+    margin-top: -10px;
+    width: 278px;
+  }
+  .user-list ul {
+    width: 264px;
+  }
+  .selectbox .dropdown {
+    left: 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .albumedit-page #container .container .column-left-center.as2,
+  .albumedit-page #container .container .column-left-center {
+    width: 100% !important;
+    margin: 0;
+  }
+  .selectbox.v3 .select {
+    width: 100%;
+  }
+  .selectbox.v3 .dropdown {
+    width: 115%;
+  }
+  .block-passions {
+    margin: 30px 10px;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li {
+    width: 100%;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox {
+    width: 100%;
+    padding-top: -20px;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label {
+    margin: 0;
+    width: 150px;
+    float: left;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.friends {
+    margin: 0;
+    width: 169px;
+    float: left;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.fans {
+    margin: 0;
+    width: 122px;
+    float: left;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.nobody {
+    margin: 0;
+    width: 170px;
+    float: left;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group label {
+    float: left;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group label.nobody {
+    float: right;
+    margin-right: 46px;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group label.nobody,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group label.nobody {
+    margin-right: 46px;
+  }
+  .albumedit-page #container .container .column-left-center.as2 #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.nobody,
+  .albumedit-page #container .container .column-left-center #business-wrapper fieldset div > div section.block-passions.contacting div > div > fieldset.music ul li .checkbox-group .radiobox label.nobody {
+    width: 170px;
+  }
+  button.button.blue {
+    margin-left: 10px;
+  }
+  section.upgrade .button {
+    margin-right: 10%;
+  }
+  .column-left-center.as2 {
+    margin: 0 !important;
+  }
+}

@@ -1,0 +1,3664 @@
+.column-center.allgroups {
+  margin: 40px 0 10px 10px !important;
+  padding: 0;
+  width: 940px !important;
+  position: relative;
+  font-family: amble !important;
+}
+.column-center .allgroups_list {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.column-center .allgroups_list .button.dark {
+  min-width: 160px;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  letter-spacing: 1px;
+  height: 24px;
+  line-height: 24px;
+}
+.column-center .allgroups_list:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.column-center .allgroups_list li.allgroups_list_item {
+  width: 460px;
+  height: 320px;
+  float: left;
+  display: block;
+  margin: 0 0 40px 0;
+}
+.column-center .allgroups_list li.allgroups_list_item:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.column-center .allgroups_list li.allgroups_list_item.right {
+  float: right;
+}
+.column-center .allgroups_list li.allgroups_list_item .top {
+  width: 440px;
+  background: #f6f6f6;
+  padding: 10px 10px 0 10px;
+}
+.column-center .allgroups_list li.allgroups_list_item .top:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.column-center .allgroups_list li.allgroups_list_item .description {
+  color: #0b0b0b;
+  font-size: 12px;
+  line-height: 16px;
+  height: 50px;
+  background: #f6f6f6;
+  padding: 15px 10px;
+}
+.column-center .allgroups_list li.allgroups_list_item .description strong {
+  text-transform: uppercase;
+  color: #000 !important;
+  font-weight: 100;
+}
+.column-center .allgroups_list li.allgroups_list_item .image_area {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  float: left;
+}
+.column-center .allgroups_list li.allgroups_list_item .image_area .image {
+  width: 140px;
+  height: 140px;
+  display: block;
+}
+.column-center .allgroups_list li.allgroups_list_item .image_area .icon {
+  position: absolute;
+  display: block;
+  right: 4px;
+  bottom: 4px;
+}
+.column-center .allgroups_list li.allgroups_list_item .image_area .list {
+  position: absolute;
+  right: 47px;
+  bottom: 3px;
+  z-index: 15;
+  height: 20px;
+}
+.column-center .allgroups_list li.allgroups_list_item .image_area .list i {
+  position: static;
+  display: block;
+  float: left;
+  width: 19px;
+  height: 19px;
+  margin: 0 3px 0 0 !important;
+  padding: 0 !important;
+  background: url('../img/albums/labels.png') 0 0 no-repeat;
+}
+.column-center .allgroups_list li.allgroups_list_item .image_area .list i.i-2 {
+  background-position: -23px 0;
+}
+.column-center .allgroups_list li.allgroups_list_item .image_area .list i.i-3 {
+  background-position: -45px 0;
+}
+.column-center .allgroups_list li.allgroups_list_item .image_area .list i.i-4 {
+  background-position: -69px 0;
+}
+.column-center .allgroups_list li.allgroups_list_item .image_area .list i.i-5 {
+  background-position: -91px 0;
+}
+.column-center .allgroups_list li.allgroups_list_item .info {
+  position: relative;
+  width: 270px;
+  height: 140px;
+  padding: 0 0 0 20px;
+  float: left;
+}
+.column-center .allgroups_list li.allgroups_list_item .info .private {
+  min-width: 30px;
+  display: inline-block;
+  padding: 19px 0 0 0;
+  margin: 0 5px 0 0;
+  height: 11px;
+  float: left;
+  font-size: 10px;
+  line-height: 11px;
+  color: #6d6d6d;
+  background: url('../img/allgroups/lock.png') center top no-repeat;
+}
+.column-center .allgroups_list li.allgroups_list_item .info h2 {
+  display: block;
+  width: 230px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  float: left;
+  font-weight: 100 !important;
+}
+.column-center .allgroups_list li.allgroups_list_item .info .items {
+  color: #6d6d6d;
+  font-size: 12px;
+  line-height: 21px;
+}
+.column-center .allgroups_list li.allgroups_list_item .info .items a {
+  text-decoration: underline;
+}
+.column-center .allgroups_list li.allgroups_list_item .info .items strong {
+  font-weight: 100 !important;
+  color: #0b0b0b;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links {
+  width: 460px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 40px;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links li {
+  display: inline-block;
+  float: left;
+  height: 25px;
+  padding: 0 20px 0 0;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links li a {
+  display: inline-block;
+  margin: 10px 0 0 3px;
+  padding: 0 0 0 20px;
+  height: 15px;
+  line-height: 18px;
+  font-size: 10px;
+  color: #808080;
+  text-decoration: none;
+  -webkit-transition: all 0ms;
+  -moz-transition: all 0ms;
+  -o-transition: all 0ms;
+  -ms-transition: all 0ms;
+  transition: all 0ms;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links li a:hover {
+  color: #42a1df;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links li a.members {
+  background: url('../img/allgroups/icons.png') 0 0 no-repeat;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links li a.members:hover {
+  background: url('../img/allgroups/icons.png') 0 -70px no-repeat;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links li a.discussions {
+  background: url('../img/allgroups/icons.png') 0 -35px no-repeat;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links li a.discussions:hover {
+  background: url('../img/allgroups/icons.png') 0 -105px no-repeat;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links li a.messages {
+  background: url('../img/allgroups/icons.png') 0 -18px no-repeat;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.links li a.messages:hover {
+  background: url('../img/allgroups/icons.png') 0 -88px no-repeat;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.images {
+  width: 460px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 50px;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.images:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.images li {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding: 0 7px 0 0;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.images li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+.column-center .allgroups_list li.allgroups_list_item ul.images li a img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.column-center .button.red.edit.start {
+  padding: 0 40px;
+  height: 24px !important;
+  line-height: 24px !important;
+  position: absolute;
+  right: 14px;
+  top: -44px;
+}
+.column-center .button.red.edit.start span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 20px;
+}
+.column-center .button.red.edit.start span:after {
+  content: '+';
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: #fff;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block-credits {
+  padding: 0 9px 9px;
+  border: 1px solid #e5e5e5;
+  margin: 30px 0;
+  font-size: 12px;
+}
+.block-credits h2 {
+  font: 18px/35px 'roboto';
+  text-transform: uppercase;
+  color: #42a1df;
+  margin: 0 0 9px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+.block-credits .line {
+  border-bottom: 1px solid #e5e5e5;
+  height: 9px;
+  margin: 0 0 9px;
+  overflow: hidden;
+}
+.block-store-menu,
+.block-passions {
+  margin: 30px 0;
+}
+.block-store-menu h2,
+.block-passions h2 {
+  margin: 10px 0 0;
+}
+.block-store-menu h2:first-child,
+.block-passions h2:first-child {
+  margin-top: 0;
+}
+.block-store-menu h2 a,
+.block-passions h2 a {
+  font-weight: bold;
+  color: #000 !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  background: #efefef;
+  font-size: 11px;
+  line-height: 23px;
+}
+.block-store-menu h2 a:before,
+.block-passions h2 a:before {
+  content: ' ';
+  float: left;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 20px;
+  color: #fff;
+  background: #45b4e7 url('../img/allgroups/plus_minus.png') top left no-repeat;
+  margin: 0 7px 0 0;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
+  -ms-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+.block-store-menu h2 a.active:before,
+.block-passions h2 a.active:before {
+  content: ' ';
+  background-position: bottom left;
+}
+.block-store-menu h2 a:hover:before,
+.block-passions h2 a:hover:before {
+  background-color: #2281d3;
+}
+.block-store-menu h2.film a:before,
+.block-passions h2.film a:before {
+  background-color: #6445ba;
+}
+.block-store-menu h2.film a:hover:before,
+.block-passions h2.film a:hover:before {
+  background-color: #412a85;
+}
+.block-store-menu h2.theater a:before,
+.block-passions h2.theater a:before {
+  background-color: #ED1C24;
+}
+.block-store-menu h2.theater a:hover:before,
+.block-passions h2.theater a:hover:before {
+  background-color: #b90916;
+}
+.block-store-menu h2.design a:before,
+.block-passions h2.design a:before {
+  background-color: #F5821F;
+}
+.block-store-menu h2.design a:hover:before,
+.block-passions h2.design a:hover:before {
+  background-color: #e95800;
+}
+.block-store-menu h2.art a:before,
+.block-passions h2.art a:before {
+  background-color: #FFCB07;
+}
+.block-store-menu h2.art a:hover:before,
+.block-passions h2.art a:hover:before {
+  background-color: #ffa010;
+}
+.block-store-menu > div,
+.block-passions > div {
+  background: #f6f6f6;
+  font-size: 12px;
+  overflow: hidden;
+  height: 0;
+}
+.block-store-menu > div > div,
+.block-passions > div > div {
+  padding: 10px;
+}
+.image-gallery {
+  clear: both;
+}
+.image-gallery.videos ul li {
+  width: 219px;
+}
+.image-gallery.videos ul li a:after {
+  background: url(../img/musician/videos-valbums-play.png);
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -24px 0 0 -24px;
+  height: 47px;
+  width: 47px;
+}
+.image-gallery.videos ul li a b:before {
+  width: 47px;
+  height: 47px;
+  content: '';
+  background: url(../img/musician/videos-valbums-play.png);
+  display: block;
+  margin: 10px auto;
+}
+.image-gallery ul {
+  padding: 0;
+  margin: -20px -20px 0 0;
+}
+.image-gallery ul:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.image-gallery ul li {
+  float: left;
+  list-style: none;
+  margin: 20px 20px 0 0;
+  width: 220px;
+  height: 220px;
+  position: relative;
+  font-size: 12px;
+}
+.image-gallery ul li a {
+  width: 220px;
+  height: 220px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.image-gallery ul li img {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.image-gallery ul li span {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+.image-gallery ul li b {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+  background: rgba(0, 0, 0, 0.9);
+  font-weight: normal;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  color: #fff;
+}
+.image-gallery ul li a:hover b {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+.image-gallery ul li a:hover span {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+.image-gallery ul li a.zoomin:hover b {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+.image-gallery ul li a.zoomin:hover span {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+.image-gallery .button {
+  width: 220px;
+  margin: 20px 0 0;
+  text-align: center;
+  padding: 0;
+}
+.comments {
+  margin: 30px 0;
+}
+.comments h2 {
+  border: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  border-bottom-color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  padding: 9px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+.comments h2 b {
+  font-weight: bold;
+}
+.comments .box {
+  border: 1px solid #e5e5e5;
+  margin: -1px 0 0;
+  padding: 0 9px;
+}
+.comments ul {
+  padding: 0;
+  margin: 0;
+}
+.comments ul li {
+  border-top: 1px solid #e5e5e5;
+  padding: 9px 10px 9px 50px;
+  list-style: none;
+  font-size: 12px;
+  position: relative;
+}
+.comments ul li:first-child {
+  border-top: 0;
+}
+.comments ul li time {
+  float: right;
+  color: #808080;
+  font-size: 10px;
+}
+.comments ul li .name img {
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  width: 30px;
+  height: 30px;
+}
+.comments ul li p {
+  color: #686868;
+  margin: 3px 0 0;
+}
+.comments ul li .remove {
+  position: absolute;
+  right: 10px;
+  top: 27px;
+  width: 15px;
+  height: 15px;
+  background: url(../img/design/x.png) no-repeat;
+}
+.comments form {
+  background: #e8e8e8;
+  margin: 0 0 9px;
+  padding: 10px;
+}
+.comments form fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.comments form img {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+.comments form textarea {
+  float: left;
+  background: #fff;
+  border: 0;
+  -webkit-box-shadow: 1px 1px 0 0 #ddd;
+  -moz-box-shadow: 1px 1px 0 0 #ddd;
+  box-shadow: 1px 1px 0 0 #ddd;
+  margin: 0 10px;
+  resize: none;
+  padding: 5px;
+  height: 20px;
+  font: 12px 'amble', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  width: 565px;
+}
+.comments form button {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 35px;
+  height: 30px;
+  background: #42a1df url(../img/design/send-comment.png) 50% 55% no-repeat;
+  border: 0;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
+  -ms-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+.comments form button:hover {
+  background-color: #2d8ad7;
+}
+.image-gallery-info {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #222;
+}
+.image-gallery-info .pic {
+  float: left;
+  width: 240px;
+  position: relative;
+  height: 220px;
+}
+.image-gallery-info .pic:before,
+.image-gallery-info .pic:after {
+  content: '';
+  background: #e5e5e5;
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.image-gallery-info .pic:after {
+  background: #bcbcbc;
+  left: 5px;
+  top: 5px;
+  -webkit-transition: top 300ms, left 300ms;
+  -moz-transition: top 300ms, left 300ms;
+  -o-transition: top 300ms, left 300ms;
+  -ms-transition: top 300ms, left 300ms;
+  transition: top 300ms, left 300ms;
+}
+.image-gallery-info .pic img {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  -webkit-transition: top 300ms, left 300ms;
+  -moz-transition: top 300ms, left 300ms;
+  -o-transition: top 300ms, left 300ms;
+  -ms-transition: top 300ms, left 300ms;
+  transition: top 300ms, left 300ms;
+}
+.image-gallery-info .pic i {
+  position: absolute;
+  right: 35px;
+  bottom: 15px;
+  z-index: 2;
+}
+.image-gallery-info h2 {
+  font-size: 22px;
+  line-height: 23px;
+  margin: 0 0 10px;
+}
+.image-gallery-info .text {
+  float: left;
+  width: 440px;
+  padding: 10px;
+  background: #f6f6f6;
+  color: #3c3c3c;
+  height: 200px;
+}
+.image-gallery-info .text p {
+  margin: 0.5em 0 0;
+}
+.image-gallery-info .options {
+  clear: both;
+  padding: 10px 0 0;
+}
+.image-gallery-info .options:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.image-gallery-info a.slideshow {
+  float: left;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.image-gallery-info div.slideshow {
+  position: relative;
+}
+.image-gallery-info div.slideshow img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+.image-gallery-info div.slideshow img:first-child {
+  position: relative;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+.image-gallery-info div.slideshow .prev,
+.image-gallery-info div.slideshow .next {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: -25px 0 0;
+  background: url(../img/design/slideshow-arrows.png);
+  width: 50px;
+  height: 50px;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+.image-gallery-info div.slideshow .prev.next,
+.image-gallery-info div.slideshow .next.next {
+  left: auto;
+  right: 0;
+  background-position: -50px 0;
+}
+.image-gallery-info div.slideshow .fullscreen {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 19px;
+  right: 15px;
+  bottom: 15px;
+  background: transparent url("../img/player/toolbox.png") no-repeat 0 -20px;
+}
+.image-gallery-info div.slideshow p {
+  display: none;
+}
+.image-gallery-info div.slideshow:hover .prev,
+.image-gallery-info div.slideshow:hover .next {
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity= 80 );
+}
+.image-gallery-info div.slideshow:hover .prev:hover,
+.image-gallery-info div.slideshow:hover .next:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+.image-gallery-info div.slideshow.video_carousel .prev,
+.image-gallery-info div.slideshow.video_carousel .next {
+  display: none;
+}
+.image-gallery-info .socials {
+  float: right;
+  font-size: 10px;
+}
+.image-gallery-info .socials .likes {
+  text-decoration: none;
+}
+.image-gallery-info .socials .likes:before {
+  content: '';
+  width: 15px;
+  height: 13px;
+  background: url(../img/musician/social-info.png) -11px 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+}
+.image-gallery-info .socials .comments {
+  text-decoration: none;
+  margin-left: 25px;
+}
+.image-gallery-info .socials .comments:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: url(../img/musician/social-info.png) -26px 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+}
+.image-gallery-info .socials .shares {
+  text-decoration: none;
+  margin-left: 25px;
+}
+.image-gallery-info .socials .shares:before {
+  content: '';
+  width: 15px;
+  height: 14px;
+  background: url(../img/musician/social-info.png) -40px 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: -1px 5px 0 0;
+}
+.block-album-cover {
+  font-size: 12px;
+  line-height: 33px;
+  margin: 20px 0;
+}
+.block-album-cover p {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+.block-album-cover a {
+  color: #6d6d6d;
+}
+.block-album-cover a span {
+  display: block;
+  position: relative;
+  margin: 0 0 15px;
+  width: 220px;
+  height: 220px;
+}
+.block-album-cover a span:before,
+.block-album-cover a span:after {
+  content: '';
+  background: #e5e5e5;
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.block-album-cover a span:after {
+  background: #bcbcbc;
+  left: 5px;
+  top: 5px;
+  -webkit-transition: top 300ms, left 300ms;
+  -moz-transition: top 300ms, left 300ms;
+  -o-transition: top 300ms, left 300ms;
+  -ms-transition: top 300ms, left 300ms;
+  transition: top 300ms, left 300ms;
+}
+.block-album-cover a span img {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  -webkit-transition: top 300ms, left 300ms;
+  -moz-transition: top 300ms, left 300ms;
+  -o-transition: top 300ms, left 300ms;
+  -ms-transition: top 300ms, left 300ms;
+  transition: top 300ms, left 300ms;
+}
+.block-album-cover a span > i {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  z-index: 3;
+  display: block;
+  -webkit-transition: bottom 300ms, right 300ms;
+  -moz-transition: bottom 300ms, right 300ms;
+  -o-transition: bottom 300ms, right 300ms;
+  -ms-transition: bottom 300ms, right 300ms;
+  transition: bottom 300ms, right 300ms;
+}
+.block-album-cover a span > i i {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: 0 0 0 3px;
+  background: url('../img/albums/labels.png') 0 0 no-repeat;
+}
+.block-album-cover a span > i i.i-2 {
+  background-position: -23px 0;
+}
+.block-album-cover a span > i i.i-3 {
+  background-position: -45px 0;
+}
+.block-album-cover a span > i i.i-4 {
+  background-position: -69px 0;
+}
+.block-album-cover a span > i i.i-5 {
+  background-position: -90px 0;
+}
+.block-album-cover a span > i b {
+  width: 41px;
+  height: 41px;
+  display: inline-block;
+  margin: 0 0 0 3px;
+  background: url('../img/albums/label_red.png') no-repeat;
+}
+.block-album-cover a span > i b.b-2 {
+  background: url('../img/albums/label_blue.png') no-repeat;
+}
+.block-album-cover a span > i b.b-3 {
+  background: url('../img/albums/label_yellow.png') no-repeat;
+}
+.block-album-cover a span > i b.b-4 {
+  background: url('../img/albums/label_orange.png') no-repeat;
+}
+.block-album-cover a span > i b.b-5 {
+  background: url('../img/albums/label_violet.png') no-repeat;
+}
+.block-album-cover a:hover span {
+  width: 220px;
+  height: 220px;
+}
+.block-album-cover a:hover span:after,
+.block-album-cover a:hover span img {
+  left: 10px;
+  top: 10px;
+}
+.block-album-cover a:hover span > i {
+  right: 5px;
+  bottom: -5px;
+}
+.breadcrumbs {
+  background: #fafafa;
+  padding: 10px;
+  font-weight: 300;
+  color: #3f3f3f;
+  font-size: 15px;
+  line-height: 60px;
+  width: 920px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+.breadcrumbs a {
+  color: #6b6b6b;
+  border-bottom: 3px solid #d0d0d0;
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  border-bottom-color: transparent;
+}
+.breadcrumbs a.dropdown-toggle {
+  border-width: 0 0 3px 0;
+}
+.breadcrumbs .up {
+  float: left;
+  margin-right: 15px;
+}
+.breadcrumbs form {
+  float: right;
+}
+.breadcrumbs form fieldset {
+  padding: 0;
+  margin: 18px 0 0;
+  border: 0;
+  position: relative;
+}
+.breadcrumbs form input {
+  background: #fff;
+  font: 12px 'amble', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  border: 1px solid #e5e5e5;
+  padding: 4px 29px 4px 9px;
+  width: 240px;
+  float: left;
+  margin: 0;
+}
+.breadcrumbs form button {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  border: 0;
+  margin: -9px 0 0;
+  padding: 0;
+  background: url(../img/search.png);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  filter: alpha(opacity= 50 );
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+.breadcrumbs form button:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+.breadcrumbs.allgroups {
+  position: relative;
+  width: 670px !important;
+  padding-right: 250px !important;
+}
+.breadcrumbs div.breadcrumbs_search,
+.breadcrumbs div.search_in_groups {
+  position: absolute;
+  right: 15px;
+  top: 38px;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 218px;
+  height: 23px;
+}
+.breadcrumbs div.breadcrumbs_search input,
+.breadcrumbs div.search_in_groups input {
+  border: 1px solid #8e8e8e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  outline: none;
+  color: #3c3c3c;
+  font-size: 12px;
+  margin: 0 !important;
+  padding: 0;
+  text-indent: 15px;
+  width: 203px;
+  /*line-height: 23px;*/
+  display: table-cell;
+  vertical-align: middle;
+  height: 23px;
+  background: url('../img/allgroups/input_bg.png') left top repeat-x;
+}
+.breadcrumbs div.breadcrumbs_search input.error,
+.breadcrumbs div.search_in_groups input.error {
+  border: 1px solid red !important;
+}
+.breadcrumbs div.breadcrumbs_search input::-webkit-input-placeholder,
+.breadcrumbs div.search_in_groups input::-webkit-input-placeholder {
+  color: #3c3c3c;
+}
+.breadcrumbs div.breadcrumbs_search input:-moz-placeholder,
+.breadcrumbs div.search_in_groups input:-moz-placeholder {
+  color: #3c3c3c;
+}
+.breadcrumbs div.breadcrumbs_search input:-ms-input-placeholder,
+.breadcrumbs div.search_in_groups input:-ms-input-placeholder {
+  color: #3c3c3c;
+}
+.breadcrumbs div.breadcrumbs_search button,
+.breadcrumbs div.search_in_groups button {
+  z-index: 5;
+  display: block;
+  position: absolute;
+  border: 0;
+  right: 3px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: url(../img/search.png);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  filter: alpha(opacity= 50 );
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+.breadcrumbs div.breadcrumbs_search button:hover,
+.breadcrumbs div.search_in_groups button:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+.all-galleries ul {
+  padding: 0;
+  margin: -20px -20px 0 0;
+}
+.all-galleries ul:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.all-galleries ul li {
+  float: left;
+  list-style: none;
+  width: 220px;
+  margin: 20px 20px 0 0;
+  font-size: 12px;
+}
+.all-galleries ul a {
+  color: #919191;
+  text-decoration: none;
+}
+.all-galleries ul a:hover {
+  text-decoration: underline;
+}
+.all-galleries ul .title {
+  color: #000;
+  display: block;
+}
+.all-galleries ul .title span {
+  display: block;
+  position: relative;
+  margin: 0 0 10px;
+  width: 220px;
+  height: 220px;
+}
+.all-galleries ul .title span:before,
+.all-galleries ul .title span:after {
+  content: '';
+  background: #e5e5e5;
+  width: 210px;
+  height: 210px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.all-galleries ul .title span:after {
+  background: #bcbcbc;
+  left: 5px;
+  top: 5px;
+  -webkit-transition: top 300ms, left 300ms;
+  -moz-transition: top 300ms, left 300ms;
+  -o-transition: top 300ms, left 300ms;
+  -ms-transition: top 300ms, left 300ms;
+  transition: top 300ms, left 300ms;
+}
+.all-galleries ul .title span img {
+  position: relative;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  -webkit-transition: top 300ms, left 300ms;
+  -moz-transition: top 300ms, left 300ms;
+  -o-transition: top 300ms, left 300ms;
+  -ms-transition: top 300ms, left 300ms;
+  transition: top 300ms, left 300ms;
+}
+.all-galleries ul .title span > i {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  z-index: 3;
+  -webkit-transition: bottom 300ms, right 300ms;
+  -moz-transition: bottom 300ms, right 300ms;
+  -o-transition: bottom 300ms, right 300ms;
+  -ms-transition: bottom 300ms, right 300ms;
+  transition: bottom 300ms, right 300ms;
+}
+.all-galleries ul .title span > i i {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: 0 0 0 3px;
+  background: url('../img/albums/labels.png') 0 0 no-repeat;
+}
+.all-galleries ul .title span > i i.i-2 {
+  background-position: -23px 0;
+}
+.all-galleries ul .title span > i i.i-3 {
+  background-position: -45px 0;
+}
+.all-galleries ul .title span > i i.i-4 {
+  background-position: -69px 0;
+}
+.all-galleries ul .title span > i i.i-5 {
+  background-position: -90px 0;
+}
+.all-galleries ul .title span > i b {
+  width: 41px;
+  height: 41px;
+  display: inline-block;
+  margin: 0 0 0 3px;
+  background: url('../img/albums/label_red.png') no-repeat;
+}
+.all-galleries ul .title span > i b.b-2 {
+  background: url('../img/albums/label_blue.png') no-repeat;
+}
+.all-galleries ul .title span > i b.b-3 {
+  background: url('../img/albums/label_yellow.png') no-repeat;
+}
+.all-galleries ul .title span > i b.b-4 {
+  background: url('../img/albums/label_orange.png') no-repeat;
+}
+.all-galleries ul .title span > i b.b-5 {
+  background: url('../img/albums/label_violet.png') no-repeat;
+}
+.all-galleries ul .title:hover span:after,
+.all-galleries ul .title:hover span img {
+  left: 10px;
+  top: 10px;
+}
+.all-galleries ul .title:hover span > i {
+  right: 5px;
+  bottom: 5px;
+}
+.all-galleries .button {
+  margin: 20px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 220px;
+}
+.musician-header {
+  background: url(../img/musician/header.jpg);
+  height: 200px;
+  margin: 0 0 15px;
+}
+.musician-info {
+  font-size: 12px;
+}
+.musician-info.small .userpic {
+  margin-top: 0;
+}
+.musician-info.small p a {
+  display: inline-block;
+  margin: 5px 10px 0 0;
+}
+.musician-info .userpic {
+  margin: -165px 0 20px -10px;
+}
+.musician-info .userpic img {
+  border: 5px solid #e8e8e8;
+}
+.musician-info h2 {
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+}
+.musician-info h3 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #6d6d6d;
+  margin: 5px 0 20px;
+  text-transform: uppercase;
+}
+.musician-info h3 span {
+  color: #000;
+}
+.musician-info p {
+  margin: 0;
+}
+.musician-info p span {
+  color: #8e8e8e;
+}
+.musician-info .social-info {
+  border-top: 1px solid #c1c1c1;
+  border-bottom: 1px solid #c1c1c1;
+  padding: 5px 7px 3px;
+  line-height: 14px;
+  font-size: 10px;
+  color: #808080;
+  margin: 10px 0 0;
+}
+.musician-info .social-info:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-info .social-info .likes {
+  float: left;
+  text-decoration: none;
+}
+.musician-info .social-info .likes:before {
+  content: '';
+  width: 15px;
+  height: 13px;
+  background: url(../img/musician/social-info.png) -11px 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 7px 0 0;
+}
+.musician-info .social-info .likes:hover:before {
+  background-position: -11px -15px;
+}
+.musician-info .social-info .shares {
+  float: right;
+  text-decoration: none;
+}
+.musician-info .social-info .shares:before {
+  content: '';
+  width: 15px;
+  height: 14px;
+  background: url(../img/musician/social-info.png) -40px 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: -1px 7px 0 0;
+}
+.musician-info .social-info .shares:hover:before {
+  background-position: -40px -15px;
+}
+.musician-info .buttons {
+  margin: 12px 0 20px;
+}
+.musician-info .buttons .b-1,
+.musician-info .buttons .b-2 {
+  width: 70px;
+  float: left;
+  background: #a8a8a8;
+  font-size: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font: 10px 'amble';
+  padding: 11px 9px 0;
+  height: 33px;
+  text-align: center;
+  margin: 0 0 6px;
+  text-decoration: none;
+}
+.musician-info .buttons .b-1.b-2,
+.musician-info .buttons .b-2.b-2 {
+  width: 62px;
+  margin: 0 0 0 5px;
+}
+.musician-info .buttons .b-1:hover,
+.musician-info .buttons .b-2:hover {
+  background: #666;
+}
+.musician-info .buttons .b-3 {
+  width: 22px;
+  height: 44px;
+  float: left;
+  margin: 0 0 0 5px;
+  background: #a8a8a8;
+  position: relative;
+  text-decoration: none;
+}
+.musician-info .buttons .b-3:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -5px;
+  background: url(../img/musician/x.png);
+}
+.musician-info .buttons .b-3:hover {
+  background-color: #666;
+}
+.musician-info .buttons .button {
+  clear: both;
+  display: block;
+  text-align: center;
+}
+.musician-info .line {
+  height: 10px;
+  border-bottom: 1px solid #c1c1c1;
+  margin-bottom: 10px;
+}
+.musician-fans-friends,
+.musician-photos-videos {
+  margin: 20px -10px;
+}
+.musician-fans-friends .tabs,
+.musician-photos-videos .tabs {
+  border-collapse: collapse;
+  width: 100%;
+}
+.musician-fans-friends .tabs td,
+.musician-photos-videos .tabs td {
+  padding: 0;
+}
+.musician-fans-friends .tabs td a,
+.musician-photos-videos .tabs td a {
+  display: block;
+  border: 1px solid transparent;
+  border-bottom-color: #e5e5e5;
+  font: 10px 'amble';
+  text-transform: uppercase;
+  padding: 9px;
+  color: #8b8a8a;
+  text-decoration: none;
+}
+.musician-fans-friends .tabs td a:hover,
+.musician-photos-videos .tabs td a:hover {
+  text-decoration: underline;
+}
+.musician-fans-friends .tabs td a b,
+.musician-photos-videos .tabs td a b {
+  font-family: 'amble';
+  font-weight: bold;
+}
+.musician-fans-friends .tabs td.active a,
+.musician-photos-videos .tabs td.active a {
+  border-color: #e5e5e5;
+  border-bottom-color: transparent;
+  color: #000;
+  text-decoration: none !important;
+  cursor: default;
+}
+.musician-fans-friends .tabs-contents,
+.musician-photos-videos .tabs-contents {
+  border: 1px solid #e5e5e5;
+  border-top: 0;
+}
+.musician-fans-friends .tabs-contents > div,
+.musician-photos-videos .tabs-contents > div {
+  display: none;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+.musician-fans-friends .tabs-contents > div:after,
+.musician-photos-videos .tabs-contents > div:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-fans-friends .tabs-contents > div:first-child,
+.musician-photos-videos .tabs-contents > div:first-child {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  display: block;
+}
+.musician-fans-friends .tabs-contents > div a,
+.musician-photos-videos .tabs-contents > div a {
+  float: left;
+  margin: 10px 1px 0 9px;
+}
+.musician-fans-friends.musician-photos-videos,
+.musician-photos-videos.musician-photos-videos {
+  margin-left: 0;
+  margin-right: 0;
+}
+.musician-socials {
+  margin: 10px 0 20px -10px;
+}
+.musician-socials:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-socials a {
+  width: 60px;
+  height: 60px;
+  float: left;
+  background: #cdcdcd;
+  margin: 10px 0 0 10px;
+  text-align: center;
+}
+.musician-socials a:before {
+  content: '';
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.musician-socials a:after {
+  content: '';
+  background: url(../img/musician/socials.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+.musician-socials a:hover {
+  background-color: #3c3c3c;
+}
+.musician-socials a.f:after {
+  width: 13px;
+  height: 28px;
+}
+.musician-socials a.f:hover:after {
+  background-position: 0 -29px;
+}
+.musician-socials a.p:after {
+  width: 23px;
+  height: 29px;
+  background-position: -13px 0;
+}
+.musician-socials a.p:hover:after {
+  background-position: -13px -29px;
+}
+.musician-socials a.g:after {
+  width: 29px;
+  height: 26px;
+  background-position: -36px 0;
+}
+.musician-socials a.g:hover:after {
+  background-position: -36px -29px;
+}
+.musician-socials a.t:after {
+  width: 21px;
+  height: 28px;
+  background-position: -65px 0;
+}
+.musician-socials a.t:hover:after {
+  background-position: -65px -29px;
+}
+.musician-socials a.y:after {
+  width: 28px;
+  height: 27px;
+  background-position: -86px 0;
+}
+.musician-socials a.y:hover:after {
+  background-position: -86px -29px;
+}
+.musician-socials a.v:after {
+  width: 28px;
+  height: 25px;
+  background-position: -114px 0;
+}
+.musician-socials a.v:hover:after {
+  background-position: -114px -29px;
+}
+.musician-funds-raised {
+  border: 1px solid #e5e5e5;
+  padding: 0 9px 9px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.musician-funds-raised h3 {
+  margin: 5px 0 0;
+  font: 30px 'amble';
+  color: #0b0b0b;
+  text-transform: uppercase;
+}
+.musician-funds-raised p {
+  font-size: 12px;
+  margin: 20px 0;
+}
+.musician-funds-raised .button {
+  display: block;
+}
+.musician-get-discovered {
+  background: #e8e8e8;
+  padding: 10px;
+  font-size: 12px;
+  color: #454545;
+  margin: 25px 0;
+}
+.musician-get-discovered h2 {
+  font: 18px/1 'roboto';
+  text-transform: uppercase;
+  color: #42a1df;
+  margin: 0 0 10px;
+}
+.musician-get-discovered div {
+  position: relative;
+  padding-left: 60px;
+}
+.musician-get-discovered div .userpic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+}
+.musician-get-discovered div .userpic img {
+  width: 50px;
+  height: 50px;
+}
+.musician-get-discovered div a {
+  color: #6d6d6d;
+}
+.musician-get-discovered .button {
+  display: block;
+  text-align: center;
+  margin: 10px 0 0;
+}
+.musician-location a {
+  border: 1px solid #e5e5e5;
+  padding: 9px;
+  font-size: 12px;
+  color: #3c3c3c !important;
+  margin: 25px 0;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+.musician-location a:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  margin: -4px 0 0;
+  border-left: 4px solid #42a1df;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+.musician-location a span {
+  color: #42a1df;
+  text-decoration: underline;
+}
+.musician-location a:hover span {
+  text-decoration: none;
+}
+.musician-upcoming-events {
+  border: 1px solid #e5e5e5;
+  padding: 0 9px;
+  margin: 20px 0;
+  font-size: 12px;
+}
+.musician-upcoming-events .title {
+  font-size: 14px;
+  color: #000;
+  display: block;
+}
+.musician-upcoming-events .title:hover {
+  text-decoration: none;
+}
+.musician-upcoming-events p {
+  color: #3c3c3c;
+  font-size: 12px;
+  margin: 10px 0 0;
+  padding: 0 0 5px;
+}
+.musician-upcoming-events p span {
+  color: #000;
+  display: block;
+}
+.musician-upcoming-events p a {
+  color: #6d6d6d;
+}
+.musician-upcoming-events .button {
+  display: block;
+  text-align: center;
+  margin: 9px 0;
+}
+.musician-recommended-links {
+  border: 1px solid #e5e5e5;
+  padding: 0 9px;
+  margin: 20px 0;
+  font-size: 12px;
+}
+.musician-recommended-links ul {
+  margin: 0;
+  padding: 7px 0;
+}
+.musician-recommended-links ul li {
+  list-style: none;
+  margin: 2px 0;
+}
+.musician-member-of,
+.musician-groups {
+  border: 1px solid #e5e5e5;
+  padding: 0 9px;
+  margin: 20px 0;
+  font-size: 12px;
+}
+.musician-member-of.musician-groups,
+.musician-groups.musician-groups {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.musician-member-of ul,
+.musician-groups ul {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #727272;
+}
+.musician-member-of ul li,
+.musician-groups ul li {
+  margin: 15px 0 0;
+  list-style: none;
+}
+.musician-member-of ul li:after,
+.musician-groups ul li:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-member-of ul li img,
+.musician-groups ul li img {
+  float: left;
+  margin: -5px 10px 0 0;
+}
+.musician-member-of ul li .title,
+.musician-groups ul li .title {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+.musician-member-of ul li .title:hover,
+.musician-groups ul li .title:hover {
+  text-decoration: underline;
+  color: #42a1df;
+}
+.musician-member-of .manage,
+.musician-groups .manage {
+  display: block;
+  margin: 3px 0 0;
+}
+.musician-store {
+  border: 1px solid #e5e5e5;
+  margin: 20px 0;
+}
+.musician-store .top {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 9px;
+  height: 35px;
+}
+.musician-store .top h2 {
+  font: 18px/35px 'roboto';
+  text-transform: uppercase;
+  color: #42a1df;
+  margin: 0;
+  float: left;
+}
+.musician-store .tabs-contents > div {
+  display: none;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+.musician-store .tabs-contents > div:first-child {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  display: block;
+}
+.musician-store .tabs-contents .iscroll {
+  display: none;
+  overflow: hidden;
+  position: relative;
+  height: 210px;
+}
+.musician-store .tabs-contents > div.show {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  display: block;
+}
+.musician-store .tabs-contents > div.show .iscroll {
+  display: block;
+}
+.musician-store ul {
+  padding: 0;
+  margin: 0;
+}
+.musician-store ul li {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0 0;
+  float: left;
+}
+.musician-store ul li h3 {
+  font: 12px 'amble';
+  color: #3c3c3c;
+  text-transform: uppercase;
+  margin: 15px 0 0;
+}
+.musician-store ul li p {
+  font: 12px 'amble';
+  color: #8e8e8e;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+.musician-store ul li .button {
+  margin: 0 0 10px;
+}
+.musician-singles-albums {
+  margin: 0 0 40px;
+}
+.musician-singles-albums .top {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  height: 35px;
+}
+.musician-singles-albums .top:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-singles-albums .top .tabs {
+  float: left;
+}
+.musician-singles-albums .top .tabs a {
+  color: #8b8a8a;
+  font: bold 10px/35px 'amble';
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+  text-decoration: none;
+}
+.musician-singles-albums .top .tabs a:hover {
+  text-decoration: underline;
+}
+.musician-singles-albums .top .tabs a.active {
+  color: #000;
+  cursor: default;
+  text-decoration: none !important;
+}
+.musician-singles-albums .tabs-contents > div {
+  display: none;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+  background: #fcfcfc;
+}
+.musician-singles-albums .tabs-contents > div:first-child {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  display: block;
+}
+.musician-singles-albums .tabs-contents .iscroll {
+  display: none;
+  overflow: hidden;
+  position: relative;
+  height: 252px;
+}
+.musician-singles-albums .tabs-contents > div.show {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  display: block;
+}
+.musician-singles-albums .tabs-contents > div.show .iscroll {
+  display: block;
+}
+.musician-singles-albums ul {
+  margin: 0;
+  padding: 0;
+}
+.musician-singles-albums ul:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-singles-albums ul li {
+  list-style: none;
+  float: left;
+  padding-bottom: 20px;
+  width: 450px;
+}
+.musician-singles-albums ul li div {
+  margin: 10px 20px 0;
+  line-height: 27px;
+  height: 27px;
+}
+.musician-singles-albums ul li div:first-child {
+  margin-top: 20px;
+}
+.musician-singles-albums ul li div .title {
+  font: 14px 'amble';
+  color: #9c9c9c;
+  text-decoration: none;
+}
+.musician-singles-albums ul li div .title:before {
+  content: '';
+  width: 27px;
+  height: 27px;
+  background: url(../img/musician/singles-albums-icons.png);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 15px 0 0;
+}
+.musician-singles-albums ul li div .title:hover {
+  color: #3c3c3c;
+}
+.musician-singles-albums ul li div .title:hover:before {
+  background-position: 0 -27px;
+}
+.musician-singles-albums ul li div .shares {
+  float: right;
+  width: 13px;
+  height: 14px;
+  background: url(../img/musician/singles-albums-icons.png) -78px 0;
+  margin: 6px 0 0 10px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  text-decoration: none;
+}
+.musician-singles-albums ul li div .shares:hover {
+  background-position: -78px -27px;
+}
+.musician-singles-albums ul li div .comments {
+  float: right;
+  width: 24px;
+  height: 21px;
+  background: url(../img/musician/singles-albums-icons.png) -54px 0;
+  font: 9px/16px 'amble';
+  color: #fff;
+  text-align: center;
+  margin: 3px 0 0 10px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  text-decoration: none;
+}
+.musician-singles-albums ul li div .comments:hover {
+  background-position: -54px -27px;
+}
+.musician-singles-albums ul li div .likes {
+  float: right;
+  width: 27px;
+  height: 24px;
+  background: url(../img/musician/singles-albums-icons.png) -27px 0;
+  font: 9px/20px 'amble';
+  color: #fff;
+  text-align: center;
+  margin-top: 1px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  text-decoration: none;
+}
+.musician-singles-albums ul li div .likes:hover {
+  background-position: -27px -27px;
+}
+.musician-videos-valbums,
+.musician-images-igalleries {
+  margin: 10px 0 10px;
+}
+.musician-videos-valbums .top,
+.musician-images-igalleries .top {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  height: 35px;
+}
+.musician-videos-valbums .top:after,
+.musician-images-igalleries .top:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-videos-valbums .top .tabs,
+.musician-images-igalleries .top .tabs {
+  float: left;
+}
+.musician-videos-valbums .top .tabs a,
+.musician-images-igalleries .top .tabs a {
+  color: #8b8a8a;
+  font: bold 10px/35px 'amble';
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+  text-decoration: none;
+}
+.musician-videos-valbums .top .tabs a:hover,
+.musician-images-igalleries .top .tabs a:hover {
+  text-decoration: underline;
+}
+.musician-videos-valbums .top .tabs a.active,
+.musician-images-igalleries .top .tabs a.active {
+  color: #000;
+  cursor: default;
+  text-decoration: none !important;
+}
+.musician-videos-valbums .tabs-contents > div,
+.musician-images-igalleries .tabs-contents > div {
+  display: none;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+.musician-videos-valbums .tabs-contents > div:first-child,
+.musician-images-igalleries .tabs-contents > div:first-child {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  display: block;
+}
+.musician-videos-valbums .tabs-contents .iscroll,
+.musician-images-igalleries .tabs-contents .iscroll {
+  display: none;
+  overflow: hidden;
+  position: relative;
+  height: 320px;
+}
+.musician-videos-valbums .tabs-contents > div.show,
+.musician-images-igalleries .tabs-contents > div.show {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  display: block;
+}
+.musician-videos-valbums .tabs-contents > div.show .iscroll,
+.musician-images-igalleries .tabs-contents > div.show .iscroll {
+  display: block;
+}
+.musician-videos-valbums ul,
+.musician-images-igalleries ul {
+  padding: 0;
+  margin: 0;
+}
+.musician-videos-valbums ul:after,
+.musician-images-igalleries ul:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-videos-valbums ul li,
+.musician-images-igalleries ul li {
+  list-style: none;
+  float: left;
+}
+.musician-videos-valbums ul li div,
+.musician-images-igalleries ul li div {
+  float: left;
+  width: 140px;
+  position: relative;
+  margin: 10px 20px 10px 0;
+}
+.musician-videos-valbums ul li div.clear,
+.musician-images-igalleries ul li div.clear {
+  margin: 0;
+  height: 0;
+  overflow: hidden;
+}
+.musician-videos-valbums ul li img,
+.musician-images-igalleries ul li img {
+  width: 140px;
+  height: 140px;
+}
+.musician-videos-valbums ul li span,
+.musician-images-igalleries ul li span {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+.musician-videos-valbums ul li b,
+.musician-images-igalleries ul li b {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: normal;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+  text-align: left;
+}
+.musician-videos-valbums ul li b:before,
+.musician-images-igalleries ul li b:before {
+  width: 47px;
+  height: 47px;
+  content: '';
+  background: url(../img/musician/videos-valbums-play.png);
+  display: block;
+  margin: 10px auto;
+}
+.musician-videos-valbums.musician-images-igalleries ul li b:before,
+.musician-images-igalleries.musician-images-igalleries ul li b:before {
+  display: none;
+}
+.musician-videos-valbums .gallery,
+.musician-images-igalleries .gallery {
+  height: 390px !important;
+}
+.musician-videos-valbums .gallery ul li,
+.musician-images-igalleries .gallery ul li {
+  font-size: 12px;
+}
+.musician-videos-valbums .gallery ul li .title,
+.musician-images-igalleries .gallery ul li .title {
+  color: #000;
+  display: block;
+}
+.musician-videos-valbums .gallery ul li .title:hover span,
+.musician-images-igalleries .gallery ul li .title:hover span {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  text-decoration: underline;
+}
+.musician-videos-valbums .gallery ul li .title:hover span img,
+.musician-images-igalleries .gallery ul li .title:hover span img {
+  left: 10px;
+  top: 10px;
+}
+.musician-videos-valbums .gallery ul li .title:hover span:after,
+.musician-images-igalleries .gallery ul li .title:hover span:after {
+  left: 10px;
+  top: 10px;
+}
+.musician-videos-valbums .gallery ul li span,
+.musician-images-igalleries .gallery ul li span {
+  display: block;
+  background: none;
+  position: relative;
+  padding: 0 10px 10px 0;
+  margin: 0 0 5px;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+.musician-videos-valbums .gallery ul li span img,
+.musician-images-igalleries .gallery ul li span img {
+  position: relative;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 130px;
+  height: 130px;
+  -webkit-transition: left 300ms, top 300ms;
+  -moz-transition: left 300ms, top 300ms;
+  -o-transition: left 300ms, top 300ms;
+  -ms-transition: left 300ms, top 300ms;
+  transition: left 300ms, top 300ms;
+}
+.musician-videos-valbums .gallery ul li span:before,
+.musician-images-igalleries .gallery ul li span:before {
+  content: '';
+  width: 130px;
+  height: 130px;
+  left: 10px;
+  top: 10px;
+  position: absolute;
+  background: #e5e5e5;
+  z-index: 1;
+  -webkit-transition: left 300ms, top 300ms;
+  -moz-transition: left 300ms, top 300ms;
+  -o-transition: left 300ms, top 300ms;
+  -ms-transition: left 300ms, top 300ms;
+  transition: left 300ms, top 300ms;
+}
+.musician-videos-valbums .gallery ul li span:after,
+.musician-images-igalleries .gallery ul li span:after {
+  content: '';
+  width: 130px;
+  height: 130px;
+  left: 5px;
+  top: 5px;
+  position: absolute;
+  background: #bcbcbc;
+  z-index: 2;
+  -webkit-transition: left 300ms, top 300ms;
+  -moz-transition: left 300ms, top 300ms;
+  -o-transition: left 300ms, top 300ms;
+  -ms-transition: left 300ms, top 300ms;
+  transition: left 300ms, top 300ms;
+}
+.musician-videos-valbums .gallery ul li a,
+.musician-images-igalleries .gallery ul li a {
+  color: #999;
+  text-decoration: none;
+}
+.musician-videos-valbums .gallery ul li a:hover,
+.musician-images-igalleries .gallery ul li a:hover {
+  text-decoration: underline;
+}
+.musician-videos-valbums.musician-videos-valbums ul li a:hover span,
+.musician-images-igalleries.musician-videos-valbums ul li a:hover span,
+.musician-videos-valbums.musician-images-igalleries ul li a:hover span,
+.musician-images-igalleries.musician-images-igalleries ul li a:hover span {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+.musician-videos-valbums.musician-videos-valbums ul li a:hover b,
+.musician-images-igalleries.musician-videos-valbums ul li a:hover b,
+.musician-videos-valbums.musician-images-igalleries ul li a:hover b,
+.musician-images-igalleries.musician-images-igalleries ul li a:hover b {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+.musician-write {
+  margin: 25px 0;
+}
+.musician-write .types {
+  padding: 0 0 10px;
+}
+.musician-write .types a {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 15px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #333;
+  vertical-align: top;
+}
+.musician-write .types a:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: url(../img/musician/write-status.png);
+  display: inline-block;
+  vertical-align: top;
+  margin: 2px 7px 0 0;
+}
+.musician-write .types a.active {
+  cursor: default;
+}
+.musician-write .types a.active:before {
+  background-position: 0 -15px;
+}
+.musician-write .types a.music:before {
+  width: 13px;
+  height: 15px;
+  background-position: -14px 0;
+  margin-top: 0;
+}
+.musician-write .types a.music.active:before {
+  background-position: -14px -15px;
+}
+.musician-write .types a.image:before {
+  width: 15px;
+  height: 11px;
+  background-position: -27px 0;
+}
+.musician-write .types a.image.active:before {
+  background-position: -27px -15px;
+}
+.musician-write .types a.video:before {
+  width: 15px;
+  height: 8px;
+  background-position: -42px 0;
+  margin-top: 3px;
+}
+.musician-write .types a.video.active:before {
+  background-position: -42px -15px;
+}
+.musician-write .types a:hover,
+.musician-write .types a.active {
+  color: #42a1df;
+}
+.musician-write form {
+  background: #e8e8e8;
+  padding: 10px;
+}
+.musician-write form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: none;
+}
+.musician-write form fieldset:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  left: 12px;
+  top: -5px;
+}
+.musician-write form fieldset textarea {
+  border: 0;
+  background: #fff;
+  outline: 0;
+  padding: 10px 10px;
+  margin: 0;
+  font: 300 12px 'amble', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  -webkit-box-shadow: 1px 1px 0 0 #ddd;
+  -moz-box-shadow: 1px 1px 0 0 #ddd;
+  box-shadow: 1px 1px 0 0 #ddd;
+  width: 420px;
+  height: 100px;
+  resize: none;
+}
+.musician-write form fieldset.status {
+  display: block;
+}
+.musician-write form fieldset.music {
+  background: #fff;
+}
+.musician-write form fieldset.music:before {
+  left: 92px;
+}
+.musician-write form fieldset.image {
+  background: #fff;
+}
+.musician-write form fieldset.image:before {
+  left: 167px;
+}
+.musician-write form fieldset.video {
+  background: #fff;
+}
+.musician-write form fieldset.video:before {
+  left: 243px;
+}
+.musician-write form .button {
+  margin: 10px 0 0;
+}
+.musician-updates {
+  background: #fcfcfc;
+  overflow: hidden;
+}
+.musician-updates ul li .info a:hover {
+  color: #42a1df;
+}
+.musician-updates ul li .content .group a:hover {
+  color: #42a1df;
+}
+.musician-updates .top {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 10px;
+  height: 35px;
+}
+.musician-updates .top h2 {
+  font: 18px/35px 'roboto';
+  text-transform: uppercase;
+  color: #42a1df;
+  margin: 0;
+  float: left;
+}
+.musician-updates .top .rss {
+  width: 11px;
+  height: 11px;
+  float: right;
+  background: url(../img/musician/social-info.png);
+  margin: 12px 0 0;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+.musician-updates .top .rss:hover {
+  background-position: 0 -15px;
+}
+.musician-updates.no-header {
+  padding-top: 5px;
+}
+.musician-updates.no-header .top {
+  border-bottom: 0;
+  border-top: 1px solid #e5e5e5;
+  text-align: right;
+  padding: 10px 10px 0;
+}
+.musician-updates.no-header .top h2 {
+  display: none;
+}
+.musician-updates.no-header .top .button {
+  display: inline-block;
+  margin: 0;
+}
+.musician-updates ul {
+  padding: 0 10px;
+  margin: 0;
+}
+.musician-updates ul li {
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid #c5c5c5;
+  margin: 10px 0 0;
+  padding: 0 0 10px 40px;
+}
+.musician-updates ul li .info {
+  color: #666;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.musician-updates ul li .info a {
+  color: #666;
+}
+.musician-updates ul li .info a:hover {
+  text-decoration: none;
+}
+.musician-updates ul li .info img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+}
+.musician-updates ul li > time {
+  float: right;
+  font-size: 10px;
+  color: #808080;
+  font-weight: 500;
+  line-height: 14px;
+}
+.musician-updates ul li .content {
+  padding: 10px 0;
+}
+.musician-updates ul li .content .single {
+  background: #e5e5e5;
+  padding: 5px 10px;
+}
+.musician-updates ul li .content .single .title {
+  font: 14px/27px 'amble';
+  color: #9c9c9c;
+  text-decoration: none;
+}
+.musician-updates ul li .content .single .title:before {
+  content: '';
+  width: 27px;
+  height: 27px;
+  background: url(../img/musician/singles-albums-icons.png);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 15px 0 0;
+}
+.musician-updates ul li .content .single .title:hover {
+  color: #3c3c3c;
+}
+.musician-updates ul li .content .single .title:hover:before {
+  background-position: 0 -27px;
+}
+.musician-updates ul li .content .video a {
+  display: block;
+  position: relative;
+  border: 10px solid #e5e5e5;
+}
+.musician-updates ul li .content .video a > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+.musician-updates ul li .content .video a > span:before {
+  width: 47px;
+  height: 47px;
+  content: '';
+  background: url(../img/musician/videos-valbums-play.png);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -24px 0 0 -24px;
+}
+.musician-updates ul li .content .video a > span span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #797979;
+}
+.musician-updates ul li .content .video a > span span b {
+  font-weight: 300;
+  color: #fff;
+  display: block;
+}
+.musician-updates ul li .content .video a:hover > span {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+.musician-updates ul li .content .photos {
+  margin: 0 0 0 -10px;
+}
+.musician-updates ul li .content .photos:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-updates ul li .content .photos a {
+  float: left;
+  position: relative;
+  margin-left: 10px;
+}
+.musician-updates ul li .content .photos a span {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+.musician-updates ul li .content .photos a img {
+  width: 140px;
+  height: 140px;
+}
+.musician-updates ul li .content .photos a.photo b {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: normal;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+  text-align: left;
+}
+.musician-updates ul li .content .photos a.photo:hover span {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+.musician-updates ul li .content .photos a.photo:hover b {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+.musician-updates ul li .content .photos .rest {
+  background: #e5e5e5;
+  width: 100px;
+  height: 100px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 40px 0 0;
+}
+.musician-updates ul li .content .photos .rest b {
+  font-size: 24px;
+  display: block;
+  background: none;
+}
+.musician-updates ul li .content .photos .rest:hover {
+  background: #bfe2f9;
+  color: #42a1df;
+}
+.musician-updates ul li .content .group {
+  background: #e5e5e5;
+  padding: 10px 15px 0 0;
+  font-size: 12px;
+  color: #8e8e8e;
+  position: relative;
+}
+.musician-updates ul li .content .group:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-updates ul li .content .group .title {
+  color: #000;
+  font-family: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+.musician-updates ul li .content .group .title:hover {
+  text-decoration: underline;
+}
+.musician-updates ul li .content .group .title time {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 65px;
+  height: 59px;
+  padding: 6px 0 0;
+  background: #fff;
+  color: #3c3c3c;
+  font: 12px 'amble';
+  text-transform: uppercase;
+  text-align: center;
+}
+.musician-updates ul li .content .group .title time b {
+  font-weight: normal;
+  font-size: 30px;
+  display: block;
+}
+.musician-updates ul li .content .group img {
+  float: left;
+  margin: -10px 15px 0 0;
+  width: 140px;
+  height: 140px;
+}
+.musician-updates ul li .content .group p {
+  margin: 0 0 3px;
+}
+.musician-updates ul li .content .group .genre {
+  color: #5d5d5d;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.musician-updates ul li .content .group .genre:hover {
+  text-decoration: none;
+}
+.musician-updates ul li .content .group .button {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+}
+.musician-updates ul li .content .event {
+  background: #e5e5e5;
+  padding: 10px 15px 0 0;
+  font-size: 12px;
+  color: #8e8e8e;
+  position: relative;
+}
+.musician-updates ul li .content .event:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-updates ul li .content .event .title {
+  color: #000;
+  font-family: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+.musician-updates ul li .content .event .title:hover {
+  text-decoration: underline;
+}
+.musician-updates ul li .content .event .title time {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 65px;
+  height: 59px;
+  padding: 6px 0 0;
+  background: #fff;
+  color: #3c3c3c;
+  font: 12px 'amble';
+  text-transform: uppercase;
+  text-align: center;
+}
+.musician-updates ul li .content .event .title time b {
+  font-weight: normal;
+  font-size: 30px;
+  display: block;
+}
+.musician-updates ul li .content .event img {
+  float: left;
+  margin: -10px 15px 0 0;
+}
+.musician-updates ul li .content .event p {
+  margin: 0 0 3px;
+}
+.musician-updates ul li .content .event time {
+  font-size: 12px;
+  color: #3c3c3c;
+}
+.musician-updates ul li .content .event time a {
+  color: #3c3c3c;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.musician-updates ul li .content .event time a:hover {
+  text-decoration: none;
+}
+.musician-updates ul li .content .follow {
+  background: #e5e5e5;
+  padding: 10px 15px 0 0;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+.musician-updates ul li .content .follow:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+.musician-updates ul li .content .follow img {
+  float: left;
+  margin: -10px 15px 0 0;
+}
+.musician-updates ul li .content .follow .title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+.musician-updates ul li .content .follow .title:hover {
+  text-decoration: underline;
+}
+.musician-updates ul li .content .follow i {
+  font-style: normal;
+  display: block;
+}
+.musician-updates ul li .socials {
+  font-size: 10px;
+}
+.musician-updates ul li .socials .likes {
+  text-decoration: none;
+}
+.musician-updates ul li .socials .likes:before {
+  content: '';
+  width: 15px;
+  height: 13px;
+  background: url(../img/musician/social-info.png) -11px 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+}
+.musician-updates ul li .socials .likes:hover:before {
+  background-position: -11px -15px;
+}
+.musician-updates ul li .socials .comments {
+  text-decoration: none;
+  margin-left: 25px;
+}
+.musician-updates ul li .socials .comments:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: url(../img/musician/social-info.png) -26px 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+}
+.musician-updates ul li .socials .comments:hover:before {
+  background-position: -26px -15px;
+}
+.musician-updates ul li .socials .shares {
+  text-decoration: none;
+  margin-left: 25px;
+}
+.musician-updates ul li .socials .shares:before {
+  content: '';
+  width: 15px;
+  height: 14px;
+  background: url(../img/musician/social-info.png) -40px 0;
+  display: inline-block;
+  vertical-align: top;
+  margin: -1px 5px 0 0;
+}
+.musician-updates ul li .socials .shares:hover:before {
+  background-position: -40px -15px;
+}
+.musician-updates .button {
+  display: block;
+  text-align: center;
+  margin: 10px 10px 0;
+}
+.musician-fans-friends .more,
+.musician-photos-videos .more,
+.musician-upcoming-events .more,
+.musician-member-of .more,
+.musician-store .more,
+.musician-groups .more {
+  display: block;
+  float: none !important;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  clear: both;
+  margin: 0 !important;
+}
+.musician-funds-raised h2,
+.musician-upcoming-events h2,
+.musician-member-of h2,
+.musician-recommended-links h2,
+.musician-groups h2 {
+  font: 18px/35px 'roboto';
+  text-transform: uppercase;
+  color: #42a1df;
+  margin: 0;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+.musician-singles-albums .nav,
+.musician-videos-valbums .nav,
+.musician-images-igalleries .nav,
+.musician-store .nav,
+.mymusic-albums .nav,
+.mymusic-singles .nav,
+.myimages-photos .nav,
+.title-tabs .nav {
+  float: right;
+  margin: 8px 0 0;
+}
+.musician-singles-albums .nav a,
+.musician-videos-valbums .nav a,
+.musician-images-igalleries .nav a,
+.musician-store .nav a,
+.mymusic-albums .nav a,
+.mymusic-singles .nav a,
+.myimages-photos .nav a,
+.title-tabs .nav a {
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+  background: #b2b2b2;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px 2px 0;
+}
+.musician-singles-albums .nav a.active,
+.musician-videos-valbums .nav a.active,
+.musician-images-igalleries .nav a.active,
+.musician-store .nav a.active,
+.mymusic-albums .nav a.active,
+.mymusic-singles .nav a.active,
+.myimages-photos .nav a.active,
+.title-tabs .nav a.active {
+  background: #42a1df;
+  cursor: default;
+}
+.musician-singles-albums .nav a.prev,
+.musician-videos-valbums .nav a.prev,
+.musician-images-igalleries .nav a.prev,
+.musician-store .nav a.prev,
+.mymusic-albums .nav a.prev,
+.mymusic-singles .nav a.prev,
+.myimages-photos .nav a.prev,
+.title-tabs .nav a.prev,
+.musician-singles-albums .nav a.next,
+.musician-videos-valbums .nav a.next,
+.musician-images-igalleries .nav a.next,
+.musician-store .nav a.next,
+.mymusic-albums .nav a.next,
+.mymusic-singles .nav a.next,
+.myimages-photos .nav a.next,
+.title-tabs .nav a.next {
+  background: url(../img/musician/store-arrows.png);
+  width: 12px;
+  height: 19px;
+  margin: 0 15px 0 0;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+.musician-singles-albums .nav a.prev:hover,
+.musician-videos-valbums .nav a.prev:hover,
+.musician-images-igalleries .nav a.prev:hover,
+.musician-store .nav a.prev:hover,
+.mymusic-albums .nav a.prev:hover,
+.mymusic-singles .nav a.prev:hover,
+.myimages-photos .nav a.prev:hover,
+.title-tabs .nav a.prev:hover,
+.musician-singles-albums .nav a.next:hover,
+.musician-videos-valbums .nav a.next:hover,
+.musician-images-igalleries .nav a.next:hover,
+.musician-store .nav a.next:hover,
+.mymusic-albums .nav a.next:hover,
+.mymusic-singles .nav a.next:hover,
+.myimages-photos .nav a.next:hover,
+.title-tabs .nav a.next:hover {
+  background-position: -1px -19px;
+}
+.musician-singles-albums .nav a.prev.next,
+.musician-videos-valbums .nav a.prev.next,
+.musician-images-igalleries .nav a.prev.next,
+.musician-store .nav a.prev.next,
+.mymusic-albums .nav a.prev.next,
+.mymusic-singles .nav a.prev.next,
+.myimages-photos .nav a.prev.next,
+.title-tabs .nav a.prev.next,
+.musician-singles-albums .nav a.next.next,
+.musician-videos-valbums .nav a.next.next,
+.musician-images-igalleries .nav a.next.next,
+.musician-store .nav a.next.next,
+.mymusic-albums .nav a.next.next,
+.mymusic-singles .nav a.next.next,
+.myimages-photos .nav a.next.next,
+.title-tabs .nav a.next.next {
+  background-position: -12px 0;
+  margin: 0 0 0 15px;
+}
+.musician-singles-albums .nav a.prev.next:hover,
+.musician-videos-valbums .nav a.prev.next:hover,
+.musician-images-igalleries .nav a.prev.next:hover,
+.musician-store .nav a.prev.next:hover,
+.mymusic-albums .nav a.prev.next:hover,
+.mymusic-singles .nav a.prev.next:hover,
+.myimages-photos .nav a.prev.next:hover,
+.title-tabs .nav a.prev.next:hover,
+.musician-singles-albums .nav a.next.next:hover,
+.musician-videos-valbums .nav a.next.next:hover,
+.musician-images-igalleries .nav a.next.next:hover,
+.musician-store .nav a.next.next:hover,
+.mymusic-albums .nav a.next.next:hover,
+.mymusic-singles .nav a.next.next:hover,
+.myimages-photos .nav a.next.next:hover,
+.title-tabs .nav a.next.next:hover {
+  background-position: -12px -19px;
+}
+.musician-singles-albums .nav a.all,
+.musician-videos-valbums .nav a.all,
+.musician-images-igalleries .nav a.all,
+.musician-store .nav a.all,
+.mymusic-albums .nav a.all,
+.mymusic-singles .nav a.all,
+.myimages-photos .nav a.all,
+.title-tabs .nav a.all {
+  background: none;
+  width: auto;
+  height: auto;
+  font: 10px 'amble';
+  color: #7a7a7a;
+  text-transform: uppercase;
+  line-height: 19px;
+  margin: 0 15px 0 0;
+  text-decoration: none;
+}
+.musician-singles-albums .nav a.all:hover,
+.musician-videos-valbums .nav a.all:hover,
+.musician-images-igalleries .nav a.all:hover,
+.musician-store .nav a.all:hover,
+.mymusic-albums .nav a.all:hover,
+.mymusic-singles .nav a.all:hover,
+.myimages-photos .nav a.all:hover,
+.title-tabs .nav a.all:hover {
+  text-decoration: underline;
+}
+.musician-singles-albums .nav.vert,
+.musician-videos-valbums .nav.vert,
+.musician-images-igalleries .nav.vert,
+.musician-store .nav.vert,
+.mymusic-albums .nav.vert,
+.mymusic-singles .nav.vert,
+.myimages-photos .nav.vert,
+.title-tabs .nav.vert {
+  display: none;
+}
+#location {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+  z-index: 70;
+  background: rgba(60, 60, 60, 0.9);
+}
+#location:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+#location > div {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 440px;
+  text-align: left;
+}
+#location > div .close {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  right: -17px;
+  top: 0;
+  background: url(../img/popup-close2.png);
+}
+#location h2 {
+  font: 30px 'amble';
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 10px;
+}
+#location form {
+  background: #e5e5e5;
+  border: 6px solid #a9a9a9;
+}
+#location form fieldset {
+  padding: 30px;
+  margin: 0;
+  border: 0;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+#location form fieldset .current {
+  background: #d2d2d2;
+  font-size: 16px;
+  color: #3c3c3c;
+  padding: 5px 10px;
+  margin: 3px 0 15px;
+}
+#location form fieldset .previously {
+  margin: 3px 0 15px 10px;
+}
+#location form fieldset .previously a {
+  color: #6d6d6d;
+}
+#location form fieldset .previously a:hover {
+  text-decoration: none;
+}
+#location form fieldset input {
+  background: #fff;
+  border: 0;
+  padding: 7px 10px;
+  font: 12px 'amble';
+  margin: 3px 0 20px;
+  width: 348px;
+}
+#edit-information > div {
+  width: 555px;
+}
+#edit-information > div > div {
+  border: 5px solid #b9b9b9;
+  background: #efefef;
+  padding: 30px 40px;
+}
+#edit-information > div > div .scroller {
+  height: 290px;
+}
+#edit-information > div > div h3 {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 20px 0 3px;
+}
+#edit-information > div > div h3:first-child {
+  margin-top: 0;
+}
+#edit-information > div > div ul {
+  padding: 0;
+  margin: 0;
+}
+#edit-information > div > div ul li {
+  list-style: none;
+  border-top: 1px solid #ebeaea;
+}
+#edit-information > div > div ul li:first-child {
+  border: 0;
+}
+#edit-information > div > div ul li a {
+  display: block;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 0 0 #ddd;
+  -moz-box-shadow: 1px 1px 0 0 #ddd;
+  box-shadow: 1px 1px 0 0 #ddd;
+  padding: 7px;
+  color: #3c3c3c;
+  font-size: 12px;
+  line-height: 20px;
+}
+#edit-information > div > div ul li a img {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 0 7px 0 0;
+}
+#edit-information > div > div ul li a.active {
+  background: #bfe2f9;
+  color: #1c8bd3;
+}
+#edit-information > div > div .buttons {
+  margin: 20px -40px -30px;
+  background: #fff;
+  padding: 20px 40px 30px;
+}
+#change-profile-picture > div {
+  width: 565px;
+}
+#change-profile-picture > div > div {
+  border: 5px solid #b9b9b9;
+  background: #fff;
+  padding: 30px;
+  font-size: 12px;
+}
+#change-profile-picture > div > div .upload-note {
+  color: #666;
+  font-size: 10px;
+  font-weight: 300;
+  margin: 5px 0 15px;
+}
+#change-profile-picture > div > div .pictures {
+  margin: 5px 0 30px;
+  font-size: 0;
+}
+#change-profile-picture > div > div .pictures a {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  vertical-align: top;
+}
+#change-profile-picture > div > div .pictures a:first-child {
+  margin-left: 0;
+}
+#change-profile-picture > div > div .pictures img {
+  width: 140px;
+  height: 140px;
+}
+#change-profile-picture > div > div .pictures .more {
+  background: #e5e5e5 url(../img/musician/more.png) 75px 50% no-repeat;
+  width: 70px;
+  height: 140px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8e8e8e;
+  padding: 0 15px;
+}
+#change-profile-picture > div > div .pictures .more:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 140px;
+  overflow: hidden;
+}
+#change-profile-picture > div > div .pictures .more span {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+#colorbox {
+  outline: none;
+}
+#cboxClose {
+  display: none;
+}
+#more-photos > div,
+#more-photos-albums > div {
+  width: 565px;
+  outline: none;
+}
+#more-photos > div > div,
+#more-photos-albums > div > div {
+  border: 5px solid #b9b9b9;
+  background: #fff;
+  padding: 30px;
+  font-size: 12px;
+}
+#more-photos > div h3,
+#more-photos-albums > div h3 {
+  color: #3f3f3f;
+  font-size: 14px;
+  margin: 0 0 15px;
+  font-weight: normal;
+}
+#more-photos > div .scroller,
+#more-photos-albums > div .scroller {
+  height: 400px;
+}
+#more-photos > div ul,
+#more-photos-albums > div ul {
+  padding: 0;
+  margin: -20px -20px 0 0;
+}
+#more-photos > div ul:after,
+#more-photos-albums > div ul:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+#more-photos > div ul li,
+#more-photos-albums > div ul li {
+  float: left;
+  margin: 20px 20px 0 0;
+  list-style: none;
+  width: 140px;
+  position: relative;
+}
+#more-photos > div ul li img,
+#more-photos-albums > div ul li img {
+  width: 140px;
+  height: 140px;
+}
+#more-photos > div ul li span,
+#more-photos-albums > div ul li span {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+#more-photos > div ul li b,
+#more-photos-albums > div ul li b {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: normal;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+  text-align: left;
+}
+#more-photos > div ul li a:hover span,
+#more-photos-albums > div ul li a:hover span {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+#more-photos > div ul li a:hover b,
+#more-photos-albums > div ul li a:hover b {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+#more-photos > div ul.gallery,
+#more-photos-albums > div ul.gallery {
+  font-size: 12px;
+}
+#more-photos > div ul.gallery .title,
+#more-photos-albums > div ul.gallery .title {
+  color: #000;
+  display: block;
+}
+#more-photos > div ul.gallery .title:hover span,
+#more-photos-albums > div ul.gallery .title:hover span {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  text-decoration: underline;
+}
+#more-photos > div ul.gallery .title:hover span img,
+#more-photos-albums > div ul.gallery .title:hover span img {
+  left: 10px;
+  top: 10px;
+}
+#more-photos > div ul.gallery .title:hover span:after,
+#more-photos-albums > div ul.gallery .title:hover span:after {
+  left: 10px;
+  top: 10px;
+}
+#more-photos > div ul.gallery span,
+#more-photos-albums > div ul.gallery span {
+  display: block;
+  background: none;
+  position: relative;
+  padding: 0 10px 10px 0;
+  margin: 0 0 5px;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+#more-photos > div ul.gallery span img,
+#more-photos-albums > div ul.gallery span img {
+  position: relative;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 130px;
+  height: 130px;
+  -webkit-transition: left 300ms, top 300ms;
+  -moz-transition: left 300ms, top 300ms;
+  -o-transition: left 300ms, top 300ms;
+  -ms-transition: left 300ms, top 300ms;
+  transition: left 300ms, top 300ms;
+}
+#more-photos > div ul.gallery span:before,
+#more-photos-albums > div ul.gallery span:before {
+  content: '';
+  width: 130px;
+  height: 130px;
+  left: 10px;
+  top: 10px;
+  position: absolute;
+  background: #e5e5e5;
+  z-index: 1;
+  -webkit-transition: left 300ms, top 300ms;
+  -moz-transition: left 300ms, top 300ms;
+  -o-transition: left 300ms, top 300ms;
+  -ms-transition: left 300ms, top 300ms;
+  transition: left 300ms, top 300ms;
+}
+#more-photos > div ul.gallery span:after,
+#more-photos-albums > div ul.gallery span:after {
+  content: '';
+  width: 130px;
+  height: 130px;
+  left: 5px;
+  top: 5px;
+  position: absolute;
+  background: #bcbcbc;
+  z-index: 2;
+  -webkit-transition: left 300ms, top 300ms;
+  -moz-transition: left 300ms, top 300ms;
+  -o-transition: left 300ms, top 300ms;
+  -ms-transition: left 300ms, top 300ms;
+  transition: left 300ms, top 300ms;
+}
+#more-photos > div ul.gallery a,
+#more-photos-albums > div ul.gallery a {
+  color: #999;
+  text-decoration: none;
+}
+#more-photos > div ul.gallery a:hover,
+#more-photos-albums > div ul.gallery a:hover {
+  text-decoration: underline;
+}
+#more-photos > div .button,
+#more-photos-albums > div .button {
+  margin-top: 20px;
+}
+#customize-design > div,
+#customize-design2 > div {
+  width: 565px;
+}
+#customize-design > div > div,
+#customize-design2 > div > div {
+  border: 5px solid #b9b9b9;
+  background: #fff;
+  padding: 30px;
+  font-size: 12px;
+}
+#customize-design > div > div .scroller,
+#customize-design2 > div > div .scroller {
+  height: 400px;
+}
+#customize-design > div > div h3,
+#customize-design2 > div > div h3 {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 0 5px;
+}
+#customize-design > div > div .image,
+#customize-design2 > div > div .image {
+  border-bottom: 1px solid #e2e1e2;
+  padding: 0 0 25px;
+  margin-bottom: 25px;
+}
+#customize-design > div > div .image:after,
+#customize-design2 > div > div .image:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+#customize-design > div > div .image .left,
+#customize-design2 > div > div .image .left {
+  float: left;
+  width: 200px;
+}
+#customize-design > div > div .image .left .button,
+#customize-design2 > div > div .image .left .button {
+  display: block;
+  text-align: center;
+}
+#customize-design > div > div .image .left .upload-note,
+#customize-design2 > div > div .image .left .upload-note {
+  color: #666;
+  font-size: 10px;
+  font-weight: 300;
+  margin: 5px 0 15px;
+}
+#customize-design > div > div .image .left .tile,
+#customize-design2 > div > div .image .left .tile {
+  background: #efefef;
+  display: inline-block;
+  padding: 4px 8px 1px 4px;
+}
+#customize-design > div > div .image .left .tile .checkbox,
+#customize-design2 > div > div .image .left .tile .checkbox {
+  font-size: 12px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+#customize-design > div > div .image .left .tile .checkbox:before,
+#customize-design2 > div > div .image .left .tile .checkbox:before {
+  left: 0;
+}
+#customize-design > div > div .pictures,
+#customize-design2 > div > div .pictures {
+  font-size: 0;
+  float: right;
+}
+#customize-design > div > div .pictures a,
+#customize-design2 > div > div .pictures a {
+  display: inline-block;
+  margin: 0 20px 0 0;
+  vertical-align: top;
+  position: relative;
+}
+#customize-design > div > div .pictures a span,
+#customize-design2 > div > div .pictures a span {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+#customize-design > div > div .pictures a b,
+#customize-design2 > div > div .pictures a b {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: normal;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  -o-transition: opacity 300ms;
+  -ms-transition: opacity 300ms;
+  transition: opacity 300ms;
+  text-align: left;
+}
+#customize-design > div > div .pictures a:hover span,
+#customize-design2 > div > div .pictures a:hover span {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity= 0 );
+}
+#customize-design > div > div .pictures a:hover b,
+#customize-design2 > div > div .pictures a:hover b {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+#customize-design > div > div .pictures img,
+#customize-design2 > div > div .pictures img {
+  width: 140px;
+  height: 140px;
+}
+#customize-design > div .image .pictures .more,
+#customize-design2 > div .image .pictures .more,
+#customize-design > div .more,
+#customize-design2 > div .more {
+  display: inline-block;
+  vertical-align: top;
+  background: #e5e5e5 url(../img/musician/more.png) 75px 50% no-repeat;
+  width: 70px;
+  height: 140px;
+  font-weight: bold;
+  padding: 0 15px;
+  margin: 0;
+}
+#customize-design > div .image .pictures .more:before,
+#customize-design2 > div .image .pictures .more:before,
+#customize-design > div .more:before,
+#customize-design2 > div .more:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 140px;
+  overflow: hidden;
+}
+#customize-design > div .image .pictures .more span,
+#customize-design2 > div .image .pictures .more span,
+#customize-design > div .more span,
+#customize-design2 > div .more span {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background: none;
+  position: relative;
+  padding: 0;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+#customize-design > div .more.popup-toggle:hover span,
+#customize-design2 > div .more.popup-toggle:hover span {
+  color: #635a5a;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+#customize-design > div .more.popup-toggle:hover span,
+#customize-design2 > div .more.popup-toggle:hover span {
+  color: #635a5a;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+#customize-design > div .colors:after,
+#customize-design2 > div .colors:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+#customize-design > div .colors .left,
+#customize-design2 > div .colors .left {
+  float: left;
+  width: 380px;
+  margin: -16px 0 0 -30px;
+}
+#customize-design > div .colors .left:after,
+#customize-design2 > div .colors .left:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  display: block;
+}
+#customize-design > div .colors .left .box,
+#customize-design2 > div .colors .left .box {
+  float: left;
+  width: 160px;
+  margin: 16px 0 0 30px;
+}
+#customize-design > div .colors .left .box > div,
+#customize-design2 > div .colors .left .box > div {
+  background: #efefef;
+  padding: 6px;
+  line-height: 30px;
+  color: #7f7f7f;
+  font-size: 12px;
+}
+#customize-design > div .colors .left .box > div b,
+#customize-design2 > div .colors .left .box > div b {
+  display: inline-block;
+  height: 30px;
+  width: 80px;
+  margin: 0 10px 0 0;
+  vertical-align: top;
+}
+#customize-design > div .colors .more,
+#customize-design2 > div .colors .more {
+  float: right;
+}
+#customize-design > div .colors a:hover span,
+#customize-design2 > div .colors a:hover span {
+  color: #635a5a;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+#customize-design > div .colors a:hover span,
+#customize-design2 > div .colors a:hover span {
+  color: #635a5a;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity= 100 );
+}
+#customize-design > div .buttons,
+#customize-design2 > div .buttons {
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 1px solid #e2e1e1;
+}

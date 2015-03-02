@@ -1,0 +1,152 @@
+﻿
+
+@media(max-width: 1023px){
+    header{
+         .selector{
+             li{
+                 margin: 0 5px 13px;
+             }
+         }
+    }
+}
+
+@media(max-width: 875px){
+    .next-cluster{
+        right: 2px;
+    }
+
+    .prev-cluster{
+        left: 2px;
+    }
+
+    footer{
+        height: auto;
+         .object{
+             padding-top: 10px;
+             text-align: center;
+             position: relative;
+              i{
+                  float: none;
+                  margin: 10px auto -10px auto;
+              }
+
+              span{
+                  display: inline-block;
+                  float: none;
+              }
+         }
+    }
+}
+
+@media(max-width: 767px){
+    header{
+        .logo-selector{
+            position: absolute;
+            left: 15px;
+            top: 0;
+        }
+        .type-selector{
+            position: absolute;
+            left: 134px;
+            top: 0;
+        }
+        .route-selector{
+            position: absolute;
+            left: 253px;
+            top: 0;
+        }
+        .point-selector{
+            margin-top: 89px;
+            margin-bottom: 19px;
+        }
+    }
+    footer{
+         .object{
+             text-align: center;
+             padding: 0 0 19px 0;
+             position: relative;
+             line-height: 24px;
+             width: 34px;
+             i{
+                 float: none;
+             }
+              span{
+                  display: inline-block;
+                  float: none;
+                  margin: 0 auto;
+                      
+              }
+
+              .title{
+                  left: 0;
+                  top: -20px;
+              }
+         }
+         .col-xs-1{
+             width: 13.333%;
+         }
+    }
+
+    #route-selector{
+        position: absolute;
+        .route-toggle{
+            right: 22px;
+            left: auto;
+        }
+    }
+
+    .rs-wrapper{
+        ul{
+            padding: 0;
+            li{
+                margin: 0 5px 0 2px;
+            }
+        }
+    }
+
+    #history{
+        width: 270px;
+        >div{
+            padding: 13px 13px 23px 13px
+        }
+    }
+
+    .mapwrapper{
+        .scales{
+            right: 15px;
+            top: 15px;
+        }
+
+        .controls{
+            left: 15px;
+            bottom: 15px;
+        }
+    }
+
+    .mcontainer{
+        li{
+            margin: 0 20px 0 0;
+            &:after{
+                right: -13px;
+            }
+        }
+    }
+
+    #popup-points,
+    #point-feature{
+        >div{
+            padding: 13px;
+        }
+        .head{
+            padding: 13px;
+            .save{
+                right: 15px;
+            }
+        }
+    }
+
+    .next-cluster,
+    .prev-cluster{
+        display: none;
+    }
+}

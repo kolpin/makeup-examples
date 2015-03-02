@@ -1,0 +1,235 @@
+@media (max-width: 1000px)  {
+    .photos_reg {
+        width: 110px;
+    }
+    .features {
+        white-space: normal;
+    }
+    .header-contacts-wrapper .email{display: none;}
+}
+@media (max-width: 1279px)  {
+
+    .item_preview .text_slide .content .center p {
+        margin: 0 0 22px 0;
+    }
+    .item_preview .text_slide .content .center {
+        margin-left: 60px;
+    }
+    .item_preview .text_slide .content .left {
+        width: 150px;
+        margin-left: 160px;
+    }
+    .item_preview .text_slide .content .left .item div.description div {
+        display: none;
+    }
+    .item_preview .text_slide .content .left .item div.description {
+        padding: 76px 0 26px 0;
+        margin: 0 0 26px 0;
+        width: 150px;
+    }
+    .item_preview .text_slide .content .left .item div.description span {
+        font-size: 24px; line-height: 30px;
+    }
+    .item_preview .text_slide .content .center .open_now {
+        display: block;
+    }
+    .item_preview .text_slide .content .slide_left {
+        left: 80px;
+    }
+    .header_main nav.main_nav > ul li ul.subs {
+        display: block; position: absolute;
+        top: 20px; left: 0;
+        width: 360px;
+    }
+    .header_main nav.main_nav > ul li ul.subs li {
+        margin: 0 28px 0 0;
+    }
+    .new_travel_images {
+        padding: 0;
+    }
+    .cats-countries {
+        margin: 0 20px 197px 0;
+    }
+    .header-contacts-wrapper{display: block;}
+    .select_wrap ul.select_nav.select_nav_map {
+        margin: 0 0 0 185px;
+    }
+}
+@media (min-width: 1280px)  {
+    .header_main {
+        width: 1110px;
+    }
+    .header_main nav.main_nav > ul {
+        margin: 0 0 0 250px;
+    }
+
+    .item_preview .img_slide .content {
+        width: 1110px;
+    }
+    .item_preview .img_slide .content .article {
+        margin-left: 250px;
+        width: 490px;
+    }
+    .item_preview .img_slide .content .refresh {
+        left: 200px;
+    }
+    .item_preview .img_slide .content .earliest_date {
+        margin-right: 105px;
+    }
+    .item_preview .text_slide .content .right {
+        display: block;
+    }
+    .text_rel {
+        width: 1110px;
+    }
+    .item_preview .text_slide .content {
+        width: 1110px;
+    }
+    .item_preview .text_slide .content .left {
+        margin-left: 125px;
+    }
+    .inner_content, .select_wrap, .photos_content, .card-travel-content {
+        width: 1110px;
+    }
+    .left_margin {
+        margin-left: 250px;
+    }
+    .inner_content .name_personal {
+        margin: 0 0 43px -5px;
+    }
+    .inner_content.coop .name_personal {
+        margin: 0 0 43px 0px;
+    }
+    .inner_content.ord .name_personal {
+        margin: 0 0 43px -2px;
+    }
+    .personal_description {
+        width: 530px;
+        margin-left: 81px;
+    }
+    .personal_params {
+        width: 165px;
+    }
+    .personal_params ul li .site_url span {
+        width: auto;
+    }
+    .personal_params ul li .site_url span b {
+        display: none;
+    }
+    .error_wrap .left {
+        margin-left: 164px;
+    }
+    .hint {
+        display: block;
+    }
+    .travel_description {
+        width: 580px;
+    }
+    .travel_nav, .videos_nav {
+        margin-right: 45px;
+    }
+    .travel_wrapper .read_more {
+        right: 70px;
+    }
+    .photos_wrap, .video_wrap {
+        width: 770px;
+    }
+    .form_contacts {
+        width: 546px;
+        margin-left: 250px;
+    }
+    .form_data_card {
+        margin-left: 250px;
+    }
+    .description_region {
+        width: 553px;
+        margin-left: 95px;
+    }
+    .comments_wrap {
+        width: 765px;
+    }
+    .item_comment .author {
+        width: 180px;
+    }
+    .item_comment .comment {
+        width: 544px;
+        margin-left: 41px;
+    }
+    .description_cost {
+        width: 565px;
+    }
+    .cert_description {
+        width: 560px;
+        margin-left: 250px;
+    }
+    .cert_questions .item {
+        width: 205px;
+        margin-right: 78px;
+    }
+    .fast_buy {
+        width: 560px;
+        margin-left: 250px;
+    }
+    .calendar_wrap {
+        width: 1093px;
+    }
+    .calendar_wrap h1.calendar_title {
+        margin: 0 0 50px 227px;
+    }
+    .cal_wrap {
+        width: 671px;
+        margin: 0 0 0 220px;
+    }
+    .cert_wrapper {
+        margin-right: 15px;
+    }
+
+    .cooperation .text_blocks {
+        width: 840px;
+        margin-left: 66px;
+    }
+    .cooperation .text_blocks .bl_wrap .list {
+        width: 178px;
+        margin-right: 45px;
+    }
+    .cooperation .text_blocks .bl_wrap .text {
+        width: 394px;
+        margin-top: 0;
+    }
+    .cooperation .text_blocks .bl_wrap .list_two {
+        width: 398px;
+        margin-right: 43px;
+        margin-bottom: 0;
+    }
+    .cooperation .text_blocks .bl_wrap .list_two.list_country {
+        margin-right: 95px;
+    }
+    .cooperation .text_blocks .bl_wrap .list_two.last_list {
+        width: 398px;
+    }
+    .photos_wrap, .video_wrap {
+        margin-left: 96px;
+    }
+    .programm_text {
+        width: 553px;
+        margin-left: 245px;
+    }
+    .header-contacts-wrapper{display: block;}
+    .card-travel-wrapp {
+        width: 1065px;
+    }
+    .new-year .special {
+        margin: 0 0 0 582px;
+    }
+}
+@media (min-width: 1900px)  {
+    .product_by {
+        right: 360px;
+    }
+    .text_rel > .slide_left {
+        display: block;
+    }
+    .text_rel .slide_left {
+        display: none;
+    }
+}

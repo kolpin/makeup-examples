@@ -1,0 +1,101 @@
+.selectbox {
+  display: none;
+}
+.custom-select {
+  display: none;
+}
+.checkbox-top {
+  margin-top: 10px;
+}
+.checkbox {
+  display: inline;
+  font-size: 12px;
+}
+.paypal {
+  display: inline-block;
+}
+.as2 .input-group li {
+  border-bottom: none;
+}
+.linkpaypal {
+  margin: 10px 0 10px 0;
+  padding-bottom: 5px;
+  font: 12px 'amble';
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 1px solid #dddddd;
+}
+.linkpaypal img {
+  margin: 0 10px 0 0;
+}
+.button.black {
+  background: #424242;
+  margin: -9px 0px 1px 11px;
+  width: 100px;
+}
+.button.black:focus,
+.button.black:active {
+  outline: none;
+}
+.email {
+  font-size: 12px;
+  margin-right: 84px;
+  line-height: 24px;
+}
+input.paypal-email {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 0 none;
+  box-shadow: 1px 1px 0 0 #DDDDDD;
+  margin: 0 15px 10px 0;
+  outline: 0 none;
+  padding: 8px 12px;
+  float: none;
+}
+input.paypal-email:active,
+input.paypal-email:focus {
+  outline: none;
+}
+.input-title {
+  font: 12px 'amble';
+  color: #3c3c3c;
+}
+.as2 .input-group li .input-title {
+  font-size: 9pt;
+}
+.as2 .input-group li .input-title .terms {
+  line-height: 14px;
+}
+.albumedit-page .business-main .input-group > li .input-title {
+  line-height: 40px;
+}
+.business-main .input-group > li .input-title.terms {
+  line-height: 10px;
+}
+.albumedit-page .business-main .input-group > li {
+  padding: 5px 0;
+}
+.albumedit-page .business-main .input-group > li input[type="text"].postal {
+  width: 100px;
+}
+.albumedit-page .business-main .input-group > li .input-title {
+  width: 205px;
+}
+.albumedit-page .business-main .input-group > li input[type="text"] {
+  width: 278px;
+}
+.selectbox .month-select {
+  width: 200px;
+}
+ul li .right-wrapper .selectbox {
+  padding-left: 8px;
+}
+ul li .right-wrapper .selectbox .select {
+  width: 256px;
+}
+.albumedit-page #business-wrapper {
+  padding-top: 15px;
+}
+.selectbox240 .select {
+  width: 256px;
+}

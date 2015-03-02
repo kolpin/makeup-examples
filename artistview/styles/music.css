@@ -1,0 +1,136 @@
+/*--------- music --------*/
+/*--------- film --------*/
+/*--------- theater --------*/
+/*--------- design --------*/
+/*--------- art --------*/
+.music-page a:hover {
+  color: #40a3dc;
+}
+.music-page a:active {
+  color: #a1a1a1;
+}
+.music-page .button {
+  background: #40a3dc;
+}
+.music-page .button:hover,
+.music-page .button:active {
+  background: #2480d3;
+  color: #FFF !important;
+}
+.music-page .button.edit-button.rearrange {
+  background: #40a3dc;
+}
+.music-page .button.edit-button.rearrange:hover,
+.music-page .button.edit-button.rearrange:active {
+  background: #2480d3;
+}
+.music-page .button.edit-button.customize {
+  background: #40a3dc;
+}
+.music-page .button.edit-button.customize:hover,
+.music-page .button.edit-button.customize:active {
+  background: #2480d3;
+}
+.music-page .button.red {
+  background: #ED1D24;
+}
+.music-page .button.red:hover,
+.music-page .button.red:active {
+  background: #c5000e;
+}
+.music-page .button.blue {
+  background: #40a3dc;
+}
+.music-page .button.blue:hover,
+.music-page .button.blue:active {
+  background: #2480d3;
+}
+.music-page .button.dark {
+  background: #424242;
+}
+.music-page .button.dark:hover,
+.music-page .button.dark:active {
+  background: #1E1E1E;
+}
+.music-page .button.light {
+  background: #E6E6E6;
+}
+.music-page .button.light:hover,
+.music-page .button.light:active {
+  background: #CECECE;
+}
+.music-page .button.myprofile {
+  background: #40a3dc;
+}
+.music-page .button.myprofile:hover,
+.music-page .button.myprofile:active {
+  background: #2480d3;
+}
+.music-page h1,
+.music-page h2,
+.music-page .store-tabs h2,
+.music-page .block-credits h2,
+.music-page .musician-funds-raised h2,
+.music-page .musician-upcoming-events h2,
+.music-page .musician-member-of h2,
+.music-page .musician-recommended-links h2,
+.music-page .musician-updates .top h2,
+.music-page .musician-store .top h2,
+.music-page .musician-groups h2 {
+  color: #40a3dc;
+}
+.music-page .image-gallery-info .socials .likes:hover:before {
+  background-position: -11px -15px;
+}
+.music-page .image-gallery-info .socials .comments:hover:before {
+  background-position: -26px -15px;
+}
+.music-page .image-gallery-info .socials .shares:hover:before {
+  background-position: -40px -15px;
+}
+.music-page .dropdown-multiselect .dropdown-items ul li.active label {
+  background-position: 1px -3px;
+}
+.music-page .block-store-menu h2 a:before {
+  background: #40a3dc;
+}
+.music-page .block-store-menu h2 a:hover:before {
+  background: #2480d3;
+}
+.music-page .block-store-menu ul li > a:hover,
+.music-page .block-store-menu ul li > a.active {
+  background: #40a3dc;
+}
+.music-page.payment-confirmation .thanks > div:before {
+  background-position: 0px -354px;
+}
+.music-page .features-membership > section > div.content.unknown i {
+  background-position: 0 0px;
+}
+.music-page .features-membership > section > div.content.starving i {
+  background-position: 0 -53px;
+}
+.music-page .features-membership > section > div.content.successfull i {
+  background-position: 0 -108px;
+}
+.music-page .features-membership > section > div.content.celebrity i {
+  background-position: 0 -161px;
+}
+.music-page .order-summary .total-summ .unknown {
+  background-position: 0 0;
+}
+.music-page .order-summary .total-summ .starving {
+  background-position: 0 -43px;
+}
+.music-page .order-summary .total-summ .succssful {
+  background-position: 0 -86px;
+}
+.music-page .order-summary .total-summ .celebrity {
+  background-position: 0 -129px;
+}
+.music-page .amount-money > li:hover {
+  background: #40a3dc;
+}
+.music-page .amount-money > li.active {
+  background: #2480d3;
+}

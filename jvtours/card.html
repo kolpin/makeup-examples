@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Юлия Высоцкая. Кулинарные туры.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='IE=EmulateIE8, IE=9' http-equiv='X-UA-Compatible'/>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="css/jcarousel.basic.css">
+    <link rel="stylesheet" href="css/jplayer.css">
+    <link href="css/fotorama.css" rel="stylesheet">
+
+    <script src='js/jquery-1.8.2.min.js'></script>
+    <script src='js/base.js'></script>
+    <script src='js/rotate3di.js'></script>
+    <script src='js/jquery.jscrollpane.min.js'></script>
+    <script src='js/jquery.mousewheel.min.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="js/jQueryRotateCompressed.2.2.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/ie7.css">
+    <![endif]-->
+
+    <script src='js/jquery.maskedinput.min.js'></script>
+    <script src='js/common.js'></script>
+    <script src="js/photos.js"></script>
+    <script src='js/fly.js'></script>
+    <script src="js/geolocation.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src='js/jquery.jplayer.min.js'></script>
+    <script src="js/fotorama.js"></script>
+    <!-- 16 KB -->
+
+    <script>
+        instant_form = true;
+        $(function () {
+            $('#pay_card_new').on("click", function () {
+                var scroll = $(window).scrollTop();
+                $('.popup_pay_card').css('top', scroll + 27);
+                $('.opacity_popup, .popup_pay_card').fadeIn();
+                return false;
+            });
+
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function () {
+                    $(this).jPlayer("setMedia", {
+                        m4v: "/videos/m4v/Big_Buck_Bunny_Trailer.m4v",
+                        ogv: "/videos/ogv/Big_Buck_Bunny_Trailer.ogv",
+                        flv: "",
+                        webmv: "/videos/webm/Big_Buck_Bunny_Trailer.webm",
+                        poster: "/videos/poster/poster.jpg"
+                    });
+                },
+                play: function () { // To avoid multiple jPlayers playing together.
+                    $(this).jPlayer("pauseOthers");
+                },
+
+                swfPath: "/js",
+                supplied: "webmv, ogv, m4v, flv",
+                size: {
+                    width: "780px",
+                    height: "488px"
+                },
+                smoothPlayBar: true,
+                cssSelectorAncestor: "#jp_container_1",
+                keyEnabled: true,
+                remainingDuration: true,
+                toggleDuration: true
+            });
+
+
+            $('.photos-items a:not(.more_photos)').hover(function () {
+                $('span, i', this).stop(true, true).fadeIn(300);
+            }, function () {
+                $('span, i', this).stop(true, true).fadeOut(300);
+            })
+
+
+            $('.close-fotorama').hover(function () {
+                $('.opacity-fotorama').show();
+            }, function () {
+                $('.opacity-fotorama').hide();
+            });
+            var fotorama2;
+            $('.photos-items a:not(.more_photos)').on("click", function (e) {
+                e.preventDefault();
+                var current = $(e.currentTarget).data('current');
+                fotorama2 = $('.fotorama').data('fotorama');
+
+                try {
+                    fotorama2.show(current);
+                    $('#current').text((fotorama2.activeIndex + 1));
+                    $('#total').text(fotorama2.data.length);
+                } catch (e) {
+                    $('.fotorama').on('fotorama:ready', function (e, fotorama) {
+
+                        fotorama.show(current);
+                        $('#current').text((fotorama.activeIndex + 1));
+                        $('#total').text(fotorama.data.length);
+
+                        $('.fotorama__arr--next').append("<span></span>");
+                        $('.fotorama__arr--prev').append("<span></span>");
+
+                        $('.fotorama__arr--next').on("click", function () {
+                            var current = parseInt($('#current').text());
+                            var max = parseInt($('#total').text());
+                            current++;
+                            if (current > max) current = 1;
+                            $('#current').text(current);
+                        });
+                        $('.fotorama__arr--prev').on("click", function () {
+                            var current = parseInt($('#current').text());
+                            var max = parseInt($('#total').text());
+                            current--;
+                            if (current < 1) current = max;
+                            $('#current').text(current);
+                        });
+                        $('.fotorama__nav__frame--thumb').on("click", function () {
+                            $('#current').text($(this).index());
+                        });
+                    });
+                }
+                $('.opacity_popup, .popup-photos-wrapp').fadeIn(500);
+            });
+            $('.photos-items a.more_photos').on("click", function (e) {
+                e.preventDefault();
+                $('.photos-items a:first').trigger("click");
+            })
+            $('.close-fotorama').on("click", function (e) {
+                e.preventDefault();
+                $('.opacity_popup, .popup-photos-wrapp').fadeOut(500);
+            });
+
+            $(this).keydown(function (eventObject) {
+                if (eventObject.which == 27) {
+                    $('.opacity_popup, .popup-photos-wrapp').fadeOut(500);
+                }
+            });
+
+            var scrollapllication = $('.price-wrapp').offset().top - 100;
+            var destination;
+            $(window).scroll(function () {
+                destination = parseInt($(this).scrollTop());
+                if (destination >= scrollapllication) {
+                    $(".side-panel .application").hide();
+                    $(".travel-application").show();
+                }
+                else {
+                    $(".side-panel .application").show();
+                    $(".travel-application").hide();
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div class="main">
+    <div class="inner">
+        <header class="main_header">
+            <div class="header_main">
+                <a href="/" id="logo"></a>
+                <nav class="main_nav">
+                    <ul>
+                        <li>
+                            <a href="#">Путешествия</a>
+                        </li>
+                        <li>
+                            <a href="#">Компания</a>
+                        </li>
+                        <li>
+                            <a href="#">Шеф-повара</a>
+                        </li>
+                        <li>
+                            <a href="#">Партнёры</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="clear"></div>
+            </div>
+            <div class="header-contacts-wrapper">
+                <div class="header-contacts">
+                    <div class="animated">
+                        <a href="#" class="phone">+7 495 <span>989−48−91</span></a>
+                        <a href="mailto:@travel@jvtours.ru" class="email">travel@jvtours.ru</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="relative">
+            <div class="travel-img-wrapp">
+                <img src="img/tmp/t1.jpg" width="1200" height="720" class="bg-img"/>
+
+                <div class="opacity"></div>
+                <div class="card-travel-content">
+                    <a href="#" id="item-country">
+                        <img src="img/flag/active/1.png"/>
+                        <span>Италия</span> 5
+                    </a>
+
+                    <div class="tour-preview">
+                        <h1>Венето ультрамарино</h1>
+                        Регион Венето — тайное сокровище и главный секрет Италии. В этом
+                        путешествии вас ждут настоящие кулинарные открытия, культурные потрясения
+                        (в лучшем значении этого слова), а также ароматы, места, вкусы, к которым
+                        никогда не прикоснётся обычный турист. Но прикоснётесь вы.
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="card-travel-wrapp">
+                    <div class="programm-wrapp">
+                        <h1>Программа</h1>
+
+                        <div class="description">
+                            <p>
+                                Приглашаем вас в удивительный регион Италии — Венето. Нашей резиденцией станет вилла <i>Куаранта</i>
+                                <i class="gray"><span>(</span>Villa Quaranta<span>)</span></i>,
+                                расположенная на термальных источниках. Мы пройдём по улицам Венеции с профессиональными
+                                гидами. Научимся готовить
+                                региональные блюда на трёх кулинарных мастер-классах под руководством итальянских
+                                шеф-поваров. Продегустируем
+                                знаменитые вина региона Венето — <i>соаве</i> <i
+                                    class="gray"><span>(</span>soave<span>)</span></i> и <i>вальполичелла</i> <i
+                                    class="gray"><span>(</span>valpolicella<span>)</span></i> на знаковых винодельнях.
+                                Побываем на
+                                историческом производстве <i>граппы</i> <i
+                                    class="gray"><span>(</span>grappa<span>)</span></i> и проведём дегустацию этого
+                                волшебного напитка.
+                            </p>
+
+                            <p>
+                                Помимо этого мы посетим производство риса одной всемирно известной марки, узнаем, как он
+                                растёт, и какие блюда из него
+                                готовят итальянцы. Познакомимся с венецианской кухней на гастрономических обедах и
+                                ужинах в ресторанах региона (в том
+                                числе отмеченных звёздами <i>Michelin</i>). Побываем на фабриках Венеции, где вручную
+                                изготавливают ткани и муранское стекло.
+                                Венеция ждёт нас круглый год!
+                            </p>
+                        </div>
+                        <div class="personal-wrapp">
+                            <div class="item">
+                                <a href="#" class="img">
+                                    <img src="img/tmp/pp1.jpg" alt=""/>
+                                </a>
+
+                                <div class="item-description">
+                                    <a href="#">Альфонсо Яккарино</a>
+
+                                    <div class="resto-name">Don Alfonso 1890</div>
+                                    <p>
+                                        Альфонсо буквально с материнским молоком впитал страсть к вину и гастрономии, а
+                                        также навыки
+                                        умелого управленца, поэтому, окончив школу гостиничного бизнеса в Стрезе, вошёл
+                                        в семейный
+                                        бизнес.
+                                    </p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="img">
+                                    <img src="img/tmp/pp2.jpg" alt=""/>
+                                </a>
+
+                                <div class="item-description">
+                                    <a href="#">Эрнесто Яккарино</a>
+
+                                    <div class="resto-name">Don Alfonso 1890</div>
+                                    <p>
+                                        Эрнесто возглавляет кухню семейного заведения со столетней историей в курортном
+                                        городке
+                                        Sant'Agata sui Due Golfi, компанию <i>Don Alfonso Consulting & Distribution, S.
+                                        r. l.</i> и ряд зарубежных
+                                        ресторанных проектов.
+                                    </p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-wrapp">
+                        <div class="video_frame">
+                            <div id="jp_container_1" class="jp-video" role="application" aria-label="media player">
+                                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                                <div class="jp-interface">
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="jp-play-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-current-time"></div>
+                                    <div class="jp-duration"></div>
+                                    <a href="javascript:;" class="jp-play" tabindex="1"></a>
+                                    <a href="javascript:;" class="jp-pause" tabindex="1"></a>
+                                    <a href="javascript:;" class="jp-stop" tabindex="1"></a>
+                                    <a href="javascript:;" class="jp-mute" tabindex="1" title="mute"></a>
+                                    <a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"></a>
+
+                                    <div class="jp-volume-bar">
+                                        <div class="jp-volume-bar-value"></div>
+                                    </div>
+                                    <a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen"></a>
+                                    <a href="javascript:;" class="jp-restore-screen" tabindex="1"
+                                       title="restore screen"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photoset">
+                            <a href="#">
+                                <img src="img/tmp/ps.jpg"/>
+                            </a>
+                            Как это было — 54 фотографии наших
+                            участников из <i>Instagram</i>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="days-wrapp">
+                        <div class="item-day">
+                            <h2>День 1.</h2>
+
+                            <div class="description">
+                                Встреча с представителем команды Юлии Высоцкой в аэропорту Венеции. Переезд на виллу <a
+                                    href="#">Куаранта</a> <i class="gray"><span>(</span>Villa Quaranta<span>)</span></i>
+                                —<br>
+                                2 часа в пути. Обед в ресторане по дороге, заселение на виллу. Свободное время: можно
+                                посетить спа, отдохнуть. Ужин<br>
+                                в ресторане виллы.
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item-day">
+                            <h2>День 2.</h2>
+
+                            <div class="description">
+                                Завтрак на вилле. Кулинарный мастер-класс – 1 на вилле винодельческого хозяйства <a
+                                    href="#">Аллегрини</a> <i class="gray"><span>(</span>Allegrini<span>)</span></i>.
+                                Обед. Осмотр
+                                погребов, дегустация вин хозяйства Аллегрини. Переезд в Верону, прогулка с
+                                профессиональным гидом по городу. Свободное
+                                время. Ужин в ресторане <a href="#">Ла Фонтанина</a> <i class="gray"><span>(</span>La
+                                Fontanina<span>)</span></i>. Возвращение на виллу.
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item-day">
+                            <h2>День 3.</h2>
+
+                            <div class="description">
+                                Завтрак на вилле. Кулинарный мастер-класс – 2 в ресторане <a href="#">Ле Гéмме ди
+                                Артемизия</a> <i class="gray"><span>(</span>Le Gemme di Artemisia<span>)</span></i>.
+                                Обед. Переезд на
+                                дистиллирию <a href="#">Поли</a> <i class="gray"><span>(</span>Poli<span>)</span></i> —
+                                исторический производитель граппы. Экскурсия на производство и дегустация. Ужин в
+                                ресторане
+                                <a href="#">Ла Локанда ди Пьеро</a> <i class="gray"><span>(</span>La Locanda di
+                                Piero<span>)</span></i>. Возвращение на виллу.
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item-day">
+                            <h2>День 4.</h2>
+
+                            <div class="description">
+                                Завтрак на вилле. Кулинарный мастер-класс – 3 в <i>агритуризмо</i> <i
+                                    class="gray"><span>(</span>agriturismo<span>)</span></i> <a href="#">И Костанти</a>
+                                <i class="gray"><span>(</span>I Costanti<span>)</span></i>. Обед. Переезд на
+                                винодельческое хозяйство <a href="#">Анзельми</a> <i
+                                    class="gray"><span>(</span>Anselmi<span>)</span></i>. Осмотр винодельни, дегустация
+                                вин местности Соаве. Ужин в ресторане Соаве
+                                <a href="#">Энотека Рэальда</a> <i class="gray"><span>(</span>Enoteca
+                                Realda<span>)</span></i>. Возвращение на виллу.
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item-day">
+                            <h2>День 5.</h2>
+
+                            <div class="description">
+                                Завтрак на вилле. Переезд на производство риса <a href="#">Мелотти</a> <i
+                                    class="gray"><span>(</span>Melotti<span>)</span></i>. Осмотр производства риса. Обед
+                                в ресторане хозяйства
+                                <a href="#">Мелотти</a>. Переезд в Сирмионе. Свободное время на озере Гарда <i
+                                    class="gray"><span>(</span>Lago di Garda<span>)</span></i>. Ужин на озере Гарда в
+                                ресторане<br>
+                                <a href="#">Сперанцина</a> <i class="gray"><span>(</span>La Speranzina<span>)</span></i>.
+                                Возвращение в отель.
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item-day">
+                            <h2>День 6.</h2>
+
+                            <div class="description">
+                                Завтрак в отеле. Переезд в Венецию. Экскурсия с профессиональным гидом. Визит на фабрику
+                                тканей ручной работы <a href="#">Луиджи
+                                Бевилякуа</a> <i class="gray"><span>(</span>Luigi Bevilacqua<span>)</span></i>. Обед в
+                                ресторане Венеции <a href="#">Вечо Фритолин</a> <i class="gray"><span>(</span>Vecio
+                                Fritolin<span>)</span></i>. Визит на фабрику ручного производства
+                                предметов интерьера из муранского стекла <a href="#">Венини</a> <i
+                                    class="gray"><span>(</span>Venini<span>)</span></i> на о. Мурано. Свободное время в
+                                Венеции. Возвращение на виллу
+                                и ужин в ресторане виллы.
+                            </div>
+                            <div class="relative">
+                                <div class="clarification">
+                                    <div class="item">
+                                        <p>
+                                            <i>Луиджи Бевилякуа</i> <i class="gray"><span>(</span>Luigi Bevilacqua<span>)</span></i>,
+                                            Венеция — фабрика с трёхвековой историей по производству
+                                            тканей ручной работы.
+                                        </p>
+
+                                        <p>
+                                            Гордостью фабрики является ручное производство текстиля, который создаётся
+                                            на подлинных
+                                            ткацких станках XVIII—XIX вв. Все фазы обработки, как и в прошлом,
+                                            осуществляются вручную: от
+                                            подготовки архивного узора и основы до плетения нитей. Ткацкие станки и
+                                            основное оборудование
+                                            фабрики XVIII века принадлежат Школе шёлка Венецианской республики, на
+                                            которых производят
+                                            ткань только вручную. Фабрика владеет историческим архивом рисунков (3 500
+                                            узоров) и является
+                                            единственным итальянским производителям тиснёного бархата.
+                                        </p>
+
+                                        <p>
+                                            Изысканные ткани фабрики украшают королевские дворцы, театры, престижные
+                                            резиденции
+                                            и частные дома по всему миру. <i>Луиджи Бевилякуа</i> находится под охраной
+                                            ЮНЭСКО — фабрика,
+                                            сохранившая уникальные традиции ручного производства.
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <p>
+                                            <i>Венини</i> <i class="gray"><span>(</span>Venini<span>)</span></i>, о.
+                                            Мурано — фабрика по производству предметов интерьера из муранского стекла
+                                            ручной работы.
+                                        </p>
+
+                                        <p>
+                                            История фабрики начинается в 1921-м году. Основатель Паоло Венини <i
+                                                class="gray"><span>(</span>Paolo Venini<span>)</span></i> объединил
+                                            лучших артистов, работающих со стеклом на о. Мурано, с самыми известными
+                                            интерьерными
+                                            художниками и дизайнерами. Благодаря их совместному творчеству и новым
+                                            технологиям работы
+                                            со стеклом, фабрика становится известной за пределами Италии. Работы фабрики
+                                            представлены
+                                            в самых крупных музеях современного искусства. Известные отели, театры,
+                                            резиденции украшают
+                                            свои интерьеры объектами, изготовленными на фабрике.
+                                        </p>
+
+                                        <p>
+                                            На сегодняшний день Венини является хранителем старинного ремесла работы со
+                                            стеклом
+                                            и законодателем новых технологий. Артисты фабрики знают стекло досконально,
+                                            поэтому всегда
+                                            работают на грани возможностей стекла как материала. В Италии есть
+                                            поговорка: <i>Только побывав
+                                            на фабрике Венини, можно познать, чтó такое муранское стекло.</i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="footnote">
+                                    <div class="item">
+                                        <img src="img/tmp/ff1.jpg" alt=""/>
+                                        Мало какая современная фабрика
+                                        производит шёлковые ткани ручным
+                                        способом. <i>Луиджи Бевилякуа</i> в числе
+                                        таких редких фабрик.
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/tmp/ff2.jpg" alt=""/>
+                                        <i>Tessuti battuti</i> авторства Карло Скарпы
+                                        (<i>Carlo Scarpa</i>), 1940 — яркий пример
+                                        артистического подхода к стеклу мастеров
+                                        фабрики <i>Венини</i>.
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="item-day">
+                            <h2>День 7.</h2>
+
+                            <div class="description">
+                                Завтрак на вилле. Переезд в аэропорт Венеции. Перелёт в Москву.
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="region-wrapp">
+                        <h1>Регион</h1>
+
+                        <div class="region-map">
+                            <img src="img/regionmap.jpg"/>
+                        </div>
+                        <div class="relative">
+                            <div class="region-description">
+                                <p>
+                                    Регион Венето — тайное сокровище и главный секрет Италии. Для начала — сама Венеция:
+                                    город, будто сотканный из дымки<br>
+                                    и туманов Гранд-канала <i class="gray"><span>(</span>Canal Grande<span>)</span></i>,
+                                    монументальный и неуловимый. Контраст между сумраком водных артерий<br>
+                                    и ослепляющим солнцем, которое встречает вас на площади Святого Марка; толпы
+                                    праздных зевак и пустота перепутанных
+                                    улочек; тишина скрытых сеткой каналов парадных церквей и шум колоколов, не дающий
+                                    спать по утрам. Дороговизна всего —
+                                    и целый мир грошовых лавочек, где с наслаждением покупаешь в кульках россыпи фруктов
+                                    и сушёных помидоров.
+                                </p>
+
+                                <p>
+                                    Венеция вроде бы, как куртизанка на балконе палаццо, охотно выставляет себя напоказ,
+                                    но самое интересное оставляет при
+                                    себе. Туристический миф <i>В перенаселённом городе негде достойно поесть</i> — миф
+                                    лишь отчасти. В Венеции необходимо
+                                    обзавестись достойным гидом и почувствовать себя с ним не туристом, а венецианцем.
+                                    Смело открывать двери крохотных
+                                    пекарен, насыщенных медовым ароматом сладких булочек; стать любителем чикетти и
+                                    трамезини, крохотных типично
+                                    венецианских сэндвичей с рыбным соусом или муссом из креветок; попробовать <i>печень
+                                    по-венециански</i>, нежнейшее блюдо<br>
+                                    со сладким томлёным луком и винной подливкой.
+                                </p>
+
+                                <p>
+                                    Венецианские пригороды не менее прекрасны, чем сама Венеция. В Бассано-дель-Граппа
+                                    <i class="gray"><span>(</span>Bassano del Grappa<span>)</span></i> делают лучшую
+                                    грáппу в Италии. Центр города заполнен магазинчиками, где продают граппу всех сортов
+                                    — в подарочных упаковках, в тонких
+                                    бутылочках и в кувшинах из муранского стекла.
+                                </p>
+
+                                <p>
+                                    Кухня Венето прихотлива и изысканна. Простые итальянские рецепты здесь прошли школу
+                                    во дворцах дóжей, некогда
+                                    стоящих у руля могущественнейшей республики Святого Марка. Здесь всегда умели
+                                    обращаться со специями: благодаря
+                                    мореплаванию доступ к ним у венецианцев появился раньше, чем у других европейцев.
+                                    Море дарило и продолжает дарить
+                                    местным блюдам богатство морепродуктов — гребешки, лангусты, устрицы. Добыча
+                                    гурманов — <i>risotto al nero disepia</i> , то есть
+                                    черный рис с чернилами каракатицы. Даже обычной поленте в Венето умеют придать
+                                    законченность и совершенство,
+                                    свойственное разве что великой венецианской живописной школе.
+
+                                </p>
+
+                                <p class="no-margin-bottom">
+                                    Венето — услада для глаз не меньше, чем для желудка. Кроме венецианских тайн,
+                                    провинция может предложить романтику
+                                    Вероны, потрясающие фрески Падуи, виллы Виченцы, улочки Тревизо, чистейшее
+                                    Адриатическое побережье. После вечной
+                                    сутолоки столицы республики Святого Марка здесь перемещаешься как будто в иное
+                                    измерение. Энергия, краски провинции
+                                    сохранили то наивное очарование и ощущение настоящего патриархального мира, которое
+                                    невозможно срежиссировать или
+                                    занести в туристические каталоги.
+                                </p>
+                            </div>
+                            <div class="quote">
+                                <div class="quote-text">
+                                    <div>
+                                        ЧТОБЫ ПОДЛИННО УЗНАТЬ ИТАЛИЮ,
+                                        ПУТЕШЕСТВЕННИКУ НУЖНО
+                                        ПРЕЛОМИТЬ ВМЕСТЕ С НЕЙ ЕЕ ХЛЕБ
+                                        И РАЗДЕЛИТЬ С НЕЙ ЧАШУ ЕЕ ВИНА.
+                                    </div>
+                                </div>
+                                <div class="author">
+                                    <a href="#" class="img">
+                                        <img src="img/tmp/q1.jpg">
+                                    </a>
+
+                                    <div class="named">
+                                        Павел Муратов
+                                        <i>Образы Италии, 1912</i>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="quote-comment">
+                                    Пожалуй, данное утверждение можно
+                                    взять за принцип, отправляясь в эти
+                                    места.
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="photos-wrapp">
+                        <div class="photos-items">
+                            <a href="#" data-current="0">
+                                <img src="img/tmp/ii1.jpg"/>
+                                <span></span>
+                                <i></i>
+                            </a>
+                            Шеф-поварá научат вас готовить
+                            особую лазанью — по-венециански
+                        </div>
+                        <div class="photos-items">
+                            <a href="#" data-current="1">
+                                <img src="img/tmp/ii2.jpg"/>
+                                <span></span>
+                                <i></i>
+                            </a>
+                            Дичь, грибы, каштаны, орехи —
+                            всего в избытке в этом регионе
+                        </div>
+                        <div class="photos-items">
+                            <a href="#" data-current="2">
+                                <img src="img/tmp/ii3.jpg"/>
+                                <span></span>
+                                <i></i>
+                            </a>
+                            Красота вечерней Венеции поразит
+                            даже искушённого туриста
+                        </div>
+                        <div class="photos-items no-margin-right">
+                            <a href="#" data-current="3">
+                                <img src="img/tmp/ii4.jpg"/>
+                                <span></span>
+                                <i></i>
+                            </a>
+                            Романтика региона Венето
+                        </div>
+                        <div class="photos-items">
+                            <a href="#" data-current="4">
+                                <img src="img/tmp/ii5.jpg"/>
+                                <span></span>
+                                <i></i>
+                            </a>
+                            Гребешки, лангусты, устрицы —
+                            ходовой товар в Венеции
+                        </div>
+                        <div class="photos-items">
+                            <a href="#" data-current="5">
+                                <img src="img/tmp/ii6.jpg"/>
+                                <span></span>
+                                <i></i>
+                            </a>
+                            Даже хлеб и выпечка в Венеции
+                            особенные
+                        </div>
+                        <div class="photos-items">
+                            <a href="#" data-current="6">
+                                <img src="img/tmp/ii7.jpg"/>
+                                <span></span>
+                                <i></i>
+                            </a>
+                            Каждый квадратный сантиметр
+                            хранит дух изящной древности
+                        </div>
+                        <div class="photos-items no-margin-right">
+                            <a href="#" class="more_photos">
+                                +13
+                            </a>
+                            Ещё 13 фотографий
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="popup popup-photos-wrapp">
+                            <a href="#" class="close-fotorama"></a>
+
+                            <div class="counter">
+                                <span id="current"></span> / <span id="total"></span>
+                            </div>
+                            <div class="opacity-fotorama"></div>
+                            <div class="fotorama" data-auto="false"></div>
+                            <script>
+                                $('.fotorama').fotorama({
+                                    width: '100%',
+                                    ratio: 680 / 454,
+
+                                    nav: 'thumbs',
+                                    thumbwidth: 68,
+                                    thumbheight: 46,
+                                    thumbborderwidth: 0,
+                                    thumbmargin: 0,
+                                    fit: 'cover',
+                                    loop: true,
+                                    arrows: true,
+                                    click: false,
+                                    swipe: false,
+                                    hash: false,
+                                    shadows: false,
+                                    data: [
+                                        {
+                                            img: 'img/tmp/ii1.jpg',
+                                            thumb: 'img/tmp/ii1.jpg',
+                                            caption: 'Шеф-поварá научат вас готовить особую лазанью — по-венециански',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/ii2.jpg',
+                                            thumb: 'img/tmp/ii2.jpg',
+                                            caption: 'Дичь, грибы, каштаны, орехи — всего в избытке в этом регионе',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/ii3.jpg',
+                                            thumb: 'img/tmp/ii3.jpg',
+                                            caption: 'Красота вечерней Венеции поразит даже искушённого туриста',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/ii4.jpg',
+                                            thumb: 'img/tmp/ii4.jpg',
+                                            caption: 'Романтика региона Венето',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/ii5.jpg',
+                                            thumb: 'img/tmp/ii5.jpg',
+                                            caption: 'Гребешки, лангусты, устрицы — ходовой товар в Венеции',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/ii6.jpg',
+                                            thumb: 'img/tmp/ii6.jpg',
+                                            caption: 'Даже хлеб и выпечка в Венеции особенные',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/ii7.jpg',
+                                            thumb: 'img/tmp/ii7.jpg',
+                                            caption: 'Каждый квадратный сантиметр хранит дух изящной древности',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/images/8.jpg',
+                                            thumb: 'img/tmp/images/8.jpg',
+                                            caption: '',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/images/9.jpg',
+                                            thumb: 'img/tmp/images/9.jpg',
+                                            caption: '',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/images/10.jpg',
+                                            thumb: 'img/tmp/images/10.jpg',
+                                            caption: '',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/images/11.jpg',
+                                            thumb: 'img/tmp/images/11.jpg',
+                                            caption: '',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/images/12.jpg',
+                                            thumb: 'img/tmp/images/12.jpg',
+                                            caption: '',
+                                            fit: 'cover'
+                                        },
+                                        {
+                                            img: 'img/tmp/images/13.jpg',
+                                            thumb: 'img/tmp/images/13.jpg',
+                                            caption: '',
+                                            fit: 'cover'
+                                        }
+                                    ]
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="price-wrapp">
+                        <h1>Стоимость</h1>
+
+                        <div class="relative">
+                            <div class="cost-wrapp">
+                                <a class="travel-application" href="#">
+                                    <i></i>
+                                    <span>заявка</span>
+                                </a>
+
+                                <div class="costs">
+                                    <span class="from">4 800</span><span class="to"> / 5 100</span>
+
+                                    <div class="varios-price">
+                                        Стоимость указана в евро — €. Варианты оплаты:
+                                        <a target="_blank"
+                                           href="img/Primer-zapolneniya-platyozhnogo-porutcheniya_(KPYV).jpg">банковский
+                                            перевод</a>, <a href="#" id="pay_card_new"><span>картой онлайн</span></a>,
+                                        картой или наличными
+                                        в офисе.
+                                    </div>
+                                </div>
+                                <div>12—17 апреля</div>
+                                <div>17—22 апреля</div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="inclusive">
+                                <div class="title">Включено</div>
+                                <div class="description">
+                                    Завтраки на вилле, где организовано проживание; обеды и ужины в лучших ресторанах
+                                    региона.<br>
+                                    3 кулинарных мастер-класса с итальянскими шеф-поварами. Посещение знаковых мест
+                                    Вероны<br>
+                                    и Венеции со знатоками региона. Дегустации местных продуктов в хозяйствах региона,
+                                    экскурсии на
+                                    винодельни, сыроварни, энотеки, а также посещение фермерского рынка. Транспортное
+                                    обслуживание (комфортный микроавтобус на 8 человек, лодки). Перевод с
+                                    итальянского<br>
+                                    и английского языков на русский в течение всего путешествия. Предоставление
+                                    подробных<br>
+                                    рецептов с детализацией приготовления. Дипломы и подарки.
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="inclusive">
+                                <div class="title">Не включено</div>
+                                <div class="description">
+                                    Виза и авиабилеты Москва — Венеция (туда и обратно). <a href="#"
+                                                                                            class="insurance"><span>Медицинский страховой полис<br>
+                                    выезжающего за рубеж</span></a> (<a href="#" class="order-now">закажите прямо
+                                    сейчас</a>). Если необходимо, компания-партнёр, с которой<br>
+                                    у нас заключён контракт, поможет с оформлением всех нужных документов.
+                                    <br><br><br><br><br><br><br>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <a href="#" class="price-bottom-banner" target="_blank">
+                                <img src="img/tmp/banner-bottom.jpg"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="side-panel">
+        <a href="#" class="application">
+            <i></i><span>заявка</span>
+        </a>
+        <ul>
+            <li>
+                <a href="#" class="faq">
+                    <span>Вопросы и ответы</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="cont-manager">
+                    <span>Связаться с менеджером</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="subscribe">
+                    <span>Подписка на обновления</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="contacts">
+                    <span>Контактная информация</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="other-sites">
+                    <span>Другие сайты компании</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="social-networks">
+            <li></li>
+            <li>
+                <a href="#" class="sn-fb"></a>
+            </li>
+            <li>
+                <a href="#" class="sn-vk"></a>
+            </li>
+            <li>
+                <a href="#" class="sn-in"></a>
+            </li>
+        </ul>
+        <div class="copy"></div>
+    </nav>
+</div>
+<div class="opacity_popup"></div>
+
+<div class="popup popup_ordertours">
+    <div class="padding_form">
+        <a href="#" class="close_ordertours"></a>
+
+        <div class="ordtour_wrapp">
+            <h1 class="title_popup title_country_h1" style="margin: 0 0 26px 0 !important;">ЗАЯВКА НА ПУТЕШЕСТВИЕ</h1>
+        </div>
+        <div class="scroll">
+            <div class="scroll_tour_wrap">
+                <form class="ordertours_form">
+                    <div class="ordtour_wrapp">
+                        <div id="info_ord_tour">
+                            <img src="img/flag/active/7.png"/>
+                            <a href="#">Затерянный мир Тосканы</a>
+                            <!--ссылка или просто название если находимся в карточке тура - Затерянный мир Тосканы-->
+                        </div>
+
+                        <div class="step">
+                            <div class="title">Шаг 1. Выберите тип размещения</div>
+
+                            <div class="accomm active" data-aid="1">
+                                <i class="ico double"></i>
+
+                                <div class="name">DBL½</div>
+                                <div class="a-title">двухместный (парный) номер</div>
+                                <div class="price">4 400 € / чел.</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="accomm" data-aid="2">
+                                <i class="ico single"></i>
+
+                                <div class="name">SGL</div>
+                                <div class="a-title">одноместный (персональный) номер</div>
+                                <div class="price">5 100 € / чел.</div>
+                                <div class="clear"></div>
+                            </div>
+
+                            <input type="hidden" name="accomm_id" value="1"/>
+                        </div>
+
+
+                        <div class="step">
+                            <div class="title">Шаг 2. Выберите дату</div>
+                            <div class="otours active" data-id="1">
+                                <i class="apply_tour"></i>
+
+                                <div class="date">12-17 апреля</div>
+                                <div class="places">осталось <b>6</b> мест</div>
+                                <div class="price">4 400 € / чел.</div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="otours" data-id="2">
+                                <i class="apply_tour"></i>
+
+                                <div class="date">17-22 апреля</div>
+                                <div class="places">осталось <b>2</b> места</div>
+                                <div class="price">14 400 € / чел.</div>
+                                <div class="clear"></div>
+                            </div>
+                            <input type="hidden" name="otour_id" value="1"/>
+                        </div>
+                        <div class="step">
+                            <div class="title">Шаг 3. Определите количество участников</div>
+                            <a href="#" class="minus passive"></a>
+
+                            <div class="count_people">1</div>
+                            <a href="#" class="plus"></a>
+                            <input type="hidden" name="count_people" value="1"/>
+                        </div>
+                        <div class="step last">
+                            <div class="title">Шаг 4. Заполните контактную информацию</div>
+                            <div class="inp_wrap"><input type="text" name="user_name" value=""
+                                                         class="input_order"/><span> — имя и фамилия</span></div>
+                            <div class="inp_wrap"><input type="text" name="user_email" value=""
+                                                         class="input_order"/><span> — эл. почта</span></div>
+                            <div class="inp_wrap"><input type="text" name="mobile_phone" value="" class="input_order"
+                                                         id="mobile_phone"/><span> — моб. телефон</span></div>
+
+                        </div>
+                        <button class="send_button">ОТПРАВИТЬ ЗАЯВКУ<i></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="popup popup_application_to_order">
+    <div class="padding_form">
+        <h1 class="title_popup title_country_h1">ЗАЯВКА НА ПУТЕШЕСТВИЕ <a href="#" class="close_application"></a></h1>
+
+        <div class="scroll">
+            <div class="scroll_tour_wrap">
+                <div class="columns">
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/1.png)"></i>Бельгия <span>2</span>
+                        </li>
+                        <li><a href="#" rel="1">Бельгия в стиле модерн</a></li>
+                        <li><a href="#" rel="2">Вкус Фландрии</a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/2.png)"></i>Великобритания <span>1</span>
+                        </li>
+                        <li><a href="#" rel="3">Гастрономический Лондон</a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/3.png)"></i>Грузия <span>3</span>
+                        </li>
+                        <li><a href="#" rel="4">Гастрономическая Грузия</a></li>
+                        <li><a href="#" rel="5">Многоголосие кухонь</a></li>
+                        <li><a href="#" rel="6">Страна сыра и вина</a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/4.png)"></i>Израиль <span>2</span>
+                        </li>
+                        <li><a href="#" rel="7"><span>Гастрономия, искусство, культура</span></a></li>
+                        <li><a href="#" rel="8">Спа-гурме-уикенд в Израиле</a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/5.png)"></i>Исландия <span>1</span>
+                        </li>
+                        <li><a href="#" rel="9">Тепло ледяной Исландии</a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/6.png)"></i>Испания <span>1</span>
+                        </li>
+                        <li><a href="#" rel="10">Секреты Каталонии</a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/7.png)"></i>Италия <span>5</span>
+                        </li>
+                        <li><a href="#" rel="11">Затерянный мир Тосканы</a></li>
+                        <li><a href="#" rel="12">Изысканный Пьемонт</a></li>
+                        <li><a href="#" rel="13">Позитано и Неаполь с Юлией Высоцкой</a></li>
+                        <li><a href="#" rel="14">Тоскана с Юлией Высоцкой</a></li>
+                        <li><a href="#" rel="15">Умбрия — Тоскана</a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/8.png)"></i>Латвия <span>1</span>
+                        </li>
+                        <li><a href="#" rel="16"><span>Эко-гурме-уикенд в Латвии</span></a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/9.png)"></i>Марокко <span>3</span>
+                        </li>
+                        <li><a href="#" rel="17">И Бог создал женщину</a></li>
+                        <li><a href="#" rel="18">Касабланка — Марракеш: океан и кухня</a></li>
+                        <li><a href="#" rel="19">Сказочный Марракеш</a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/10.png)"></i>Словения - Хорватия <span>1</span>
+                        </li>
+                        <li><a href="#" rel="20">Путешествие с ароматом тыквенных семечек</a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/11.png)"></i>Франция <span>4</span>
+                        </li>
+                        <li><a href="#" rel="21">Бордо</a></li>
+                        <li><a href="#" rel="22">Гурме-уикенд в Бордо</a></li>
+                        <li><a href="#" rel="23">Дордонь — Бордо</a></li>
+                        <li><a href="#" rel="24">Прованс</a></li>
+                    </ul>
+                    <ul class="ultours">
+                        <li class="item">
+                            <i style="background: url(img/flag/active/12.png)"></i>Швеция <span>1</span>
+                        </li>
+                        <li><a href="#" rel="25"><span>Западная Швеция</span></a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popup popup_faq">
+    <h1 class="name_personal faqh1"><a href="#" class="close_faq"></a>Вопросы и ответы</h1>
+
+    <div class="scroll_wrap">
+        <div class="top_overflow"></div>
+        <div class="down_overflow"></div>
+        <div class="faq_content">
+            <div class="relative faq_rel">
+                <ul>
+                    <li><span>Какие условия, важны ли кулинарные навыки?</span>
+                        Наши путешествия предназначены для всех, кто хочет научиться
+                        готовить и узнать новые техники приготовления блюд. Мы будем
+                        рады участникам с любым уровнем подготовки.
+                    </li>
+                    <li><span>Помогаете ли Вы с билетами и визой?</span>
+                        Да. Оформлением виз, авиабилетов и медицинских страховок
+                        занимается дружественная компания-партнёр, с которой у нас
+                        заключён контракт.
+                    </li>
+                    <li><span>Можно ли брать с собой детей?</span>
+                        Мы всегда рады маленьким кулинарам. Однако просим
+                        родителей учитывать, что наши путешествия могут показаться
+                        насыщенными не только ребёнку, но и взрослому человеку.
+                        Обращаем внимание, что дети могут уставать во время поездок
+                        по региону, поэтому рекомендуем брать помощника, который
+                        присмотрит за ребёнком. Со своей стороны мы делаем всё
+                        возможное, чтобы обеспечить комфорт приезжающим детям.
+                    </li>
+                    <li><span>Возможно ли участие, если я не из Москвы?</span>
+                        К нам приезжают участники из разных стран, группа собирается
+                        в аэропорту, после чего мы вместе отправляемся к месту
+                    </li>
+                </ul>
+                <ul class="no_margin_right">
+                    <li><span>Что, если у меня пищевая аллергия?</span>
+                        Специальная анкета, которую вы заполните перед поездкой,
+                        позволит нам предусмотреть все важные моменты, связанные
+                        со здоровьем, и сформировать меню таким образом, чтобы вы
+                        чувствовали себя комфортно во время путешествия.
+                    </li>
+                    <li><span>Сколько участников в группе?</span>
+                        Количество участников варьируется в зависимости от
+                        конкретных дат. В среднем это 5—7 человек.
+                    </li>
+                    <li><span>Каковы условия отказа от путешествия?</span>
+                        Вы вправе досрочно и в одностороннем порядке расторгнуть
+                        договор. Но при условии оплаты понесённых расходов,
+                        связанных с подготовкой к путешествию. Данные расходы мы
+                        подтверждаем документально.
+                    </li>
+                    <li><span>Дополнительные расходы во время путешествия?</span>
+                        Завтраки, обеды, ужины и транспортные расходы, участие
+                        в мастер-классах и дегустациях, посещение виноделен,
+                        а также памятные подарки — всё это включено в стоимость.
+                        Дополнительные расходы могут возникнуть, если вы
+                        захотите купить подарки себе, своим родственникам или друзьям
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup popup_cont_manager">
+    <form class="fitback_form">
+        <div class="padding_form">
+            <h1 class="title_popup"><a href="#" class="close_cnt_mngr"></a>СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ</h1>
+
+            <div><input type="text" name="user_name" value="" id="contact_name"/><span> — имя и фамилия</span></div>
+            <div><input type="text" name="user_email" value="" id="contact_email"/><span> — эл. почта</span></div>
+            <div><input type="text" name="mobile_phone" value="" id="contact_phone"/><span> — моб. телефон</span></div>
+            <div><textarea name="message" id="contact_body"></textarea><span> — сообщение</span></div>
+        </div>
+        <button class="send_button">ОТПРАВИТЬ СООБЩЕНИЕ<i></i></button>
+    </form>
+</div>
+<div class="popup popup_subscribe">
+    <form class="rss_form">
+        <div class="padding_form">
+            <h1 class="title_popup"><a href="#" class="close_subs"></a>ПОДПИСКА НА ОБНОВЛЕНИЯ</h1>
+
+            <div>
+                Мы активно развиваем новые направления, открываем новые страны
+                и совершенствуем наши программы. Подпишитесь на обновления и будьте
+                в курсе новостей.<br><br>
+                Если вам не понравятся наши письма, посвящённые обновлениям, вы всегда сможете
+                отписаться.
+            </div>
+            <div><input type="text" name="user_name" value="" id="subscriber_name"/><span> — имя и фамилия</span></div>
+            <div><input type="text" name="user_email" value="" id="subscriber_email"/><span> — эл. почта</span></div>
+        </div>
+        <button class="send_button">Подписаться<i></i></button>
+    </form>
+</div>
+<div class="popup popup_other_sites">
+    <div class="padding_form">
+        <h1 class="title_popup"><a href="#" class="close_other"></a>ДРУГИЕ САЙТЫ КОМПАНИИ</h1>
+
+        <div>
+            <a href="#" class="others_sites_link">
+                <img class="hover" src="img/others/logo_1_hover.png" width="150" height="75"/>
+                <img src="img/others/logo_1.png" width="150" height="75"/>
+                <span class="url_others">www.juliavysotskaya.com<i></i></span>
+            </a>
+            <a href="#" class="others_sites_link">
+                <img class="hover" src="img/others/logo_2_hover.png" width="150" height="75"/>
+                <img src="img/others/logo_2.png" width="150" height="75"/>
+                <span class="url_others">www.edimdoma.ru<i></i></span>
+            </a>
+            <a href="#" class="others_sites_link">
+                <img class="hover" src="img/others/logo_3_hover.png" width="150" height="75"/>
+                <img src="img/others/logo_3.png" width="150" height="75"/>
+                <span class="url_others">www.studio.jvcompany.ru<i></i></span>
+            </a>
+            <a href="#" class="others_sites_link no_margin_right">
+                <img class="hover" src="img/others/logo_4_hover.png" width="150" height="75"/>
+                <img src="img/others/logo_4.png" width="150" height="75"/>
+                <span class="url_others">www.ernik.ru<i></i></span>
+            </a>
+            <a href="#" class="others_sites_link">
+                <img class="hover" src="img/others/logo_5_hover.png" width="150" height="75"/>
+                <img src="img/others/logo_5.png" width="150" height="75"/>
+                <span class="url_others">www.foodembassy.ru<i></i></span>
+            </a>
+            <a href="#" class="others_sites_link">
+                <img class="hover" src="img/others/logo_6_hover.png" width="150" height="75"/>
+                <img src="img/others/logo_6.png" width="150" height="75"/>
+                <span class="url_others">www.konchalovsky.ru<i></i></span>
+            </a>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="popup popup_copy">
+    <div class="padding_form">
+        <h1 class="title_popup"><a href="#" class="close_copy"></a>АВТОРСКИЕ ПРАВА</h1>
+        <ul class="fundamentals">
+            <li>
+                <span>Основные положения</span>
+                Сайт — а именно его текстовое содержание, фотографии, видеофайлы, шрифты и другая
+                информация — являются собственностью ООО <i>Кулинарные путешествия Юлии Высоцкой</i>. Мы
+                будем благодарны, если в процессе цитирования материалов сайта вы разместите фразу
+                <i>По материалам сайта www.jvtours.ru</i> — данная фраза должна иметь активную ссылку.
+            </li>
+        </ul>
+        <ul class="authors">
+            <li>
+                <span>Тексты</span>
+                Людмила Сальникова
+                <i>фуд-редактор журнала <i>Хлеб-соль</i></i>
+            </li>
+            <li>
+                <span>Фотографы</span>
+                Екатерина Дёмина<br>
+                Михаил Королёв<br>
+                Светлана Малыхина<br>
+                Юлия Каурова<br>
+                Alla Kishek<br>
+                Olger Andrésson<br>
+                Toerisme Mechele<br>
+                Tom Fakler
+            </li>
+            <li class="no_margin_right">
+                <span>Фотобанки</span>
+                www.milo-profi.be<br>
+                www.shutterstock.com<br>
+                www.wallbase.cc
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="popup popup_contacts">
+    <div class="cont_wrap">
+        <div id="cont_text">
+            <div class="padding">
+                <h1><a href="#" class="close_cont"></a>КОНТАКТНЫЕ ДАННЫЕ</h1>
+
+                <div class="contacts">
+                    <div class="left">
+                        <div class="phone">+7 495 <span>989−48−91</span></div>
+                        <div class="address">
+                            Эл. почта: <a href="#">travel@jvtours.ru</a><br>Адрес: Москва, ул. Правды, 21, стр. 1
+                        </div>
+                    </div>
+                    <div class="right">
+                        Звоните: 10.00—19.00, понедельник–пятница.
+                        Пишите: круглосуточно. С радостью ответим на
+                        все вопросы. С вами будет работать ваш
+                        персональный менеджер.
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <ul class="cont_tabs">
+                    <li>
+                        <div class="num_tab one" data-item="1"><i>от м. Савёловская</i></div>
+                        <div class="method">пешком</div>
+                    </li>
+                    <li>
+                        <div class="num_tab two" data-item="2"><i>от м. Белорусская</i></div>
+                        <div class="method">пешком</div>
+                    </li>
+                    <li>
+                        <div class="num_tab three" data-item="3"><i id="addr_text">от Газетного пер., 12</i><span> — <a
+                                href="#" id="edit"><b>изменить адрес</b></a></span></div>
+                        <div class="method">на автомобиле: <span id="car_dist">4.6 км, 9 мин</span></div>
+                        <div class="edit_address">
+                            <input type="text" id="address"/>
+                            <a href="#" id="apply"></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="relative">
+                    <div class="top_overflow_cont"></div>
+                    <div class="down_overflow_cont"></div>
+                    <div class="tabs_wrapper">
+                        <div class="tab_content tc_1">
+                            <ol id="panel_1">
+
+                            </ol>
+                        </div>
+                        <div class="tab_content tc_2">
+                            <ol id="panel_2">
+
+                            </ol>
+                        </div>
+                        <div class="tab_content tc_3">
+                            <div class="relative load_address" id="directions_panel">
+                                <ol id="panel_3">
+
+                                </ol>
+                            </div>
+                            <a href="#" class="see_on_map">Посмотрите на карте<i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cont_map">
+            <div class="slide_map"><i></i></div>
+            <div class="opacity_map"></div>
+            <div id="map-canvas"></div>
+            <div class="half_opacity_left"><i class="icons_map back"></i></div>
+            <a href="#" class="icons_map print"></a>
+        </div>
+    </div>
+</div>
+<div class="popup popup_order">
+    <form class="order_form">
+        <div class="padding_form">
+            <h1 class="title_popup"><a href="#" class="close_order"></a>Заявка</h1>
+
+            <div class="step">
+                <div class="title">Шаг 1. Выберите дату</div>
+                <div class="tours" data-id="1">
+                    <i class="apply_tour"></i>
+
+                    <div class="date">12-17 апреля</div>
+                    <div class="places">осталось <b>6</b> мест</div>
+                    <div class="price">4 400 € / чел.</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="tours" data-id="2">
+                    <i class="apply_tour"></i>
+
+                    <div class="date">17-22 апреля</div>
+                    <div class="places">осталось <b>2</b> места</div>
+                    <div class="price">14 400 € / чел.</div>
+                    <div class="clear"></div>
+                </div>
+                <input type="hidden" name="tour_id"/>
+            </div>
+            <div class="step">
+                <div class="title">Шаг 2. Определите количество участников</div>
+                <a href="#" class="minus passive"></a>
+
+                <div class="count_people">1</div>
+                <a href="#" class="plus"></a>
+                <input type="hidden" name="count_people" value="1"/>
+            </div>
+            <div class="step last">
+                <div class="title">Шаг 3. Заполните контактную информацию</div>
+                <div class="inp_wrap"><input type="text" name="user_name" value="" class="input_order"/><span> — имя и фамилия</span>
+                </div>
+                <div class="inp_wrap"><input type="text" name="user_email" value="" class="input_order"/><span> — эл. почта</span>
+                </div>
+                <div class="inp_wrap"><input type="text" name="phone" value="" class="input_order"
+                                             id="mobile_phone2"/><span> — моб. телефон</span></div>
+
+            </div>
+        </div>
+        <button class="send_request">ОТПРАВИТЬ ЗАЯВКУ<i></i></button>
+    </form>
+</div>
+
+<div class="popup popup_pay_card">
+    <div class="padding_form">
+        <h1 class="title_popup"><a href="#" class="close_pay_card"></a>ОПЛАТА КАРТОЙ ОНЛАЙН</h1>
+
+        <div class="relative">
+            <div class="text">
+                Мы гарантируем полную безопасность вашего интернет-платежа:
+                <ul>
+                    <li>оплата происходит через сайт компании <i>Uniteller</i> (официальный сервис-провайдер <i>Visa</i>,
+                        <i>Mastercard</i>, <i>Worldwide</i>, <i>JCB</i> и <i>Diners club</i>);
+                    </li>
+                    <li>процессинг сертифицирован стандартом безопасности данных индустрии платёжных карт <i>PCI DSS</i>;
+                    </li>
+                    <li>применяется интеллектуальная система мониторинга мошеннических операций и&nbsp;протокол <i>3-D
+                        Secure</i> (дополнительный уровень безопасности банковских карт);
+                    </li>
+                    <li>передача информации происходит по технологии шифрования SSL, по закрытым банковским каналам,
+                        имеющим наивысший уровень надёжности (передача ваших данных третьим лицам исключена).
+                    </li>
+                </ul>
+                Процесс онлайн-оплаты по шагам:
+                <ul>
+                    <li>ваш персональный менеджер подтверждает вашу заявку на путешествие — вам приходит письмо на эл.
+                        почту, в котором содержится ссылка;
+                    </li>
+                    <li>вы переходите по ссылке и попадаете на защищенную платёжную страницу нашего сайта, вводите
+                        данные своей банковской карты для оплаты заказа;
+                    </li>
+                    <li>если карта поддерживает протокол <i>3-D Secure</i>, то вы проходите доп. проверку на странице
+                        банка, который выпустил вашу карту (проверка — это чаще всего пароль из SMS или карта переменных
+                        кодов);
+                    </li>
+                    <li>оплата успешно произошла — вам приходит на эл. почту письмо с подтверждением совершённого
+                        заказа.
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+                <p class="first"><a href="#">Сайт компании <span>Uniteller</span><i></i></a></p>
+
+                <p><a href="#"><span>PCI DSS</span> на <span>Википедии</span><i></i></a></p>
+
+                <p><a href="#"><span>3-D Secure</span> на <span>Википедии</span><i></i></a></p>
+
+                <div>
+                    Если оплата не произошла,
+                    свяжитесь с вашим персональным
+                    менеджером, или позвоните нам
+                    в&nbsp;офис +7 495 989-48-91. Мы
+                    поможем решить все вопросы.
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="popup popup_order_success">
+    <div class="padding_form">
+        <h1 class="title_popup"><a href="#" class="close_order_success"></a>ВАША ЗАЯВКА ПРИНЯТА</h1>
+
+        <div class="text">
+            В ближайшее время с вами свяжется ваш персональный менеджер для
+            обсуждения деталей предстоящего путешествия. Благодарим вас за участие
+            и рады, что вы с нами! Ваши контактные данные (на всякий случай):
+        </div>
+        <table class="table_data">
+            <tr>
+                <td class="title_td">имя и фамилия</td>
+                <td>Зинаида Волховская</td>
+            </tr>
+            <tr>
+                <td class="title_td">эл. почта</td>
+                <td>z.volkhovskya@gmail.com</td>
+            </tr>
+            <tr>
+                <td class="title_td">моб. телефон</td>
+                <td>+7 906 606-32-07</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+#nav ul li {
+    position: relative;
+    zoom: 1;
+    *display: inline;
+}
+.arr {
+    width: 45px;
+}

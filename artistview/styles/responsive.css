@@ -1,0 +1,3016 @@
+.block-passions.profile {
+  display: block;
+}
+.block-passions.mobile-only {
+  display: none;
+}
+@media all and (min-width: 740px) {
+  .mobile-shift-top,
+  .mobile-nav,
+  .hidden-wide {
+    display: none;
+  }
+  .prev-next-mobile {
+    display: none;
+  }
+  .image-gallery-info .text p .more {
+    display: none;
+  }
+}
+@media all and (max-width: 1023px) {
+  .hidden-wide.visible-tablet {
+    display: block;
+  }
+  .hidden-tablet {
+    display: none;
+  }
+  header .container {
+    position: relative;
+  }
+  header #search {
+    position: absolute;
+    top: 75px;
+    right: 0;
+  }
+  header #search fieldset {
+    margin: 0;
+  }
+  header #search input {
+    width: 140px;
+  }
+  header nav {
+    margin-top: 75px;
+  }
+  header .logged {
+    position: absolute;
+    right: 0;
+    top: 13px;
+    padding: 0;
+  }
+  .all-galleries ul > li {
+    margin-right: 30px;
+  }
+  .all-galleries ul .title:hover span:after {
+    left: 5px;
+    top: 5px;
+  }
+  .all-galleries ul .title:hover span img {
+    left: 0px;
+    top: 0px;
+  }
+  .container {
+    width: 730px !important;
+    margin-left: auto;
+    margin-right: auto;
+    /*
+      .business-main{
+
+        .input-group{
+          > li{
+           .drag-file{
+              height: auto !important;
+              .drag-file-target{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+*/
+  }
+  .container .breadcrumbs {
+    width: auto;
+    margin: 0 0 20px 0;
+  }
+  .container #first-login .who-are-you > ul > li {
+    width: 230px;
+  }
+  .container #first-login .whats-your-passion > div > ul > li {
+    width: 130px;
+  }
+  .container #first-login fieldset .columns > li {
+    margin-left: 0px;
+  }
+  #container aside {
+    float: left;
+    width: 240px;
+  }
+  #container .container .column-left-center {
+    width: auto !important;
+    margin: 0 0 20px 0;
+    padding: 0;
+    float: none;
+  }
+  #container .container .column-left-center:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+  }
+  #container .container .column-left-center > section {
+    width: auto;
+    overflow: hidden;
+  }
+  #container .container .column-left-center > section .text {
+    width: 470px;
+  }
+  #container .container .column-left-center #album_list ul {
+    width: 100%;
+  }
+  #container .container .column-left-center #album_list ul > li {
+    float: none;
+    width: auto;
+  }
+  #container .container .column-left-center #album_list ul > li > div {
+    width: auto;
+  }
+  #container .container .column-left-center .slideshow {
+    margin: 0 auto;
+  }
+  #container .container .column-right-2col #album_list.mymusic-weight ul > li > div {
+    /*max-width:400px;*/
+  }
+  #container .container .column-right-2col #album_list.mymusic-weight ul > li > div .title {
+    min-width: 220px;
+  }
+  #container .container .column-right-2col #album_list.mymusic-weight ul > li > div .secondstep input {
+    width: 215px;
+  }
+  #container .container .column-right-2col .myimages-photos.editable #image_list ul > li > div {
+    max-width: 400px;
+  }
+  #container .container .column-right-2col .myimages-photos.editable #image_list ul > li > div .title {
+    min-width: 220px;
+  }
+  #container .container .column-right-2col .myimages-photos.editable #image_list ul > li > div .secondstep input {
+    width: 175px;
+  }
+  #container .container .column-right-2col .myimages-photos.editable #image_list ul > li:nth-child(4n+1) {
+    margin: 0 0px 0px 0px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul > li:nth-child(4n+1) {
+    margin: 0 0px 16px 16px;
+  }
+  #container .container .singles-header .movetip {
+    clear: both;
+  }
+  #container .container .singles-header .editbutons {
+    margin-bottom: 5px;
+  }
+  #container .container .column-left-2col .all-galleries .title:hover span > i {
+    bottom: 15px;
+    right: 15px;
+  }
+  #container .container .column-center {
+    margin: 0 0 0 20px;
+  }
+  #container .container .column-left,
+  #container .container .column-right {
+    margin: 0 0 0  20px;
+    padding: 0;
+    float: none;
+  }
+  #container .container .column-left:after,
+  #container .container .column-right:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+  }
+  #container .container .column-left .block-passions,
+  #container .container .column-right .block-passions {
+    margin-top: 0;
+    display: block;
+  }
+  #container .container .column-left .block-credits,
+  #container .container .column-right .block-credits {
+    margin-top: 0;
+  }
+  #container .container .column-right {
+    width: 220px;
+    margin: 0 0 0 10px;
+  }
+  #container .container .column-right.tablet-full {
+    width: auto;
+    margin: 0;
+    padding: 0 10px;
+  }
+  #player > div .controls {
+    width: 135px;
+  }
+  #player > div .controls .volume {
+    width: 84px;
+  }
+  #player > div .status > div .bar a {
+    width: 170px!important;
+  }
+  #player > div .socials {
+    display: none;
+  }
+  #player .playlist {
+    width: 730px;
+    height: 280px;
+    margin-left: -365px;
+  }
+  #player .playlist > div {
+    height: 230px;
+  }
+  #player .playlist > div .preview {
+    height: 230px;
+    width: 420px;
+  }
+  #player .playlist > div .preview img {
+    height: 230px;
+    width: 420px;
+  }
+  #player .playlist > div .list {
+    width: 260px;
+    height: 210px;
+  }
+  #player .playlist > div .list > div {
+    width: 260px;
+    height: 210px;
+  }
+  #player .playlist > div .list > div ul li {
+    width: 245px;
+  }
+  #player .playlist > div .list > div ul li p {
+    width: 170px;
+  }
+  #player .playlist.fullscreen > div {
+    width: 710px;
+    height: 395px;
+    margin-left: -355px;
+    margin-top: -215px;
+  }
+  #player .playlist.fullscreen > div .preview {
+    width: 710px;
+    height: 395px;
+  }
+  #player .playlist.music {
+    width: 300px;
+    margin-left: 65px;
+  }
+  .comments form textarea {
+    width: 595px;
+  }
+  .image-gallery ul {
+    margin: -20px -35px 0 0;
+  }
+  .image-gallery ul li {
+    margin: 20px 35px 0 0;
+  }
+  .image-gallery ul li a {
+    height: 130px;
+    width: 130px;
+  }
+  .image-gallery-info .slideshow img {
+    width: 100%;
+  }
+  .image-gallery-info .text p .more {
+    display: none;
+  }
+  .block-album-cover:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+  }
+  .block-album-cover a {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+  }
+  .block-album-cover a p {
+    display: none;
+  }
+  .block-album-cover a:hover span {
+    width: 220px;
+    height: 220px;
+  }
+  .block-album-cover a:hover span:after {
+    left: 5px;
+    top: 5px;
+  }
+  .block-album-cover a:hover span img {
+    left: 0;
+    top: 0;
+  }
+  .block-album-cover .text {
+    width: 450px;
+    font-size: 14px;
+    line-height: 16px;
+    float: left;
+    background: #F6F6F6;
+    color: #3c3c3c;
+    height: 210px;
+    padding: 10px;
+  }
+  .block-album-cover .text h2 {
+    font-size: 22px;
+    line-height: 23px;
+  }
+  .block-album-cover .text p {
+    overflow: hidden;
+    position: relative;
+    max-height: 210px;
+  }
+  .block-album-cover .text p .more {
+    display: none;
+  }
+  .block-album-cover .text .album-title {
+    float: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .block-album-cover.video-cover a {
+    display: inline;
+    float: none;
+  }
+  .video_container {
+    width: 730px;
+    height: 406px;
+  }
+  .video_container .video_area {
+    width: 730px;
+    height: 406px;
+  }
+  .video_container .video_area video {
+    width: 730px;
+    height: 406px;
+  }
+  #container .column-right-2col {
+    width: 390px;
+  }
+  /*  .music-page {
+      .breadcrumbs {
+         padding-right: 310px;
+      }
+    }*/
+  .myart-index #container .container .column-right .block-passions {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+  .myart-index .margin10side {
+    margin: 0 0px;
+  }
+  .albumedit-page.only .dragndrop-big {
+    margin-top: 20px !important;
+  }
+  .my-profile-page #container .container.customize .column-center {
+    padding: 0 20px;
+  }
+  .my-profile-page .musician-header > div {
+    padding-top: 132px;
+    margin-left: 240px;
+  }
+  .my-profile-page .musician-header .button.blue.edit-button.customize {
+    position: relative;
+    margin: 0 auto;
+  }
+  .my-profile-page .musician-header .button.blue.edit-button.rearrange {
+    position: relative;
+    margin: 10px auto 0;
+  }
+  .myart-index #container .container .column-right,
+  .albumedit-page #container .container .column-right {
+    width: auto;
+  }
+  .albumedit-page #container .container .column-right {
+    margin: 0 10px;
+  }
+  .albumedit-page #container .container .column-left-center {
+    margin: 0 10px 20px;
+  }
+  .av-dollars #container .container .column-left-center {
+    float: left;
+    width: 420px !important;
+  }
+  .av-dollars #container .container .column-left-center .donation-settings .bg-wrapper > div textarea {
+    width: 375px;
+  }
+  .av-dollars #container .container .column-left-center .donation-settings .bg-wrapper > div .checkbox {
+    float: none;
+    margin: 10px 0 0 5px;
+  }
+  .av-dollars #container .container .column-left-center .donation-settings .bg-wrapper .wrapp-fileupload .drag-file {
+    float: none;
+  }
+  .av-dollars #container .container .column-left-center .donation-settings .bg-wrapper .wrapp-fileupload .drag-file:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+  }
+  .av-dollars #container .container .column-right {
+    float: left;
+    margin-top: 26px;
+    width: 300px;
+  }
+  .payment-confirmation .features-membership {
+    margin-top: 0px;
+  }
+  .payment-confirmation .features-membership > section {
+    width: 100px;
+  }
+  .payment-confirmation .features-membership > section.account-type {
+    width: 200px;
+  }
+  .payment-confirmation .features-membership > section.av-score-boost {
+    width: 94px;
+  }
+  .payment-confirmation .features-membership > section.prices {
+    width: 130px;
+  }
+  .payment-confirmation .features-membership > section.prices .title,
+  .payment-confirmation .features-membership > section.prices .content {
+    text-align: right;
+  }
+  .payment-confirmation .features-membership > section > div.title {
+    padding: 20px 0px 0 0;
+    height: 44px;
+  }
+  .payment-confirmation .features-membership > section > div.title span {
+    display: block;
+  }
+  .payment-confirmation .check-out-block {
+    margin-top: 68px;
+  }
+  .payment-subscription #container .container .column-left-center {
+    float: left;
+    width: 420px !important;
+  }
+  .payment-subscription #container .container .column-right {
+    float: right;
+    width: 295px;
+    padding: 0;
+  }
+  .payment-subscription .input-group {
+    margin: 0 12px;
+  }
+  .payment-subscription .input-group > li .right-wrapper {
+    width: 263px;
+  }
+  .payment-subscription .input-group > li input[type="text"] {
+    width: 238px;
+  }
+  .payment-subscription .input-group > li .input-title {
+    width: 115px;
+    font-size: 12px;
+  }
+  .payment-subscription .input-group > li .input-title.adress {
+    line-height: 14px;
+    width: 100px;
+  }
+  .payment-subscription .donations-form .bg-wrapper {
+    padding-top: 20px;
+  }
+  .payment-subscription .donations-form .bg-wrapper > div h4 {
+    margin-left: 10px;
+  }
+  .payment-subscription .donations-form .place-order {
+    margin: 20px 0 0;
+  }
+  .payment-subscription .order-summary {
+    padding-bottom: 25px;
+  }
+  .donatations .donate-header > h2 {
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: 'roboto';
+  }
+  .donatations #container .container .donate-header {
+    margin-left: 10px;
+  }
+  .donatations #container .container .donate-header .column-left-center {
+    width: 408px !important;
+    float: left;
+  }
+  .donatations #container .container .donate-header .column-right {
+    width: 295px;
+    padding: 0;
+    float: right;
+  }
+  .donatations .donations-form {
+    margin: 20px 0 0 ;
+  }
+  .donatations .donations-form .donate {
+    margin: 20px 0;
+  }
+  .donatations .donations-form .bg-wrapper {
+    border-top: none;
+  }
+  .donatations .donations-form .bg-wrapper > div h4 {
+    margin-left: 10px;
+  }
+  .donatations .donations-form .bg-wrapper > div .checkbox {
+    margin-left: 10px;
+  }
+  .donatations .donations-form .bg-wrapper > div .input-group .input-title {
+    font-size: 12px;
+  }
+  .donatations .amount-money {
+    margin: 0 0px 0 10px;
+  }
+  .donatations .amount-money > li {
+    width: 128px;
+    margin: 0 15px 15px 0px;
+    font: bold 31px/68px 'gotham_promedium';
+    height: 68px;
+  }
+  .donatations .input-group {
+    margin: 0 10px;
+  }
+  .search-autocomplite > ul > li span.search-desc {
+    overflow: hidden;
+    max-height: 30px;
+  }
+}
+@media all and (max-width: 959px) {
+  .popup {
+    width: 100% !important;
+  }
+  .popup > div {
+    width: 560px;
+  }
+  #home {
+    min-width: 730px;
+  }
+  #sign-up .left {
+    width: 510px;
+  }
+  #sign-up .right {
+    width: 560px;
+    height: 150px;
+    background-position: 0 -70px;
+  }
+  #sign-up .right .facebook {
+    margin-top: 55px;
+  }
+  #watch-intro > div {
+    width: 555px !important;
+  }
+  #watch-intro > div #watch-intro-video {
+    width: 555px !important;
+    height: 310px !important;
+    margin: 0 auto;
+  }
+  #watch-intro > div #watch-intro-video video {
+    width: 555px !important;
+    height: 310px !important;
+  }
+  #album_list ul {
+    width: 100%;
+  }
+  #album_list ul > li {
+    width: 100%;
+  }
+  #album_list ul > li > div {
+    width: 685px;
+  }
+}
+@media all and (max-width: 739px) {
+  .hidden-mobile {
+    display: none;
+  }
+  .container {
+    width: auto !important;
+  }
+  .container:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+  }
+  header {
+    height: auto;
+    min-width: 320px;
+  }
+  header .logo {
+    margin: 20px 0 0 20px;
+  }
+  header nav {
+    clear: both;
+    float: none;
+    margin: 15px 0 0;
+  }
+  header nav a {
+    display: block;
+    float: none;
+    margin: 0;
+    line-height: 40px;
+    padding: 0 20px;
+    position: relative;
+    border: 0;
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+  }
+  header nav a:hover,
+  header nav a.active {
+    color: #fff !important;
+  }
+  header nav a.active {
+    height: auto;
+    cursor: pointer !important;
+  }
+  header nav a.active:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 6px solid #fff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -3px;
+  }
+  header nav a.i-1 {
+    background: #43a1df;
+  }
+  header nav a.i-2 {
+    background: #6445ba;
+  }
+  header nav a.i-3 {
+    background: #ee1c25;
+  }
+  header nav a.i-4 {
+    background: #f68121;
+  }
+  header nav a.i-5 {
+    background: #ffcb0b;
+  }
+  header .logged {
+    position: relative;
+    top: auto;
+    clear: both;
+    padding: 15px 0 0;
+    text-align: center;
+    float: none;
+    z-index: 1;
+  }
+  header .logged > li {
+    display: inline-block;
+    float: none;
+    position: relative;
+  }
+  header .logged > li #location-dropdown,
+  header .logged > li #chat-dropdown#chat-dropdown {
+    right: 50%;
+    margin-right: -115px;
+  }
+  header .logged > li #location-dropdown:before,
+  header .logged > li #chat-dropdown#chat-dropdown:before,
+  header .logged > li #location-dropdown:after,
+  header .logged > li #chat-dropdown#chat-dropdown:after {
+    right: 50%;
+    margin-right: -20px;
+  }
+  header .logged > li #notifications-dropdown {
+    right: auto;
+    left: -10px;
+    margin-right: 0;
+  }
+  header .logged > li #notifications-dropdown:before,
+  header .logged > li #notifications-dropdown:after {
+    right: auto;
+    left: 11px;
+    margin-right: 0;
+  }
+  header .logged > li #chat-dropdown#chat-dropdown {
+    margin-right: -106px;
+  }
+  header #search {
+    background: #373737;
+    top: 20px;
+    right: 0;
+    padding: 0;
+    width: 50px;
+  }
+  header #search fieldset {
+    padding: 0 10px 0 30px;
+    overflow: hidden;
+    text-align: center;
+  }
+  header #search.open fieldset {
+    padding: 0 10px 0 45px;
+  }
+  header #search input {
+    padding: 5px;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    width: 95%;
+    display: block;
+    margin: 7px auto;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    filter: alpha(opacity= 0 );
+    float: none;
+    -webkit-appearance: none;
+  }
+  header #search button {
+    right: auto;
+    left: 15px;
+  }
+  header #search .search-autocomplite {
+    top: 39px;
+    text-align: left;
+  }
+  header .login {
+    text-align: center;
+    float: none;
+    position: static;
+    clear: both;
+    padding-top: 15px;
+  }
+  header.popuped .container #back {
+    display: block !important;
+  }
+  #home {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    min-width: 320px;
+  }
+  #home .text {
+    padding: 40px;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #home .text:before {
+    display: none;
+  }
+  #home .text > div {
+    width: auto;
+    font-size: 13px;
+  }
+  #home .text > div h1 {
+    font-size: 24px;
+  }
+  #home .text > div p {
+    width: auto;
+    text-align: center;
+  }
+  #home .text > div .button {
+    display: block;
+    width: 140px;
+    padding: 0;
+    text-align: center;
+    margin: 15px auto 0;
+  }
+  #home footer {
+    padding: 20px;
+    height: auto;
+    position: relative;
+  }
+  #home footer .copyright,
+  #home footer .by {
+    float: none;
+  }
+  #home footer .copyright.by,
+  #home footer .by.by {
+    margin-top: 10px;
+  }
+  #container-popup .popup {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    filter: alpha(opacity= 100 );
+    display: block;
+    position: relative;
+    background: #e3e2e3;
+  }
+  #container-popup .popup#forgot-password > div form > fieldset .cancel {
+    display: block!important;
+  }
+  #container-popup .popup .close {
+    display: none;
+  }
+  #container-popup .popup h2 {
+    background: #212121;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  #container-popup .popup > div {
+    width: auto !important;
+    display: block;
+  }
+  #container-popup .popup > div #watch-intro-video {
+    width: 320px !important;
+    height: 180px !important;
+    font-size: 10px;
+    position: relative;
+    padding: 40px 0 0 0;
+  }
+  #container-popup .popup > div #watch-intro-video video {
+    width: 320px !important;
+    height: 180px !important;
+    vertical-align: top;
+    outline: 0;
+  }
+  #container-popup .popup > div #watch-intro-video .vjs-poster {
+    display: none;
+  }
+  #container-popup .popup > div > div,
+  #container-popup .popup > div form > fieldset {
+    width: 280px;
+    float: none;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  #container-popup .popup > div > div .cancel,
+  #container-popup .popup > div form > fieldset .cancel {
+    display: none;
+  }
+  #container-popup .popup > div > div .field,
+  #container-popup .popup > div form > fieldset .field {
+    width: auto;
+    float: none;
+    padding: 0;
+    margin: 0;
+  }
+  #container-popup .popup > div > div .field input,
+  #container-popup .popup > div form > fieldset .field input {
+    width: 266px;
+  }
+  #container-popup .popup > div > div .field input.mm,
+  #container-popup .popup > div form > fieldset .field input.mm,
+  #container-popup .popup > div > div .field input.dd,
+  #container-popup .popup > div form > fieldset .field input.dd {
+    width: 50px;
+  }
+  #container-popup .popup > div > div .field input.yyyy,
+  #container-popup .popup > div form > fieldset .field input.yyyy {
+    width: 98px;
+  }
+  #container-popup .popup > div > div.left,
+  #container-popup .popup > div form > fieldset.left {
+    padding-bottom: 0;
+  }
+  #container-popup .popup > div > div.right,
+  #container-popup .popup > div form > fieldset.right {
+    padding: 0;
+    background: none;
+  }
+  #container-popup .popup > div > div.right .or,
+  #container-popup .popup > div form > fieldset.right .or {
+    display: block;
+  }
+  #container-popup .popup > div > div.right .facebook,
+  #container-popup .popup > div form > fieldset.right .facebook {
+    margin-top: 0;
+    display: block;
+  }
+  #player {
+    display: none;
+  }
+  #container {
+    background: none !important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  #container .mobile-shift-top {
+    height: 150px;
+  }
+  #container .container {
+    width: 320px !important;
+    position: relative;
+  }
+  #container .container.wide {
+    width: auto !important;
+  }
+  #container .container .column-center,
+  #container .container .column-left-center,
+  #container .container .column-right {
+    width: auto !important;
+    padding: 0px 15px;
+    margin: 0;
+    float: none;
+  }
+  #container .container .column-left-center.albums .title {
+    width: auto;
+  }
+  #container .container .column-left-center.albums h1 {
+    font-size: 14px;
+  }
+  #container .container .column-right-2col {
+    margin: 20px 20px 0 20px !important;
+    width: auto;
+    float: none;
+  }
+  #container .container .column-right-2col #album_list.mymusic-weight ul > li > div .title {
+    min-width: 200px;
+  }
+  #container .container .column-right-2col #album_list.mymusic-weight ul > li > div .secondstep input {
+    width: 110px;
+  }
+  #container .container .column-right-2col .myimages-photos.editable #image_list ul > li > div {
+    max-width: 280px;
+  }
+  #container .container .column-right-2col .myimages-photos.editable #image_list ul > li > div .title {
+    min-width: 220px;
+  }
+  #container .container .column-right-2col .myimages-photos.editable #image_list ul > li > div .secondstep {
+    padding-right: 10px;
+    width: auto;
+  }
+  #container .container .column-right-2col .myimages-photos.editable #image_list ul > li > div .secondstep input {
+    width: 80px;
+  }
+  #container .container .column-right-2col .myimages-photos.editable #image_list ul > li > div .secondstep .rect {
+    margin-left: 0;
+  }
+  #container .container aside {
+    float: none;
+    text-align: center;
+    font-size: 0;
+    margin: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    width: auto;
+  }
+  #container .container aside .column-left,
+  #container .container aside .column-right {
+    text-align: left;
+    display: block;
+    width: auto;
+    margin: 0;
+    float: none;
+    padding: 0;
+  }
+  #container .container aside .column-left section,
+  #container .container aside .column-right section {
+    margin: 0px 0px 40px 0px;
+  }
+  #container .container aside .column-left section.hidden-wide,
+  #container .container aside .column-right section.hidden-wide {
+    margin: 0px 0px 25px 0px;
+  }
+  #container .container aside .column-left .groups,
+  #container .container aside .column-right .groups {
+    display: block;
+  }
+  #container .container aside .column-left .groups .dropdown-toggle,
+  #container .container aside .column-right .groups .dropdown-toggle {
+    display: block;
+  }
+  #container .container aside .column-left .groups .dropdown-items,
+  #container .container aside .column-right .groups .dropdown-items {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .musician-header.myprofile {
+    overflow: hidden;
+    padding: 10px 0;
+    height: 150px;
+    background-position: center;
+  }
+  .musician-header.myprofile > div {
+    padding-top: 0px;
+    margin-left: 0px;
+  }
+  .button.blue.edit-button,
+  .button.blue.edit-button {
+    position: static;
+  }
+  .button.blue.edit-button.customize,
+  .button.blue.edit-button.customize {
+    margin: 125px auto 0 auto !important;
+  }
+  .button.blue.edit-button.rearrange,
+  .button.blue.edit-button.rearrange {
+    display: none;
+  }
+  .musician-info .userpic {
+    width: 220px;
+    margin: 15px auto 20px auto;
+  }
+  .musician-info .userpic > .top {
+    margin-right: 20px;
+  }
+  .musician-fans-friends,
+  .musician-photos-videos {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .musician-fans-friends .tabs-contents,
+  .musician-photos-videos .tabs-contents {
+    padding: 10px 0 10px 0;
+  }
+  .musician-fans-friends .tabs-contents > div,
+  .musician-photos-videos .tabs-contents > div {
+    position: relative;
+  }
+  .musician-fans-friends .tabs-contents > div a,
+  .musician-photos-videos .tabs-contents > div a {
+    margin: 10px 15px 25px 25px;
+  }
+  .musician-fans-friends .tabs-contents > div a.more,
+  .musician-photos-videos .tabs-contents > div a.more {
+    bottom: -10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -29px !important;
+  }
+  .musician-socials.sec {
+    margin: 0 0 10px 0 !important;
+  }
+  .musician-inf {
+    margin-left: 0;
+    padding-right: 10px;
+    width: auto;
+  }
+  .completeness-list,
+  .completeness-list li {
+    width: auto;
+  }
+  .completeness-list .prcnts_bg,
+  .completeness-list li .prcnts_bg {
+    margin-right: 30px;
+    width: auto;
+  }
+  body > footer .socials {
+    display: none;
+  }
+  body > footer .middle {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body > footer .middle ul {
+    width: 30%;
+    margin: 0 0 0 5%;
+  }
+  body > footer .middle ul:first-child {
+    margin-left: 0;
+  }
+  body > footer .bottom {
+    padding: 20px;
+  }
+  body > footer .bottom .copyright,
+  body > footer .bottom .by {
+    float: none;
+  }
+  body > footer .bottom .copyright.by,
+  body > footer .bottom .by.by {
+    margin-top: 10px;
+  }
+  body > .popup > div {
+    width: 295px !important;
+  }
+  body > .popup > div fieldset {
+    padding: 25px 20px !important;
+  }
+  body > .popup#watch-intro > div {
+    width: 295px !important;
+  }
+  body > .popup#watch-intro > div #watch-intro-video {
+    width: 295px !important;
+    height: 164px !important;
+  }
+  body > .popup#watch-intro > div #watch-intro-video video {
+    width: 295px !important;
+    height: 164px !important;
+  }
+  body > .popup#sign-up .left {
+    width: 255px !important;
+    height: auto!important;
+    padding: 20px 20px 0 20px!important;
+  }
+  body > .popup#sign-up .right {
+    width: 255px !important;
+    height: 90px !important;
+    padding: 0 20px 20px 20px!important;
+    background: #E3E2E3;
+  }
+  body > .popup#sign-up .right .or {
+    display: block;
+  }
+  body > .popup#sign-up .right .facebook {
+    margin-top: 0;
+  }
+  .musician-updates ul {
+    padding: 0;
+  }
+  .musician-updates ul li {
+    padding: 5px 0 10px 0;
+  }
+  .musician-updates ul li .content .video img {
+    max-width: 100%;
+  }
+  .musician-updates ul li .content .photos {
+    margin: 0 0 0 -10px;
+  }
+  .musician-updates ul li .content .photos:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+  }
+  .musician-updates ul li .content .photos a {
+    float: left;
+    position: relative;
+    margin: 0 10px 0px 10px;
+  }
+  .musician-updates ul li .content .photos a span {
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 12px;
+    color: #fff;
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    -o-transition: opacity 300ms;
+    -ms-transition: opacity 300ms;
+    transition: opacity 300ms;
+  }
+  .musician-updates ul li .content .photos a img {
+    width: 130px;
+    height: 130px;
+  }
+  .musician-updates ul li .content .photos .rest {
+    display: none;
+    background: #e5e5e5;
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 40px 0 0;
+  }
+  .musician-updates ul li .content .photos .rest b {
+    font-size: 24px;
+    display: block;
+  }
+  .musician-updates ul li .content .photos .rest:hover {
+    background: #bfe2f9;
+    color: #42a1df;
+  }
+  .musician-updates ul li .content .single .title {
+    color: #3C3C3C;
+  }
+  .musician-updates ul li .content .single .title:before {
+    background-position: 0 -27px;
+  }
+  .musician-updates ul li .content .button {
+    padding: 0 20px;
+  }
+  .musician-updates ul li .info {
+    position: relative;
+    height: 30px;
+  }
+  .musician-updates ul li .info:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+  }
+  .musician-updates ul li .info a {
+    text-indent: 35px;
+    display: block;
+    float: left;
+    margin-right: 3px;
+  }
+  .musician-updates.no-header .top {
+    padding: 0 0 10px 0;
+    border-top: none;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .musician-updates.no-header .top h2 {
+    display: block;
+    line-height: 40px;
+  }
+  .musician-updates .button {
+    margin: 10px 0 0 0;
+  }
+  .musician-info.staff {
+    position: relative;
+    text-align: center;
+  }
+  .musician-info.staff .userpic {
+    margin: 20px auto 15px auto;
+  }
+  .musician-info.staff a {
+    font-size: 12px;
+    margin: 0px 5px;
+  }
+  #sign-up .field p.error,
+  #login .field p.error,
+  #forgot-password .field p.error {
+    right: 0;
+    top: 100%;
+  }
+  #sign-up .field p.error:before,
+  #login .field p.error:before,
+  #forgot-password .field p.error:before {
+    display: none;
+  }
+  #first-login fieldset,
+  #add-product fieldset,
+  .albumedit-page fieldset {
+    padding: 25px 20px 0 20px;
+  }
+  #first-login fieldset .columns > li,
+  #add-product fieldset .columns > li,
+  .albumedit-page fieldset .columns > li {
+    margin-left: 0px;
+  }
+  #first-login fieldset.who-are-you,
+  #add-product fieldset.who-are-you,
+  .albumedit-page fieldset.who-are-you {
+    margin-bottom: 0px;
+  }
+  #first-login fieldset.who-are-you > ul > li,
+  #add-product fieldset.who-are-you > ul > li,
+  .albumedit-page fieldset.who-are-you > ul > li {
+    margin: 0px 0px 10px 0px!important;
+    background: #fff;
+    width: 100% !important;
+    padding: 0;
+  }
+  #first-login fieldset.who-are-you > ul > li > label,
+  #add-product fieldset.who-are-you > ul > li > label,
+  .albumedit-page fieldset.who-are-you > ul > li > label {
+    padding: 5px 0px;
+    height: auto;
+    color: #a8a8a8;
+  }
+  #first-login fieldset.who-are-you > ul > li > label > b,
+  #add-product fieldset.who-are-you > ul > li > label > b,
+  .albumedit-page fieldset.who-are-you > ul > li > label > b {
+    height: 40px;
+    width: 90px;
+    background: #A8A8A8;
+    float: left;
+    font-size: 14px;
+    line-height: 40px;
+    text-indent: 12px;
+    margin-right: 15px;
+    color: #fff;
+    margin-top: -6px;
+  }
+  #first-login fieldset.who-are-you > ul > li > label.active,
+  #add-product fieldset.who-are-you > ul > li > label.active,
+  .albumedit-page fieldset.who-are-you > ul > li > label.active {
+    background: #FFF;
+    color: #0a0a0a;
+  }
+  #first-login fieldset.who-are-you > ul > li > label.active > b,
+  #add-product fieldset.who-are-you > ul > li > label.active > b,
+  .albumedit-page fieldset.who-are-you > ul > li > label.active > b {
+    background: #E64323;
+    color: #fff;
+  }
+  #first-login fieldset.whats-your-passion > div > ul,
+  #add-product fieldset.whats-your-passion > div > ul,
+  .albumedit-page fieldset.whats-your-passion > div > ul {
+    border-bottom: none;
+    border-right: 1px solid #D7D7D7;
+    padding: 0;
+    margin-right: 20px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li,
+  #add-product fieldset.whats-your-passion > div > ul > li,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li {
+    width: 100% !important;
+    height: 70px;
+    margin: 5px 0;
+    padding: 0;
+    text-align: left;
+    background-color: transparent !important;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li:first-child,
+  #add-product fieldset.whats-your-passion > div > ul > li:first-child,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li:first-child {
+    margin-top: 0px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li .box,
+  #add-product fieldset.whats-your-passion > div > ul > li .box,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li .box {
+    border: none;
+    height: 70px;
+    line-height: 70px;
+    padding: 0;
+    text-indent: 90px;
+    position: relative;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li .box i {
+    background: #ffffff url("../img/mobile/whats-your-passion.png") no-repeat;
+    height: 70px !important;
+    width: 70px !important;
+    float: left;
+    border: 1px solid #E5E5E5;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: " ";
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li .box.active,
+  #add-product fieldset.whats-your-passion > div > ul > li .box.active,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li .box.active {
+    color: #3c3c3c !important;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li .primary,
+  #add-product fieldset.whats-your-passion > div > ul > li .primary,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li .primary {
+    top: 50%;
+    margin-top: -16px;
+    left: auto;
+    right: -17px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li .primary.active,
+  #add-product fieldset.whats-your-passion > div > ul > li .primary.active,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li .primary.active {
+    overflow: visible;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li .primary.active:before,
+  #add-product fieldset.whats-your-passion > div > ul > li .primary.active:before,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li .primary.active:before {
+    display: block;
+    position: absolute;
+    content: 'primary';
+    font-size: 12px;
+    color: #0a0a0a;
+    left: -50px;
+    top: 8px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li .primary.active span,
+  #add-product fieldset.whats-your-passion > div > ul > li .primary.active span,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li .primary.active span {
+    display: none !important;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li:before,
+  #add-product fieldset.whats-your-passion > div > ul > li:before,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li:before {
+    left: auto;
+    right: -8px;
+    top: 50%;
+    margin-top: -7px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.music .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li.music .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.music .box i {
+    background-position: 3px 0;
+    margin-left: 0px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.music.active .box,
+  #add-product fieldset.whats-your-passion > div > ul > li.music.active .box,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.music.active .box {
+    background: transparent;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.music.active .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li.music.active .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.music.active .box i {
+    background-color: #45B4E7;
+    background-position: 3px -70px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.film .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li.film .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.film .box i {
+    background-position: -210px 0;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.film.active .box,
+  #add-product fieldset.whats-your-passion > div > ul > li.film.active .box,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.film.active .box {
+    background: transparent;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.film.active .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li.film.active .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.film.active .box i {
+    background-color: #513896;
+    background-position: -210px -70px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.theater .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li.theater .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.theater .box i {
+    background-position: -69px 0;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.theater.active .box,
+  #add-product fieldset.whats-your-passion > div > ul > li.theater.active .box,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.theater.active .box {
+    background: transparent;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.theater.active .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li.theater.active .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.theater.active .box i {
+    background-color: #ED1C24;
+    background-position: -69px -70px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.design .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li.design .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.design .box i {
+    background-position: -138px 0;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.design.active .box,
+  #add-product fieldset.whats-your-passion > div > ul > li.design.active .box,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.design.active .box {
+    background: transparent;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.design.active .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li.design.active .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.design.active .box i {
+    background-color: #F5821F;
+    background-position: -138px -70px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.art .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li.art .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.art .box i {
+    background-position: -279px 0;
+    margin-left: 0px;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.art.active .box,
+  #add-product fieldset.whats-your-passion > div > ul > li.art.active .box,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.art.active .box {
+    background: transparent;
+  }
+  #first-login fieldset.whats-your-passion > div > ul > li.art.active .box i,
+  #add-product fieldset.whats-your-passion > div > ul > li.art.active .box i,
+  .albumedit-page fieldset.whats-your-passion > div > ul > li.art.active .box i {
+    background-color: #FFCB19;
+    background-position: -279px -70px;
+  }
+  #first-login .more fieldset,
+  #add-product .more fieldset,
+  .albumedit-page .more fieldset {
+    padding: 0 20px;
+  }
+  #first-login .more fieldset > div > h2 > span,
+  #add-product .more fieldset > div > h2 > span,
+  .albumedit-page .more fieldset > div > h2 > span {
+    display: none !important;
+  }
+  #first-login .more fieldset > div > div,
+  #add-product .more fieldset > div > div,
+  .albumedit-page .more fieldset > div > div {
+    padding: 0 30px;
+    margin-bottom: 20px;
+  }
+  #first-login .more fieldset > div > div h3,
+  #add-product .more fieldset > div > div h3,
+  .albumedit-page .more fieldset > div > div h3 {
+    height: auto;
+  }
+  #first-login .more fieldset > div > div .columns > li,
+  #add-product .more fieldset > div > div .columns > li,
+  .albumedit-page .more fieldset > div > div .columns > li {
+    width: auto;
+  }
+  #first-login .more fieldset > div > div .columns .other,
+  #add-product .more fieldset > div > div .columns .other,
+  .albumedit-page .more fieldset > div > div .columns .other {
+    width: 160px;
+  }
+  #first-login .buttons button,
+  #add-product .buttons button,
+  .albumedit-page .buttons button {
+    font-size: 12px;
+    padding: 5px 50px;
+  }
+  #first-login .business-main .input-group > li .input-title,
+  #add-product .business-main .input-group > li .input-title,
+  .albumedit-page .business-main .input-group > li .input-title {
+    float: none;
+    width: auto;
+    margin: 0;
+  }
+  #first-login .business-main .input-group > li input[type='text'],
+  #add-product .business-main .input-group > li input[type='text'],
+  .albumedit-page .business-main .input-group > li input[type='text'],
+  #first-login .business-main .input-group > li input[type='phone'],
+  #add-product .business-main .input-group > li input[type='phone'],
+  .albumedit-page .business-main .input-group > li input[type='phone'],
+  #first-login .business-main .input-group > li input[type='email'],
+  #add-product .business-main .input-group > li input[type='email'],
+  .albumedit-page .business-main .input-group > li input[type='email'],
+  #first-login .business-main .input-group > li textarea,
+  #add-product .business-main .input-group > li textarea,
+  .albumedit-page .business-main .input-group > li textarea {
+    float: none;
+    margin: 0 0 10px 0;
+    width: 200px;
+  }
+  #first-login .business-main .input-group > li .drag-file,
+  #add-product .business-main .input-group > li .drag-file,
+  .albumedit-page .business-main .input-group > li .drag-file {
+    height: auto;
+  }
+  #first-login .business-main .input-group > li .drag-file .drag-file-target,
+  #add-product .business-main .input-group > li .drag-file .drag-file-target,
+  .albumedit-page .business-main .input-group > li .drag-file .drag-file-target {
+    display: none;
+  }
+  #first-login .business-main .input-group > li .add_another_location,
+  #add-product .business-main .input-group > li .add_another_location,
+  .albumedit-page .business-main .input-group > li .add_another_location {
+    display: block;
+    width: 145px;
+  }
+  .breadcrumbs {
+    width: auto !important;
+    line-height: 28px!important;
+    padding: 10px 20px;
+  }
+  .breadcrumbs .up {
+    display: none;
+  }
+  .breadcrumbs form {
+    float: none;
+    clear: both;
+    margin-bottom: 10px;
+  }
+  .breadcrumbs form button {
+    right: auto;
+    left: 255px;
+  }
+  .breadcrumbs .breadcrumbs_search {
+    position: relative !important;
+    top: 4px !important;
+    left: 0 !important;
+    width: auto !important;
+    height: 40px !important;
+    padding-top: 5px !important;
+  }
+  .breadcrumbs .breadcrumbs_search input {
+    width: 100% !important;
+  }
+  .breadcrumbs .dropdown-multiselect,
+  .breadcrumbs .dropdown-wrapper {
+    line-height: 26px;
+  }
+  .all-galleries {
+    padding: 0 0 0 20px;
+  }
+  .all-galleries ul {
+    width: auto !important;
+    margin: 0;
+  }
+  .all-galleries ul > li {
+    width: 150px;
+    margin-right: 0px;
+  }
+  .all-galleries ul .title span {
+    width: 130px;
+    height: 130px;
+  }
+  .all-galleries ul .title span:before,
+  .all-galleries ul .title span:after {
+    width: 130px;
+    height: 130px;
+  }
+  .all-galleries ul .title span img {
+    width: 130px;
+  }
+  .all-galleries ul .title span i {
+    right: 5px;
+    bottom: 5px;
+    height: 41px;
+  }
+  .all-galleries ul .title span i i {
+    position: absolute;
+  }
+  .all-galleries ul .title span i i:nth-child(1) {
+    right: 44px;
+    bottom: 0;
+  }
+  .all-galleries ul .title span i i:nth-child(2) {
+    right: 66px;
+    bottom: 0;
+  }
+  .all-galleries ul .title span i i:nth-child(3) {
+    right: 44px;
+    bottom: 23px;
+  }
+  .all-galleries ul .title span i i:nth-child(4) {
+    right: 66px;
+    bottom: 23px;
+  }
+  .all-galleries ul .title span i i:nth-child(5) {
+    right: 88px;
+    bottom: 0;
+  }
+  .all-galleries ul .title span i b {
+    float: right;
+    clear: left;
+  }
+  .all-galleries .button.light.show-more {
+    background: none;
+    width: 280px;
+    text-decoration: underline;
+    color: #8e8e8e;
+  }
+  .all-galleries .button.light.show-more:hover {
+    background: none;
+    text-decoration: none;
+  }
+  #container .column-left-2col {
+    margin: 0 0 0 20px;
+    width: auto;
+    float: none;
+  }
+  #container .column-left-2col section .top {
+    margin-right: 20px;
+  }
+  #container .column-left-2col .all-galleries {
+    padding: 0!important;
+  }
+  #container .column-left-2col .all-galleries ul li {
+    width: 150px;
+  }
+  #container .column-left-2col .all-galleries ul .title span > i {
+    right: 15px;
+    bottom: 15px!important;
+  }
+  #container .column-left-2col .all-galleries ul .title span > i i {
+    position: absolute;
+  }
+  #container .column-left-2col .all-galleries ul .title span > i i:nth-child(1) {
+    right: 0px;
+    bottom: 0;
+  }
+  #container .column-left-2col .all-galleries ul .title span > i i:nth-child(2) {
+    right: 22px;
+    bottom: 0;
+  }
+  #container .column-left-2col .all-galleries ul .title span > i i:nth-child(3) {
+    right: 0px;
+    bottom: 23px;
+  }
+  #container .column-left-2col .all-galleries ul .title span > i i:nth-child(4) {
+    right: 22px;
+    bottom: 23px;
+  }
+  #container .column-left-2col .all-galleries ul .title span > i i:nth-child(5) {
+    right: 44px;
+    bottom: 0;
+  }
+  #container .column-left-2col .all-galleries ul .title span > i b {
+    float: right;
+    clear: left;
+  }
+  #container .column-left-2col .button.edit-button {
+    padding: 0 23px!important;
+  }
+  .singles-header .editbutons {
+    margin-left: 0;
+  }
+  .singles-header .editbutons .secondstep {
+    /*width:280px;*/
+  }
+  .singles-header .editbutons #cancelEditSingles,
+  .singles-header .editbutons #cancelEditPhotos {
+    padding: 0 40px;
+  }
+  .image-gallery-info {
+    position: relative;
+  }
+  .image-gallery-info h2 {
+    font-size: 15px;
+  }
+  .image-gallery-info .pic {
+    width: 130px;
+    height: 130px;
+    margin-right: 20px;
+  }
+  .image-gallery-info .pic:after,
+  .image-gallery-info .pic:before {
+    width: 130px;
+    height: 130px;
+  }
+  .image-gallery-info .pic > img {
+    width: 130px;
+    height: 130px;
+  }
+  .image-gallery-info .pic i {
+    bottom: 5px;
+    right: 5px;
+  }
+  .image-gallery-info .text {
+    width: 135px;
+    height: 130px;
+    background: none;
+    padding: 0 10px;
+    overflow: hidden;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    -ms-transition: height 1s ease;
+    transition: height 1s ease;
+  }
+  .image-gallery-info .text.exp {
+    height: auto;
+  }
+  .image-gallery-info .text h2 {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .image-gallery-info .text p {
+    font-size: 10px;
+    max-height: 75px;
+    padding-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: max-height 1s ease;
+    -moz-transition: max-height 1s ease;
+    -o-transition: max-height 1s ease;
+    -ms-transition: max-height 1s ease;
+    transition: max-height 1s ease;
+  }
+  .image-gallery-info .text p.exp {
+    max-height: none;
+  }
+  .image-gallery-info .text p .more {
+    bottom: 0;
+    display: block;
+    left: 0;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    width: 100%;
+    background: transparent url("../img/mobile/shadow.png") top left repeat-x;
+  }
+  .image-gallery-info .socials {
+    float: left;
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  .image-gallery-info div.slideshow img {
+    width: 100%;
+  }
+  .image-gallery-info div.slideshow .next,
+  .image-gallery-info div.slideshow .prev {
+    opacity: 0.7;
+    width: 23px;
+    height: 23px;
+    background: transparent url("../img/mobile/slideshow-arrows.png") no-repeat 0 0 !important;
+    top: -10px;
+    left: auto;
+    right: 31px;
+  }
+  .image-gallery-info div.slideshow .next {
+    background-position: -23px 0 !important;
+    right: 0;
+  }
+  .image-gallery-info div.slideshow.video_carousel .next,
+  .image-gallery-info div.slideshow.video_carousel .prev {
+    display: none;
+  }
+  .image-gallery-info .options {
+    padding: 25px 0 0 0;
+  }
+  .image-gallery-info .options .slideshow {
+    display: none;
+  }
+  .block-album-cover:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+  }
+  .block-album-cover a {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+  }
+  .block-album-cover a p {
+    display: none;
+  }
+  .block-album-cover a span {
+    height: 130px;
+    width: 130px;
+  }
+  .block-album-cover a span:after,
+  .block-album-cover a span:before,
+  .block-album-cover a span img {
+    height: 130px;
+    width: 130px;
+  }
+  .block-album-cover a span > i {
+    right: 5px;
+    bottom: 5px;
+    height: 41px;
+    display: block;
+  }
+  .block-album-cover a span > i i {
+    position: absolute;
+  }
+  .block-album-cover a span > i i:nth-child(1) {
+    right: 44px;
+    bottom: 0;
+  }
+  .block-album-cover a span > i i:nth-child(2) {
+    right: 66px;
+    bottom: 0;
+  }
+  .block-album-cover a span > i i:nth-child(3) {
+    right: 44px;
+    bottom: 23px;
+  }
+  .block-album-cover a span > i i:nth-child(4) {
+    right: 66px;
+    bottom: 23px;
+  }
+  .block-album-cover a span > i i:nth-child(5) {
+    right: 88px;
+    bottom: 0;
+  }
+  .block-album-cover a span > i b {
+    float: right;
+    clear: left;
+  }
+  .block-album-cover a:hover span {
+    height: 130px;
+    width: 130px;
+  }
+  .block-album-cover .text {
+    width: 110px;
+    height: 130px;
+    background: none;
+    line-height: 12px;
+    float: left;
+    font-size: 10px;
+    padding: 0 10px;
+  }
+  .block-album-cover .text.exp {
+    height: auto;
+  }
+  .block-album-cover .text h2 {
+    font-size: 15px;
+    color: #3C3C3C;
+    margin-top: 0;
+  }
+  .block-album-cover .text p {
+    font-size: 10px;
+    max-height: 75px;
+    padding-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  .block-album-cover .text p.exp {
+    max-height: none;
+  }
+  .block-album-cover .text p .more {
+    bottom: 0;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: transparent url("../img/mobile/shadow.png") top left repeat-x;
+  }
+  .block-album-cover .text .album-title {
+    font-size: 12px;
+    margin: 3px 0 15px 0;
+  }
+  #album_list ul {
+    width: auto;
+  }
+  #album_list ul li > div {
+    padding: 7px 0;
+  }
+  #album_list ul li > div .shares,
+  #album_list ul li > div .comments,
+  #album_list ul li > div .likes {
+    display: none;
+  }
+  #album_list ul li > div .title {
+    min-width: 210px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  #album_list ul li > div .time {
+    float: right;
+  }
+  .albums_player .entire {
+    display: none;
+  }
+  .albums_player .player .single .time {
+    float: right;
+    padding: 0 3px 0 0;
+  }
+  .albums_player .socials {
+    float: left;
+    padding-top: 15px;
+  }
+  .image-gallery ul {
+    margin: 0;
+    width: 107%;
+  }
+  .image-gallery ul li {
+    width: 130px;
+    height: 130px;
+    margin: 19px 19px 0 0;
+  }
+  .image-gallery ul li img {
+    width: 130px;
+    height: 130px;
+  }
+  .image-gallery ul li > a span {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .image-gallery ul li > a span:after {
+    display: block;
+    content: "...";
+    color: #fff;
+    position: absolute;
+    width: 21px;
+    height: 35px;
+    line-height: 35px;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  .image-gallery ul li > a:hover b {
+    opacity: 0;
+  }
+  .image-gallery.videos ul li {
+    width: 130px;
+    height: 130px;
+  }
+  .image-gallery .button {
+    width: 280px;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+  .comments form textarea {
+    width: 145px;
+  }
+  .comments h2 {
+    border-color: transparent;
+  }
+  .comments .box {
+    border: none;
+    padding: 0;
+  }
+  .comments .box .more-comments {
+    display: block;
+  }
+  .comments ul li:first-child {
+    border-top: 1px solid #E5E5E5;
+  }
+  .comments ul li:last-child {
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 10px;
+  }
+  .block-credits {
+    border: none;
+    padding: 0;
+  }
+  .video_carousel {
+    width: 280px;
+    height: 153px;
+  }
+  .video_carousel #cont {
+    height: 153px;
+  }
+  .video_carousel .video_area {
+    width: 280px !important;
+    height: 153px !important;
+    overflow: hidden;
+  }
+  .video_carousel .video_area video {
+    width: 280px;
+    height: 153px;
+  }
+  .video_carousel .play {
+    background: transparent url("../img/mobile/play.png") no-repeat center center;
+    opacity: 1;
+  }
+  .button.myprofile {
+    margin: 15px auto !important;
+  }
+  .video_container {
+    width: 280px;
+    height: 156px;
+  }
+  .video_container .video_area {
+    width: 280px;
+    height: 156px;
+  }
+  .video_container .video_area video {
+    width: 280px;
+    height: 156px;
+  }
+  .video_container .video_area .play {
+    background: transparent url("../img/mobile/play.png") no-repeat center center;
+  }
+  .vjs-poster {
+    width: 280px !important;
+    height: 156px !important;
+  }
+  .prev-next-mobile {
+    display: block;
+    position: absolute;
+    width: 280px;
+    height: 23px;
+    top: 0;
+    left: 50%;
+    margin-left: -140px;
+  }
+  .prev-next-mobile .next,
+  .prev-next-mobile .prev {
+    display: block;
+    position: absolute;
+    opacity: 0.7;
+    width: 23px;
+    height: 23px;
+    background: transparent url("../img/mobile/slideshow-arrows.png") no-repeat 0 0 !important;
+    left: auto;
+    right: 31px;
+  }
+  .prev-next-mobile .next:hover,
+  .prev-next-mobile .prev:hover,
+  .prev-next-mobile .next:active,
+  .prev-next-mobile .prev:active {
+    opacity: 1;
+  }
+  .prev-next-mobile .next {
+    background-position: -23px 0 !important;
+    right: 3px;
+  }
+  .myart-mymusic .breadcrumbs,
+  .myart-myimage .breadcrumbs,
+  .myart-myvideo .breadcrumbs,
+  .myart-index .breadcrumbs {
+    padding-right: 0px;
+  }
+  .myart-mymusic .breadcrumbs div.search_in_groups,
+  .myart-myimage .breadcrumbs div.search_in_groups,
+  .myart-myvideo .breadcrumbs div.search_in_groups,
+  .myart-index .breadcrumbs div.search_in_groups {
+    position: relative;
+    width: 250px;
+    top: 0;
+    right: auto;
+    left: auto;
+    height: 35px;
+  }
+  .myart-mymusic .breadcrumbs div.search_in_groups input,
+  .myart-myimage .breadcrumbs div.search_in_groups input,
+  .myart-myvideo .breadcrumbs div.search_in_groups input,
+  .myart-index .breadcrumbs div.search_in_groups input {
+    width: 265px;
+  }
+  .albumedit-page #container .container {
+    margin: 0 auto;
+    width: 320px !important;
+  }
+  .albumedit-page #container .container .column-right {
+    padding: 0;
+  }
+  .albumedit-page #container .container .column-left-center {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper {
+    position: absolute;
+    top: -545px;
+  }
+  .albumedit-page #container .container .column-left-center #business-wrapper .input-group {
+    padding: 0 0 20px 0;
+  }
+  .albumedit-page #container .container .column-left-center > section {
+    width: 320px;
+  }
+  .albumedit-page #container .container .column-right {
+    margin: 0;
+  }
+  .albumedit-page .album-right {
+    border: 0 none;
+    margin-top: 280px;
+    padding: 0 20px 30px;
+  }
+  .albumedit-page .dragndrop-big {
+    padding: 0 20px 10px 20px;
+  }
+  .albumedit-page .dragndrop-big h2 {
+    color: #424242;
+    font: bold 12px 'roboto';
+    padding-top: 15px;
+  }
+  .albumedit-page section .top.double {
+    padding: 0 20px;
+  }
+  .albumedit-page section .top.double .breadlink {
+    width: 0px;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+  .albumedit-page .margin10side {
+    margin: 0 0px;
+  }
+  .albumedit-page .margin10side.mymusic-weight {
+    margin: 0 20px;
+  }
+  .albumedit-page fieldset {
+    padding: 0;
+  }
+  .albumedit-page #album_list ul {
+    width: 280px;
+  }
+  .albumedit-page #album_list ul li .secondstep input {
+    width: 160px;
+  }
+  .albumedit-page #album_list ul li > div .time {
+    float: right;
+  }
+  .albumedit-page .more fieldset {
+    padding: 0 0px;
+  }
+  .albumedit-page .more fieldset > div > div {
+    padding: 0 0px;
+  }
+  .albumedit-page .business-main .input-group > li input[type="text"],
+  .albumedit-page .business-main.credits-form .input-group > li input[type="text"],
+  .albumedit-page .business-main .input-group > li input[type="phone"],
+  .albumedit-page .business-main.credits-form .input-group > li input[type="phone"],
+  .albumedit-page .business-main .input-group > li input[type="email"],
+  .albumedit-page .business-main.credits-form .input-group > li input[type="email"],
+  .albumedit-page .business-main .input-group > li textarea,
+  .albumedit-page .business-main.credits-form .input-group > li textarea {
+    width: 255px;
+  }
+  .albumedit-page .business-main .input-group > li .people > div,
+  .albumedit-page .business-main.credits-form .input-group > li .people > div {
+    font-size: 11px;
+  }
+  .albumedit-page .whats-your-passion ul li .box {
+    background: transparent url("../img/albums-edit/back.PNG") no-repeat 0 0 !important;
+  }
+  .albumedit-page .hidden-mobile {
+    display: none!important;
+  }
+  .albumedit-page .hide-business .top,
+  .albumedit-page #credits-wrapper .top {
+    padding: 0 20px;
+  }
+  .albumedit-page .grayform {
+    padding: 20px 20px 0 20px;
+  }
+  .albumedit-page .grayform .checkbox {
+    font-size: 13px;
+  }
+  .albumedit-page .grayform h3 {
+    font-size: 16px!important;
+  }
+  .albumedit-page .grayform .more fieldset > div h2 {
+    font: 14px/24px 'amble';
+  }
+  .albumedit-page .grayform .more fieldset > div h2 a:before {
+    font: 14px/24px 'amble';
+    height: 24px;
+    width: 24px;
+  }
+  .albumedit-page #saveEditAlbum,
+  .albumedit-page #cancelEditAlbum {
+    width: 160px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .singleedit-page .album-right {
+    margin-top: 305px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul {
+    padding: 0;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul li {
+    margin: 0 0 16px 16px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul li .drag-file.uploaded {
+    width: 130px;
+    height: 130px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul li .drag-file.uploaded:before {
+    width: 130px;
+    height: 120px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul li .drag-file.uploaded img {
+    width: 130px;
+    height: 130px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul li .drag-file.uploaded div {
+    width: 110px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul li .drag-file.uploaded:hover > div {
+    height: 130px;
+    cursor: pointer;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul > li:nth-child(4n+1) {
+    margin: 0 0px 16px 0px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul > li:nth-child(2n+1) {
+    margin: 0 0px 16px 0px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list .image-placeholder {
+    height: 130px;
+    width: 130px;
+  }
+  .albumedit-page.only #container .container .column-left-center #business-wrapper {
+    position: relative;
+    top: 0;
+  }
+  .myart-index #container .container {
+    margin: 0 auto;
+    width: 320px !important;
+  }
+  .myart-index #container .container .column-left-center {
+    padding: 0;
+  }
+  .myart-index #container .container .partblock {
+    width: 320px;
+    background-color: #f6f6f6;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+  }
+  .myart-index #container .container .partblock .emblem {
+    font: 14px 'amble';
+    height: 70px;
+    width: 70px;
+    margin: 20px 10px 10px 20px;
+    color: #3c3c3c;
+    float: left;
+  }
+  .myart-index #container .container .partblock .emblem:before {
+    content: "";
+    display: block;
+    height: 70px;
+    margin: 0 auto 8px;
+    position: relative;
+    width: 70px;
+  }
+  .myart-index #container .container .partblock .emblem.music:before {
+    background: url("../img/mobile/singles.png") no-repeat center 12px;
+  }
+  .myart-index #container .container .partblock .emblem.photos:before {
+    background: url("../img/mobile/photos.png") no-repeat center 14px;
+  }
+  .myart-index #container .container .partblock .emblem.videos:before {
+    background: url("../img/mobile/videos.png") no-repeat center 14px;
+  }
+  .myart-index #container .container .partblock .newalbum {
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+    height: 25px;
+  }
+  .myart-index #container .container .partblock .dragndrop-big {
+    background: none repeat scroll 0 0 #F8F8F8;
+    float: left;
+    margin-top: 10px !important;
+    position: relative;
+    width: 200px;
+    padding: 0;
+  }
+  .myart-index #container .container .partblock .dragndrop-big .drag-file label {
+    font-size: 12px;
+  }
+  .myart-index #container .container .partblock .dragndrop-big .drag-file label:after {
+    content: "to upload";
+  }
+  .myart-index #container .container .column-right .block-passions {
+    margin-top: 10px;
+    margin-left: 0px!important;
+    width: 280px;
+  }
+  .myart-index .breadcrumbs {
+    width: auto !important;
+    line-height: 28px!important;
+    padding: 10px 20px;
+  }
+  .myart-index .breadcrumbs .up {
+    display: none;
+  }
+  .myart-index .breadcrumbs div.search_in_groups input {
+    width: 275px;
+  }
+  .myart-index .breadcrumbs form {
+    float: none;
+    clear: both;
+    margin-bottom: 10px;
+    width: 260px;
+  }
+  .myart-index .breadcrumbs form button {
+    right: auto;
+    left: 253px;
+  }
+  .myart-index section .top.double {
+    padding: 0 20px;
+  }
+  .myart-index section .top.double .breadlink {
+    width: 0px;
+    margin-right: 10px;
+    overflow: hidden;
+  }
+  .myart-index .margin10side {
+    margin: 0 0px;
+  }
+  .myart-index .left {
+    display: block;
+    height: 70px;
+    position: relative;
+    width: 280px;
+  }
+  .myart-index .passion {
+    height: 45px;
+    width: 200px;
+    padding-left: 80px;
+    padding-top: 25px;
+    text-align: left;
+  }
+  .myart-index .passion:before {
+    background: url("../img/mobile/whats-your-passion.png") no-repeat left -70px;
+    height: 70px;
+    width: 80px;
+    left: 5px;
+    position: absolute;
+    top: 0;
+  }
+  .myart-index #changeMyPassion {
+    margin: 20px auto 0 auto;
+    display: block;
+  }
+  .myart-mymusic #container .container,
+  .myart-myimage #container .container,
+  .myart-myvideo #container .container {
+    margin: 0 auto;
+  }
+  .myart-mymusic #container .container .column-left-center,
+  .myart-myimage #container .container .column-left-center,
+  .myart-myvideo #container .container .column-left-center {
+    /*padding:0;*/
+  }
+  .myart-mymusic #container .container .editbutons .secondstep,
+  .myart-myimage #container .container .editbutons .secondstep,
+  .myart-myvideo #container .container .editbutons .secondstep {
+    width: auto;
+  }
+  .myart-mymusic #container .container .editbutons .button,
+  .myart-myimage #container .container .editbutons .button,
+  .myart-myvideo #container .container .editbutons .button {
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    padding: 0!important;
+    float: none;
+  }
+  .myart-mymusic #container .container .mymusic-albums .editbutons,
+  .myart-myimage #container .container .mymusic-albums .editbutons,
+  .myart-myvideo #container .container .mymusic-albums .editbutons {
+    margin-right: 20px;
+  }
+  .myart-mymusic .breadcrumbs,
+  .myart-myimage .breadcrumbs,
+  .myart-myvideo .breadcrumbs {
+    width: auto !important;
+    line-height: 28px!important;
+    padding: 10px 20px;
+  }
+  .myart-mymusic .breadcrumbs .up,
+  .myart-myimage .breadcrumbs .up,
+  .myart-myvideo .breadcrumbs .up {
+    display: none;
+  }
+  .myart-mymusic .breadcrumbs div.search_in_groups input,
+  .myart-myimage .breadcrumbs div.search_in_groups input,
+  .myart-myvideo .breadcrumbs div.search_in_groups input {
+    width: 275px;
+  }
+  .myart-mymusic .margin10side,
+  .myart-myimage .margin10side,
+  .myart-myvideo .margin10side {
+    margin: 0 0px;
+  }
+  .myart-mymusic .singles-header,
+  .myart-myimage .singles-header,
+  .myart-myvideo .singles-header {
+    margin-top: 10px;
+  }
+  .myart-mymusic .singles-header .editbutons,
+  .myart-myimage .singles-header .editbutons,
+  .myart-myvideo .singles-header .editbutons {
+    top: 35px;
+    position: relative;
+    float: none;
+  }
+  .myart-mymusic .singles-header .movetip,
+  .myart-myimage .singles-header .movetip,
+  .myart-myvideo .singles-header .movetip {
+    top: -40px;
+    position: relative;
+  }
+  .myart-mymusic .mymusic-singles.editable .singles-header .movetip,
+  .myart-myimage .mymusic-singles.editable .singles-header .movetip,
+  .myart-myvideo .mymusic-singles.editable .singles-header .movetip,
+  .myart-mymusic .myimages-photos.editable .singles-header .movetip,
+  .myart-myimage .myimages-photos.editable .singles-header .movetip,
+  .myart-myvideo .myimages-photos.editable .singles-header .movetip {
+    top: -77px;
+  }
+  .myart-mymusic #album_list,
+  .myart-myimage #album_list,
+  .myart-myvideo #album_list {
+    margin-top: 5px;
+  }
+  .myart-mymusic .drag-wrapper,
+  .myart-myimage .drag-wrapper,
+  .myart-myvideo .drag-wrapper {
+    margin-top: 10px;
+  }
+  .musician-write {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .musician-write form {
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .musician-write form fieldset {
+    position: relative;
+    padding: 0;
+    text-align: left;
+  }
+  .musician-write form fieldset textarea {
+    display: block;
+    height: 35px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .musician-write form fieldset.music:before {
+    left: 45px;
+  }
+  .musician-write form fieldset.image:before {
+    left: 80px;
+  }
+  .musician-write form fieldset.video:before {
+    left: 114px;
+  }
+  .musician-write form button {
+    margin: 0 auto;
+    width: 200px;
+  }
+  .musician-write .types {
+    text-align: left;
+  }
+  .musician-write .types a {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 15px;
+    margin: 0 5px 0 10px;
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    filter: alpha(opacity= 70 );
+  }
+  .musician-write .types a.active {
+    width: auto;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    filter: alpha(opacity= 100 );
+  }
+  .musician-images-igalleries .top .tabs a,
+  .musician-videos-valbums .top .tabs a {
+    margin: 0 0 0 10px;
+  }
+  .musician-images-igalleries .tabs-contents .iscroll,
+  .musician-videos-valbums .tabs-contents .iscroll {
+    overflow: hidden;
+    height: 300px !important;
+  }
+  .musician-images-igalleries .tabs-contents .iscroll.gallery,
+  .musician-videos-valbums .tabs-contents .iscroll.gallery {
+    height: 360px !important;
+  }
+  .musician-images-igalleries ul li,
+  .musician-videos-valbums ul li {
+    height: 300px !important;
+  }
+  .musician-images-igalleries ul li div,
+  .musician-videos-valbums ul li div {
+    width: 130px;
+    height: 130px;
+  }
+  .musician-images-igalleries ul li div a,
+  .musician-videos-valbums ul li div a {
+    text-decoration: none;
+  }
+  .musician-images-igalleries ul li img,
+  .musician-videos-valbums ul li img {
+    width: 130px;
+    height: 130px;
+  }
+  .musician-images-igalleries .video ul li div a,
+  .musician-videos-valbums .video ul li div a {
+    text-decoration: none;
+  }
+  .musician-images-igalleries .video ul li div a:after,
+  .musician-videos-valbums .video ul li div a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0px;
+    content: "";
+    display: none;
+    width: 100%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    -webkit-transition: 0ms;
+    -moz-transition: 0ms;
+    -o-transition: 0ms;
+    -ms-transition: 0ms;
+    transition: 0ms;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    filter: alpha(opacity= 0 );
+  }
+  .musician-images-igalleries .video ul li div a:hover,
+  .musician-videos-valbums .video ul li div a:hover {
+    text-decoration: none;
+  }
+  .musician-images-igalleries .video ul li div a:hover:after,
+  .musician-videos-valbums .video ul li div a:hover:after {
+    display: block;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    filter: alpha(opacity= 100 );
+  }
+  .musician-images-igalleries .video ul li div a b,
+  .musician-videos-valbums .video ul li div a b {
+    -webkit-transition: opacity 0ms;
+    -moz-transition: opacity 0ms;
+    -o-transition: opacity 0ms;
+    -ms-transition: opacity 0ms;
+    transition: opacity 0ms;
+    padding: 20px 10px 0 10px;
+    height: 100px;
+    overflow: hidden;
+  }
+  .musician-images-igalleries .gallery ul li div,
+  .musician-videos-valbums .gallery ul li div {
+    width: 130px;
+    height: auto;
+  }
+  .musician-images-igalleries .gallery ul li .title,
+  .musician-videos-valbums .gallery ul li .title {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+  }
+  .musician-images-igalleries .gallery ul li .title span img,
+  .musician-videos-valbums .gallery ul li .title span img {
+    width: 120px;
+    height: 120px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+  }
+  .musician-images-igalleries .gallery ul li .title span:before,
+  .musician-videos-valbums .gallery ul li .title span:before {
+    width: 120px;
+    height: 120px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+  }
+  .musician-images-igalleries .gallery ul li .title span:after,
+  .musician-videos-valbums .gallery ul li .title span:after {
+    width: 120px;
+    height: 120px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
+  }
+  .musician-singles-albums ul li div {
+    margin: 0;
+    padding: 10px 10px 0 10px;
+  }
+  .musician-singles-albums ul li div .title {
+    width: 135px;
+    overflow: hidden;
+  }
+  body.my-profile-page .change-color .buttons .button {
+    margin: 40px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .dropdown-toggle {
+    line-height: 23px;
+    border: 1px solid #A8A8A8;
+  }
+  .av-dollars .descr-information {
+    margin-left: 0;
+    padding: 0 20px;
+    width: auto !important;
+  }
+  .av-dollars #container .container .column-left-center {
+    padding: 0 20px;
+    width: auto !important;
+    float: none;
+  }
+  .av-dollars #container .container .column-left-center h2 {
+    margin-bottom: 20px;
+  }
+  .av-dollars #container .container .column-left-center .donation-settings .bg-wrapper > div .checkbox {
+    float: none;
+    margin: 10px 0 0 5px;
+  }
+  .av-dollars #container .container .column-left-center .donation-settings .bg-wrapper > div textarea {
+    width: 98%;
+    padding: 8px 1%;
+  }
+  .av-dollars #container .container .column-left-center .donation-settings .bg-wrapper .wrapp-fileupload .input-title {
+    margin-left: 0;
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .av-dollars #container .container .column-left-center .donation-settings .bg-wrapper .wrapp-fileupload .fileupload .drag-file {
+    margin: 10px auto 0;
+  }
+  .av-dollars #container .container .column-left-center .donation-settings .button {
+    margin-top: 25px;
+    width: 100%;
+  }
+  .av-dollars #container .container .column-right {
+    margin-top: 26px;
+    padding: 0 20px;
+    width: auto !important;
+    float: none;
+  }
+  .av-dollars #container .container .column-right .buttons {
+    margin: 0 10px;
+  }
+  .av-dollars #container .container .column-right .buttons .button {
+    margin-top: 24px;
+    width: 100%;
+    padding: 0px;
+  }
+  .payment-confirmation .container {
+    padding-top: 5px;
+  }
+  .payment-confirmation .thanks > div {
+    position: relative;
+    padding: 26px 20px 45px;
+    min-height: auto;
+    text-align: center;
+  }
+  .payment-confirmation .thanks > div:before {
+    content: ' ';
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto 30px;
+    display: block;
+    width: 88px;
+    height: 88px;
+    background: url('../img/orders/statuses_norm.png') 0 -354px;
+  }
+  .payment-confirmation .features-membership {
+    margin: 30px 20px 0;
+  }
+  .payment-confirmation .features-membership:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+  }
+  .payment-confirmation .features-membership > section {
+    float: left;
+    width: 49%;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .payment-confirmation .features-membership > section > div.title {
+    padding: 12px 0 6px;
+    height: auto;
+    border-bottom: none;
+  }
+  .payment-confirmation .features-membership > section > div.title span {
+    display: inline;
+  }
+  .payment-confirmation .features-membership > section > div.content {
+    height: auto;
+    padding-bottom: 15px;
+    width: inherit;
+    margin: 0 auto;
+    display: block;
+  }
+  .payment-confirmation .features-membership > section > div.content i {
+    display: block;
+    margin: 0 auto 6px;
+  }
+  .payment-confirmation .features-membership > section.account-type {
+    float: none;
+    width: 100%;
+  }
+  .payment-confirmation .features-membership > section.account-type .title {
+    text-align: center;
+    padding: 12px 0;
+    height: auto;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .payment-confirmation .features-membership > section.account-type .content {
+    padding: 15px 0;
+  }
+  .payment-confirmation .features-membership > section.av-score-boost,
+  .payment-confirmation .features-membership > section.fans-limit {
+    margin-left: 2%;
+  }
+  .payment-confirmation .features-membership > section.av-score-boost {
+    width: 49%;
+  }
+  .payment-confirmation .features-membership > section.donations-limit,
+  .payment-confirmation .features-membership > section.fans-limit {
+    border-bottom: none;
+  }
+  .payment-confirmation .features-membership > section.prices {
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: none;
+  }
+  .payment-confirmation .features-membership > section.prices .title {
+    margin-top: 5px;
+  }
+  .payment-confirmation .features-membership > section.prices .title,
+  .payment-confirmation .features-membership > section.prices .content {
+    text-align: center;
+  }
+  .payment-confirmation .features-membership > div .print-my-records {
+    width: 100%;
+  }
+  .payment-confirmation .check-out-block {
+    margin: 35px 20px;
+    width: auto;
+  }
+  .payment-confirmation .check-out-block .check-out {
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+  }
+  .payment-subscription #container .container .payment-info {
+    margin: 0 15px;
+    width: auto;
+  }
+  .payment-subscription #container .container .payment-info h2 {
+    font-size: 22px;
+  }
+  .payment-subscription #container .container .column-left-center {
+    float: none;
+    padding: 0 15px;
+    width: auto !important;
+  }
+  .payment-subscription #container .container .column-right {
+    margin: 30px 15px 0;
+    width: auto;
+  }
+  .payment-subscription .donations-form .bg-wrapper {
+    border-top: none;
+  }
+  .payment-subscription .donations-form .bg-wrapper > div h4 {
+    margin-left: 10px;
+  }
+  .payment-subscription .donations-form .bg-wrapper > div .input-group {
+    margin: 0 10px;
+  }
+  .payment-subscription .donations-form .place-order {
+    padding: 0px;
+    width: 100%;
+  }
+  .payment-subscription .order-summary,
+  .payment-subscription .use-av {
+    border: none;
+    padding: 0;
+  }
+  .payment-subscription .use-av .use-item .summ {
+    margin: 0;
+  }
+  .payment-subscription .use-av .use-purchase {
+    width: 160px;
+    margin: 0 auto;
+  }
+  .payment-subscription .input-group:after,
+  .donatations .input-group:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;
+  }
+  .payment-subscription .input-group > li.postal-code,
+  .donatations .input-group > li.postal-code {
+    float: left;
+    width: 105px;
+  }
+  .payment-subscription .input-group > li.phone,
+  .donatations .input-group > li.phone {
+    float: left;
+    width: 164px;
+  }
+  .payment-subscription .input-group > li.phone .right-wrapper,
+  .donatations .input-group > li.phone .right-wrapper {
+    width: auto;
+  }
+  .payment-subscription .input-group > li .right-wrapper.payment-types,
+  .donatations .input-group > li .right-wrapper.payment-types {
+    margin-top: 10px;
+  }
+  .payment-subscription .input-group > li input[type="text"],
+  .donatations .input-group > li input[type="text"] {
+    width: 247px;
+  }
+  .payment-subscription .input-group > li input[type="text"]#postal-code,
+  .donatations .input-group > li input[type="text"]#postal-code {
+    width: 68px;
+  }
+  .payment-subscription .input-group > li input[type="text"]#phone,
+  .donatations .input-group > li input[type="text"]#phone {
+    width: 142px;
+  }
+  .payment-subscription .input-group > li .dropdown-selectbox.country .dropdown-toggle,
+  .donatations .input-group > li .dropdown-selectbox.country .dropdown-toggle {
+    width: 228px;
+  }
+  .payment-subscription .input-group > li .input-title,
+  .donatations .input-group > li .input-title {
+    float: none;
+    width: 100%;
+  }
+  .payment-subscription .input-group > li .input-title.adress,
+  .donatations .input-group > li .input-title.adress {
+    line-height: 34px;
+    width: 100%;
+  }
+  .donatations #container .container .donate-header {
+    margin-left: 0px;
+  }
+  .donatations #container .container .donate-header > h2 {
+    border: none;
+    padding: 0 20px;
+  }
+  .donatations #container .container .donate-header .column-left-center {
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: auto !important;
+  }
+  .donatations #container .container .donate-header .column-right {
+    float: none;
+    margin: 30px 20px 0;
+    width: auto;
+  }
+  .donatations .musician-funds-raised {
+    border: none;
+    padding: 0;
+  }
+  .donatations .support-project {
+    padding: 10px 20px;
+  }
+  .donatations .donations-form .bg-wrapper > div {
+    margin: 0px;
+  }
+  .donatations .donations-form .bg-wrapper > div h4 {
+    margin: 30px 20px 15px;
+  }
+  .donatations .donations-form .bg-wrapper > div .checkbox {
+    margin: 20px 20px;
+    font-size: 12px;
+    line-height: 14px;
+    width: 280px;
+  }
+  .donatations .donations-form .bg-wrapper > div .checkbox span {
+    display: inline-block;
+    margin-right: 20px;
+    text-indent: 0;
+  }
+  .donatations .donations-form .bg-wrapper > div .amount-money {
+    margin: 0 0px 0 20px;
+    width: 300px;
+  }
+  .donatations .donations-form .bg-wrapper > div .amount-money > li {
+    width: 90px;
+    margin: 0 5px 5px 0px;
+    font: bold 21px/45px 'gotham_promedium';
+    height: 45px;
+  }
+  .donatations .donations-form .bg-wrapper > div .amount-money > li.big-mob {
+    width: 138px;
+  }
+  .donatations .donations-form .bg-wrapper > div .input-group {
+    margin: 0 20px;
+  }
+  .donatations .donations-form .buttons {
+    margin: 0 20px;
+  }
+  .donatations .donations-form .buttons .donate {
+    width: 100%;
+  }
+  header .logged > li #basket-dropdown {
+    width: 318px;
+    right: -62px;
+  }
+  header .logged > li #basket-dropdown:after,
+  header .logged > li #basket-dropdown:before {
+    right: 65px;
+  }
+  header .logged > li #basket-dropdown ul li {
+    text-align: left;
+  }
+  header .logged > li #basket-dropdown ul li:after {
+    width: 300px;
+  }
+  header .logged > li #basket-dropdown ul li a,
+  header .logged > li #basket-dropdown ul li i {
+    text-align: left;
+  }
+  .album-song #container .container .column-right.tablet-full,
+  .albums #container .container .column-right.tablet-full {
+    padding: 0 15px;
+  }
+}
+@media all and (min-width: 450px) and (max-width: 500px) {
+  #container .container .column-right-2col .myimages-photos #image_list ul > li:nth-child(4n+1) {
+    margin: 0 0px 16px 16px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul > li:nth-child(2n+1) {
+    margin: 0 0px 16px 16px;
+  }
+  #container .container .column-right-2col .myimages-photos #image_list ul > li:nth-child(3n+1) {
+    margin: 0 0px 16px 0px;
+  }
+  .column-center .cust-bl .box-color:nth-child(2n+2) {
+    margin-right: 0px !important;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}

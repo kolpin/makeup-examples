@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='IE=EmulateIE8, IE=9' http-equiv='X-UA-Compatible'>
+    <title>Юлия Высоцкая. Кулинарные туры.</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+    <link rel="stylesheet" href="css/jcarousel.basic.css">
+
+    <script src='js/jquery-1.8.2.min.js'></script>
+    <script src='js/base.js'></script>
+    <script src='js/rotate3di.js'></script>
+    <script src='js/jquery.jscrollpane.min.js'></script>
+    <script src='js/jquery.mousewheel.min.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="js/jQueryRotateCompressed.2.2.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/ie7.css">
+    <![endif]-->
+
+    <script src='js/jquery.maskedinput.min.js'></script>
+    <script src='js/common.js'></script>
+    <script src="js/photos.js"></script>
+    <script src='js/fly.js'></script>
+    <script src="js/geolocation.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script></head>
+    <script src='js/photos_slider.js'></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="inner">
+            <header >
+                <div class="header_main">
+                    <a href="/" id="logo"></a>
+                    <nav class="main_nav">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">Путешествия</a>
+                                <ul class="subs">
+                                    <li>
+                                        <a href="#">Сертификат</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Видео</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" >Компания</a>
+                            </li>
+                            <li>
+                                <a href="#">Шеф-повара</a>
+                            </li>
+                            <li>
+                                <a href="#" >Партнёры</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="clear"></div>
+                </div>
+                <div class="header-contacts-wrapper">
+                    <div class="header-contacts"><div class="animated">
+                        <a href="#" class="phone">+7 495 <span>989−48−91</span></a>
+                        <a href="mailto:@travel@jvtours.ru" class="email">travel@jvtours.ru</a>
+                    </div>
+                    </div>
+                </div>
+            </header>
+            <div class="inner_content photos">
+                <div class="left_margin">
+                    <h1 class="name_personal">ЗАТЕРЯННЫЙ МИР ТОСКАНЫ</h1>
+                </div>
+                <div class="relative">
+                    <div class="photos_wrap">
+                        <a href="#" class="fly-box" data-img="1">
+                            <img src="img/tmp/i1.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="2">
+                            <img src="img/tmp/i2.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="3">
+                            <img src="img/tmp/i3.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="4">
+                            <img src="img/tmp/i4.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="5">
+                            <img src="img/tmp/i5.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="6">
+                            <img src="img/tmp/i6.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="7">
+                            <img src="img/tmp/i7.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="8">
+                            <img src="img/tmp/i8.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="9">
+                            <img src="img/tmp/i9.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="10">
+                            <img src="img/tmp/i10.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="11">
+                            <img src="img/tmp/i11.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="12">
+                            <img src="img/tmp/i12.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                        <a href="#" class="fly-box" data-img="13">
+                            <img src="img/tmp/i13.png" alt="" />
+                            <span class="see"></span>
+                            <span class="opacity_img"></span>
+                        </a>
+                    </div>
+                    <nav class="travel_nav dark_links">
+                        <ul>
+                            <li><a href="#" class="program"><i></i>Программа</a></li>
+                            <li><span class="photos active"><i></i>Фотографии 13</span></li>
+                            <li><a href="#" class="region"><i></i>Регион</a></li>
+                            <li><a href="#" class="reviews"><i></i>Отзывы</a></li>
+                            <li><a href="#" class="cost"><i></i>Стоимость</a></li>
+                            <li class="empty"></li>
+                        </ul>
+                        <div class="photos_reg"><a href="#" class="features">Познакомьтесь<br>с особенностями региона<i></i></a></div>
+                    </nav>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="photo_slider">
+                <a href="#" class="close_img"></a>
+
+                <div class="half_opacity_right">
+                    <a href="#" class="next"></a>
+                </div>
+
+
+                <div class="half_opacity_left">
+                    <a href="#" class="prev"></a>
+                </div>
+
+
+                <div class="opacity"></div>
+                <div class="jcarousel_full">
+                    <ul>
+                        <li><img src="img/tmp/photos/1.jpg" width="1500" height="1150" class="images" data-img="1" /></li>
+                        <li><img src="img/tmp/photos/2.jpg" width="2500" height="1667" class="images" data-img="2" /></li>
+                        <li><img src="img/tmp/photos/3.jpg" width="2500" height="1423" class="images" data-img="3" /></li>
+                        <li><img src="img/tmp/photos/4.jpg" width="1600" height="1065" class="images" data-img="4" /></li>
+                        <li><img src="img/tmp/photos/5.jpg" width="2500" height="1654" class="images" data-img="5" /></li>
+                        <li><img src="img/tmp/photos/6.jpg" width="1900" height="1225" class="images" data-img="6" /></li>
+                        <li><img src="img/tmp/photos/7.jpg" width="2500" height="1675" class="images" data-img="7" /></li>
+                        <li><img src="img/tmp/photos/8.jpg" width="2500" height="1664" class="images" data-img="8" /></li>
+                        <li><img src="img/tmp/photos/9.jpg" width="2500" height="1652" class="images" data-img="9" /></li>
+                        <li><img src="img/tmp/photos/10.jpg" width="1900" height="1188" class="images" data-img="10" /></li>
+                        <li><img src="img/tmp/photos/11.jpg" width="2500" height="1424" class="images" data-img="11" /></li>
+                        <li><img src="img/tmp/photos/12.jpg" width="1900" height="2020" class="images" data-img="12" /></li>
+                        <li><img src="img/tmp/photos/13.jpg" width="1900" height="1188" class="images" data-img="13" /></li>
+                    </ul>
+                </div>
+                <p class="jcarousel-pagination"></p>
+                <script>
+                    $(function() {
+                        $.preloadImages(
+                            "img/tmp/photos/1.jpg",
+                            "img/tmp/photos/2.jpg",
+                            "img/tmp/photos/3.jpg",
+                            "img/tmp/photos/5.jpg",
+                            "img/tmp/photos/6.jpg",
+                            "img/tmp/photos/7.jpg",
+                            "img/tmp/photos/8.jpg",
+                            "img/tmp/photos/9.jpg",
+                            "img/tmp/photos/10.jpg",
+                            "img/tmp/photos/11.jpg",
+                            "img/tmp/photos/12.jpg",
+                            "img/tmp/photos/13.jpg"
+                        );
+                    })
+                </script>
+            </div>
+        </div>
+        <!-- SIDEBAR -->
+        <nav class="side-panel">
+            <a href="#" class="application">
+                <i></i><span>заявка</span>
+            </a>
+            <ul>
+                <li>
+                    <a href="#" class="faq">
+                        <span>Вопросы и ответы</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="cont-manager">
+                        <span>Связаться с менеджером</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="subscribe">
+                        <span>Подписка на обновления</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="contacts">
+                        <span>Контактная информация</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="other-sites">
+                        <span>Другие сайты компании</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="social-networks">
+                <li></li>
+                <li>
+                    <a href="#" class="sn-fb"></a>
+                </li>
+                <li>
+                    <a href="#" class="sn-vk"></a>
+                </li>
+                <li>
+                    <a href="#" class="sn-in"></a>
+                </li>
+            </ul>
+            <div class="copy"></div>
+        </nav>
+        <!-- END SIDEBAR -->
+    </div>
+    <!-- POPUP -->
+    <div class="opacity_popup"></div>
+    <div class="popup popup_ordertours">
+        <div class="padding_form">
+            <a href="#" class="close_ordertours"></a>
+                <div class="ordtour_wrapp">
+                    <h1 class="title_popup title_country_h1" style="margin: 0 0 26px 0 !important;">ЗАЯВКА НА ПУТЕШЕСТВИЕ</h1>
+                </div>
+                <div class="scroll">
+                    <div class="scroll_tour_wrap">
+                        <form class="ordertours_form">
+                            <div class="ordtour_wrapp">
+                                <div id="info_ord_tour">
+                                    <img src="img/flag/active/7.png" />
+                                    <a href="#">Затерянный мир Тосканы</a>
+                                    <!--ссылка или просто название если находимся в карточке тура - Затерянный мир Тосканы-->
+                                </div>
+
+                                <div class="step">
+                                    <div class="title">Шаг 1. Выберите тип размещения</div>
+
+                                    <div class="accomm active" data-aid="1">
+                                        <i class="ico double"></i>
+                                        <div class="name">DBL½</div>
+                                        <div class="a-title">двухместный (парный) номер</div>
+                                        <div class="price">4 400 € / чел.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="accomm" data-aid="2">
+                                        <i class="ico single"></i>
+                                        <div class="name">SGL</div>
+                                        <div class="a-title">одноместный (персональный) номер</div>
+                                        <div class="price">5 100 € / чел.</div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <input type="hidden" name="accomm_id" value="1" />
+                                </div>
+
+
+                                <div class="step">
+                                    <div class="title">Шаг 2. Выберите дату</div>
+                                    <div class="otours active" data-id="1">
+                                        <i class="apply_tour"></i>
+                                        <div class="date">12-17 апреля</div>
+                                        <div class="places">осталось <b>6</b> мест</div>
+                                        <div class="price">4 400 € / чел.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="otours"  data-id="2">
+                                        <i class="apply_tour"></i>
+                                        <div class="date">17-22 апреля</div>
+                                        <div class="places">осталось <b>2</b> места</div>
+                                        <div class="price">14 400 € / чел.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <input type="hidden" name="otour_id" value="1" />
+                                </div>
+                                <div class="step">
+                                    <div class="title">Шаг 3. Определите количество участников</div>
+                                    <a href="#" class="minus passive"></a>
+                                    <div class="count_people">1</div>
+                                    <a href="#" class="plus"></a>
+                                    <input type="hidden" name="count_people" value="1" />
+                                </div>
+                                <div class="step last">
+                                    <div class="title">Шаг 4. Заполните контактную информацию</div>
+                                    <div class="inp_wrap"><input type="text" name="user_name" value="" class="input_order" /><span> — имя и фамилия</span></div>
+                                    <div class="inp_wrap"><input type="text" name="user_email" value="" class="input_order" /><span> — эл. почта</span></div>
+                                    <div class="inp_wrap"><input type="text" name="mobile_phone" value="" class="input_order" id="mobile_phone"/><span> — моб. телефон</span></div>
+
+                                </div>
+                                <button class="send_button">ОТПРАВИТЬ ЗАЯВКУ<i></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+
+    <div class="popup popup_application_to_order">
+        <div class="padding_form">
+            <h1 class="title_popup title_country_h1">ЗАЯВКА НА ПУТЕШЕСТВИЕ <a href="#" class="close_application"></a></h1>
+            <div class="scroll">
+                <div class="scroll_tour_wrap">
+                    <div class="columns">
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/1.png)"></i>Бельгия <span>2</span>
+                            </li>
+                            <li><a href="#" rel="1">Бельгия в стиле модерн</a></li>
+                            <li><a href="#" rel="2">Вкус Фландрии</a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/2.png)"></i>Великобритания <span>1</span>
+                            </li>
+                            <li><a href="#" rel="3">Гастрономический Лондон</a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/3.png)"></i>Грузия <span>3</span>
+                            </li>
+                            <li><a href="#" rel="4">Гастрономическая Грузия</a></li>
+                            <li><a href="#" rel="5">Многоголосие кухонь</a></li>
+                            <li><a href="#" rel="6">Страна сыра и вина</a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/4.png)"></i>Израиль <span>2</span>
+                            </li>
+                            <li><a href="#" rel="7"><span>Гастрономия, искусство, культура</span></a></li>
+                            <li><a href="#" rel="8">Спа-гурме-уикенд в Израиле</a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/5.png)"></i>Исландия <span>1</span>
+                            </li>
+                            <li><a href="#" rel="9">Тепло ледяной Исландии</a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/6.png)"></i>Испания <span>1</span>
+                            </li>
+                            <li><a href="#" rel="10">Секреты Каталонии</a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/7.png)"></i>Италия <span>5</span>
+                            </li>
+                            <li><a href="#" rel="11">Затерянный мир Тосканы</a></li>
+                            <li><a href="#" rel="12">Изысканный Пьемонт</a></li>
+                            <li><a href="#" rel="13">Позитано и Неаполь с Юлией Высоцкой</a></li>
+                            <li><a href="#" rel="14">Тоскана с Юлией Высоцкой</a></li>
+                            <li><a href="#" rel="15">Умбрия — Тоскана</a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/8.png)"></i>Латвия <span>1</span>
+                            </li>
+                            <li><a href="#" rel="16"><span>Эко-гурме-уикенд в Латвии</span></a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/9.png)"></i>Марокко <span>3</span>
+                            </li>
+                            <li><a href="#" rel="17">И Бог создал женщину</a></li>
+                            <li><a href="#" rel="18">Касабланка — Марракеш: океан и кухня</a></li>
+                            <li><a href="#" rel="19">Сказочный Марракеш</a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/10.png)"></i>Словения - Хорватия <span>1</span>
+                            </li>
+                            <li><a href="#" rel="20">Путешествие с ароматом тыквенных семечек</a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/11.png)"></i>Франция <span>4</span>
+                            </li>
+                            <li><a href="#" rel="21">Бордо</a></li>
+                            <li><a href="#" rel="22">Гурме-уикенд в Бордо</a></li>
+                            <li><a href="#" rel="23">Дордонь — Бордо</a></li>
+                            <li><a href="#" rel="24">Прованс</a></li>
+                        </ul>
+                        <ul class="ultours">
+                            <li class="item">
+                                <i style="background: url(img/flag/active/12.png)"></i>Швеция <span>1</span>
+                            </li>
+                            <li><a href="#" rel="25"><span>Западная Швеция</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popup popup_faq">
+        <h1 class="name_personal faqh1"><a href="#" class="close_faq"></a>Вопросы и ответы</h1>
+        <div class="scroll_wrap">
+            <div class="top_overflow"></div>
+            <div class="down_overflow"></div>
+            <div class="faq_content">
+                <div class="relative faq_rel">
+                    <ul>
+                        <li><span>Какие условия, важны ли кулинарные навыки?</span>
+                            Наши путешествия предназначены для всех, кто хочет научиться
+                            готовить и узнать новые техники приготовления блюд. Мы будем
+                            рады участникам с любым уровнем подготовки.</li>
+                        <li><span>Помогаете ли Вы с билетами и визой?</span>
+                            Да. Оформлением виз, авиабилетов и медицинских страховок
+                            занимается дружественная компания-партнёр, с которой у нас
+                            заключён контракт.</li>
+                        <li><span>Можно ли брать с собой детей?</span>
+                            Мы всегда рады маленьким кулинарам. Однако просим
+                            родителей учитывать, что наши путешествия могут показаться
+                            насыщенными не только ребёнку, но и взрослому человеку.
+                            Обращаем внимание, что дети могут уставать во время поездок
+                            по региону, поэтому рекомендуем брать помощника, который
+                            присмотрит за ребёнком. Со своей стороны мы делаем всё
+                            возможное, чтобы обеспечить комфорт приезжающим детям.</li>
+                        <li><span>Возможно ли участие, если я не из Москвы?</span>
+                            К нам приезжают участники из разных стран, группа собирается
+                            в аэропорту, после чего мы вместе отправляемся к месту
+                        </li>
+                    </ul>
+                    <ul class="no_margin_right">
+                        <li><span>Что, если у меня пищевая аллергия?</span>
+                            Специальная анкета, которую вы заполните перед поездкой,
+                            позволит нам предусмотреть все важные моменты, связанные
+                            со здоровьем, и сформировать меню таким образом, чтобы вы
+                            чувствовали себя комфортно во время путешествия.</li>
+                        <li><span>Сколько участников в группе?</span>
+                            Количество участников варьируется в зависимости от
+                            конкретных дат. В среднем это 5—7 человек.</li>
+                        <li><span>Каковы условия отказа от путешествия?</span>
+                            Вы вправе досрочно и в одностороннем порядке расторгнуть
+                            договор. Но при условии оплаты понесённых расходов,
+                            связанных с подготовкой к путешествию. Данные расходы мы
+                            подтверждаем документально.</li>
+                        <li><span>Дополнительные расходы во время путешествия?</span>
+                            Завтраки, обеды, ужины и транспортные расходы, участие
+                            в мастер-классах и дегустациях, посещение виноделен,
+                            а также памятные подарки — всё это включено в стоимость.
+                            Дополнительные расходы могут возникнуть, если вы
+                            захотите купить подарки себе, своим родственникам или друзьям</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_cont_manager">
+        <form class="fitback_form">
+            <div class="padding_form">
+                <h1 class="title_popup"><a href="#" class="close_cnt_mngr"></a>СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ</h1>
+                <div><input type="text" name="user_name" value="" id="contact_name" /><span> — имя и фамилия</span></div>
+                <div><input type="text" name="user_email" value="" id="contact_email" /><span> — эл. почта</span></div>
+                <div><input type="text" name="mobile_phone" value="" id="contact_phone"/><span> — моб. телефон</span></div>
+                <div><textarea name="message" id="contact_body"></textarea><span> — сообщение</span></div>
+            </div>
+            <button class="send_button">ОТПРАВИТЬ СООБЩЕНИЕ<i></i></button>
+        </form>
+    </div>
+    <div class="popup popup_subscribe">
+        <form class="rss_form">
+            <div class="padding_form">
+                <h1 class="title_popup"><a href="#" class="close_subs"></a>ПОДПИСКА НА ОБНОВЛЕНИЯ</h1>
+                <div>
+                    Мы активно развиваем новые направления, открываем новые страны
+                    и совершенствуем наши программы. Подпишитесь на обновления и будьте
+                    в курсе новостей.<br><br>
+                    Если вам не понравятся наши письма, посвящённые обновлениям, вы всегда сможете
+                    отписаться.
+                </div>
+                <div><input type="text" name="user_name" value="" id="subscriber_name" /><span> — имя и фамилия</span></div>
+                <div><input type="text" name="user_email" value="" id="subscriber_email" /><span> — эл. почта</span></div>
+            </div>
+            <button class="send_button">Подписаться<i></i></button>
+        </form>
+    </div>
+    <div class="popup popup_other_sites">
+        <div class="padding_form">
+            <h1 class="title_popup"><a href="#" class="close_other"></a>ДРУГИЕ САЙТЫ КОМПАНИИ</h1>
+            <div>
+                <a href="#" class="others_sites_link">
+                    <img class="hover" src="img/others/logo_1_hover.png" width="150" height="75" />
+                    <img src="img/others/logo_1.png" width="150" height="75" />
+                    <span class="url_others">www.juliavysotskaya.com<i></i></span>
+                </a>
+                <a href="#" class="others_sites_link">
+                    <img class="hover" src="img/others/logo_2_hover.png" width="150" height="75" />
+                    <img src="img/others/logo_2.png" width="150" height="75" />
+                    <span class="url_others">www.edimdoma.ru<i></i></span>
+                </a>
+                <a href="#" class="others_sites_link">
+                    <img class="hover" src="img/others/logo_3_hover.png" width="150" height="75" />
+                    <img src="img/others/logo_3.png" width="150" height="75" />
+                    <span class="url_others">www.studio.jvcompany.ru<i></i></span>
+                </a>
+                <a href="#" class="others_sites_link no_margin_right">
+                    <img class="hover" src="img/others/logo_4_hover.png" width="150" height="75" />
+                    <img src="img/others/logo_4.png" width="150" height="75" />
+                    <span class="url_others">www.ernik.ru<i></i></span>
+                </a>
+                <a href="#" class="others_sites_link">
+                    <img class="hover" src="img/others/logo_5_hover.png" width="150" height="75" />
+                    <img src="img/others/logo_5.png" width="150" height="75" />
+                    <span class="url_others">www.foodembassy.ru<i></i></span>
+                </a>
+                <a href="#" class="others_sites_link">
+                    <img class="hover" src="img/others/logo_6_hover.png" width="150" height="75" />
+                    <img src="img/others/logo_6.png" width="150" height="75" />
+                    <span class="url_others">www.konchalovsky.ru<i></i></span>
+                </a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_copy">
+        <div class="padding_form">
+            <h1 class="title_popup"><a href="#" class="close_copy"></a>АВТОРСКИЕ ПРАВА</h1>
+            <ul class="fundamentals">
+                <li>
+                    <span>Основные положения</span>
+                    Сайт — а именно его текстовое содержание, фотографии, видеофайлы, шрифты и другая
+                    информация — являются собственностью ООО <i>Кулинарные путешествия Юлии Высоцкой</i>. Мы
+                    будем благодарны, если в процессе цитирования материалов сайта вы разместите фразу
+                    <i>По материалам сайта www.jvtours.ru</i> — данная фраза должна иметь активную ссылку.
+                </li>
+            </ul>
+            <ul class="authors">
+                <li>
+                    <span>Тексты</span>
+                    Людмила Сальникова
+                    <i>фуд-редактор журнала <i>Хлеб-соль</i></i>
+                </li>
+                <li>
+                    <span>Фотографы</span>
+                    Екатерина Дёмина<br>
+                    Михаил Королёв<br>
+                    Светлана Малыхина<br>
+                    Юлия Каурова<br>
+                    Alla Kishek<br>
+                    Olger Andrésson<br>
+                    Toerisme Mechele<br>
+                    Tom Fakler
+                </li>
+                <li class="no_margin_right">
+                    <span>Фотобанки</span>
+                    www.milo-profi.be<br>
+                    www.shutterstock.com<br>
+                    www.wallbase.cc
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popup popup_contacts">
+        <div class="cont_wrap">
+            <div id="cont_text">
+                <div class="padding">
+                    <h1><a href="#" class="close_cont"></a>КОНТАКТНЫЕ ДАННЫЕ</h1>
+                    <div class="contacts">
+                        <div class="left">
+                            <div class="phone">+7 495 <span>989−48−91</span></div>
+                            <div class="address">
+                                Эл. почта: <a href="#">travel@jvtours.ru</a><br>Адрес: Москва, ул. Правды, 21, стр. 1
+                            </div>
+                        </div>
+                        <div class="right">
+                            Звоните: 10.00—19.00, понедельник–пятница.
+                            Пишите: круглосуточно. С радостью ответим на
+                            все вопросы. С вами будет работать ваш
+                            персональный менеджер.
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <ul class="cont_tabs">
+                        <li>
+                            <div class="num_tab one" data-item="1"><i>от м. Савёловская</i></div>
+                            <div class="method">пешком</div>
+                        </li>
+                        <li>
+                            <div class="num_tab two" data-item="2"><i>от м. Белорусская</i></div>
+                            <div class="method">пешком</div>
+                        </li>
+                        <li>
+                            <div class="num_tab three" data-item="3"><i id="addr_text">от Газетного пер., 12</i><span> — <a href="#" id="edit"><b>изменить адрес</b></a></span></div>
+                            <div class="method">на автомобиле: <span id="car_dist">4.6 км, 9 мин</span></div>
+                            <div class="edit_address">
+                                <input type="text" id="address" />
+                                <a href="#" id="apply"></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="relative">
+                        <div class="top_overflow_cont"></div>
+                        <div class="down_overflow_cont"></div>
+                        <div class="tabs_wrapper">
+                            <div class="tab_content tc_1">
+                                <ol id="panel_1">
+
+                                </ol>
+                            </div>
+                            <div class="tab_content tc_2">
+                                <ol id="panel_2">
+
+                                </ol>
+                            </div>
+                            <div class="tab_content tc_3">
+                                <div class="relative load_address" id="directions_panel">
+                                    <ol id="panel_3">
+
+                                    </ol>
+                                </div>
+                                <a href="#" class="see_on_map">Посмотрите на карте<i></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cont_map">
+                <div class="slide_map"><i></i></div>
+                <div class="opacity_map"></div>
+                <div id="map-canvas"></div>
+                <div class="half_opacity_left"><i class="icons_map back"></i></div>
+                <a href="#" class="icons_map print"></a>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_order">
+        <form class="order_form">
+            <div class="padding_form">
+                <h1 class="title_popup"><a href="#" class="close_order"></a>Заявка</h1>
+                <div class="step">
+                    <div class="title">Шаг 1. Выберите дату</div>
+                    <div class="tours" data-id="1">
+                        <i class="apply_tour"></i>
+                        <div class="date">12-17 апреля</div>
+                        <div class="places">осталось <b>6</b> мест</div>
+                        <div class="price">4 400 € / чел.</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="tours"  data-id="2">
+                        <i class="apply_tour"></i>
+                        <div class="date">17-22 апреля</div>
+                        <div class="places">осталось <b>2</b> места</div>
+                        <div class="price">14 400 € / чел.</div>
+                        <div class="clear"></div>
+                    </div>
+                    <input type="hidden" name="tour_id" />
+                </div>
+                <div class="step">
+                    <div class="title">Шаг 2. Определите количество участников</div>
+                    <a href="#" class="minus passive"></a>
+                    <div class="count_people">1</div>
+                    <a href="#" class="plus"></a>
+                    <input type="hidden" name="count_people" value="1" />
+                </div>
+                <div class="step last">
+                    <div class="title">Шаг 3. Заполните контактную информацию</div>
+                    <div class="inp_wrap"><input type="text" name="user_name" value="" class="input_order" /><span> — имя и фамилия</span></div>
+                    <div class="inp_wrap"><input type="text" name="user_email" value="" class="input_order" /><span> — эл. почта</span></div>
+                    <div class="inp_wrap"><input type="text" name="phone" value="" class="input_order" id="mobile_phone2"/><span> — моб. телефон</span></div>
+
+                </div>
+            </div>
+            <button class="send_request">ОТПРАВИТЬ ЗАЯВКУ<i></i></button>
+        </form>
+    </div>
+
+    <div class="popup popup_pay_card">
+        <div class="padding_form">
+            <h1 class="title_popup"><a href="#" class="close_pay_card"></a>ОПЛАТА КАРТОЙ ОНЛАЙН</h1>
+            <div class="relative">
+                <div class="text">
+                    Мы гарантируем полную безопасность вашего интернет-платежа:
+                    <ul>
+                        <li>оплата происходит через сайт компании <i>Uniteller</i> (официальный сервис-провайдер <i>Visa</i>, <i>Mastercard</i>, <i>Worldwide</i>, <i>JCB</i> и <i>Diners club</i>);</li>
+                        <li>процессинг сертифицирован стандартом безопасности данных индустрии платёжных карт <i>PCI DSS</i>;</li>
+                        <li>применяется интеллектуальная система мониторинга мошеннических операций и&nbsp;протокол <i>3-D Secure</i> (дополнительный уровень безопасности банковских карт);</li>
+                        <li>передача информации происходит по технологии шифрования SSL, по закрытым банковским каналам, имеющим наивысший уровень надёжности (передача ваших данных третьим лицам исключена).</li>
+                    </ul>
+                    Процесс онлайн-оплаты по шагам:
+                    <ul>
+                        <li>ваш персональный менеджер подтверждает вашу заявку на путешествие — вам приходит письмо на эл. почту, в котором содержится ссылка;</li>
+                        <li>вы переходите по ссылке и попадаете на защищенную платёжную страницу нашего сайта, вводите данные своей банковской карты для оплаты заказа;</li>
+                        <li>если карта поддерживает протокол <i>3-D Secure</i>, то вы проходите доп. проверку на странице банка, который выпустил вашу карту (проверка — это чаще всего пароль из SMS или карта переменных кодов);</li>
+                        <li>оплата успешно произошла — вам приходит на эл. почту письмо с подтверждением совершённого заказа.</li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <p class="first"><a href="#">Сайт компании <span>Uniteller</span><i></i></a></p>
+                    <p><a href="#"><span>PCI DSS</span> на <span>Википедии</span><i></i></a></p>
+                    <p><a href="#"><span>3-D Secure</span> на <span>Википедии</span><i></i></a></p>
+                    <div>
+                        Если оплата не произошла,
+                        свяжитесь с вашим персональным
+                        менеджером, или позвоните нам
+                        в&nbsp;офис +7 495 989-48-91. Мы
+                        поможем решить все вопросы.
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup_order_success">
+        <div class="padding_form">
+            <h1 class="title_popup"><a href="#" class="close_order_success"></a>ВАША ЗАЯВКА ПРИНЯТА</h1>
+            <div class="text">
+                В ближайшее время с вами свяжется ваш персональный менеджер для
+                обсуждения деталей предстоящего путешествия. Благодарим вас за участие
+                и рады, что вы с нами! Ваши контактные данные (на всякий случай):
+            </div>
+            <table class="table_data">
+                <tr>
+                    <td class="title_td">имя и фамилия</td>
+                    <td>Зинаида Волховская</td>
+                </tr>
+                <tr>
+                    <td class="title_td">эл. почта</td>
+                    <td>z.volkhovskya@gmail.com</td>
+                </tr>
+                <tr>
+                    <td class="title_td">моб. телефон</td>
+                    <td>+7 906 606-32-07</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- END POPUP -->
+</body>
+</html>
